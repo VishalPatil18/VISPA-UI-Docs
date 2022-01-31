@@ -1,3 +1,7 @@
+.colors__content {
+  scroll-behavior: smooth;
+}
+
 .default__cp {
   display: flex;
   flex-direction: column;
