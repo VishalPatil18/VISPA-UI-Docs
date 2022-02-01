@@ -1,0 +1,13 @@
+.eg__wrapper {
+  width: 100%;
+  padding: var(--space-xl);
+  background-color: var(--grey-1);
+  margin: var(--space-md) 0;
+}
+
+.eg {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--br-sm);
+  background-color: var(--danger);
+}

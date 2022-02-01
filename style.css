@@ -1,5 +1,6 @@
 @import url('./pages/installation/_installation.css');
 @import url('./pages/colors/_colors.css');
+@import url('./pages/utilities/utilities.css');
 
 body {
   color: var(--dark);
@@ -118,6 +119,7 @@ body {
   overflow-y: scroll;
   padding: var(--space-xl) var(--space-xl) 0 var(--space-sm);
   width: 100%;
+  scroll-behavior: smooth;
 }
 
 .maincontent__content--desc {
