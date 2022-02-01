@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://vispaui-postdev-deploy.netlify.app/css/main.css">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" type="image/x-icon" href="../../assets/VISPA_UI--logo.svg">
+  <title>VISPA-UI / Typography</title>
+</head>
+<body class="poppins">
+  <!-------------------------------------
+                  NAVBAR 
+  -------------------------------------->
+  <header class="_navbar">
+    <img class="navbar__logo" src="../../assets/VISPA_UI--logo.svg" alt="vispa-ui--logo">
+    <a class="h-4" href="../../index.html">
+      <p>VISPA<span class="navbar__ui">UI</span></p>
+    </a>
+    <span class="navbar__version">v1.0</span>
+    <a class="h-5 button btn-lg btn-plain" href="#">Docs</a>
+    <a href="https://github.com/VishalPatil18/VISPA-UI">
+      <img class="icon-dark icon-xl" src="https://vispaui-postdev-deploy.netlify.app/assets/github.svg" alt="github">
+    </a>
+  </header>
+
+  <!-------------------------------------
+                MAIN BODY 
+  -------------------------------------->
+  <main class="maincontent">
+    <!-------------------------------------
+                  SIDEBAR 
+    -------------------------------------->
+    <aside class="maincontent__sidebar--left">
+      <div class="drawer">
+        <div class="drawer__list">
+          <p class="list__subheading">Getting Started</p>
+          <a href="../installation/installation.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/download.svg" alt="install">
+            Installation
+          </a>
+    
+          <a href="../colors/colors.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/palette.svg" alt="colors">
+            Colors
+          </a>
+    
+          <a href="./typography.html" class="drawer__item drawer__item--active">
+            <img class="icon-md icon-primary drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/feather-alt.svg" alt="typography">
+            Typography
+          </a>
+
+          <a href="../utilities/utilities.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/cogs.svg" alt="utilities">
+            Utilities
+          </a>
+        </div>
+        <div class="drawer__list">
+          <p class="list__subheading">Components</p>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/warning.svg" alt="alert">
+            Alert
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/portrait.svg" alt="avatar">
+            Avatar
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg" alt="badge">
+            Badge
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/clone.svg" alt="button">
+            Button
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/id-card.svg" alt="card">
+            Card
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/backspace.svg" alt="chips">
+            Chips
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/indent.svg" alt="drawer">
+            Drawer
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/th.svg" alt="grid">
+            Grid
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/images.svg" alt="image">
+            Image
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/edit.svg" alt="input">
+            Input
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/list-ol.svg" alt="list">
+            List
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/window-maximize.svg" alt="modal">
+            Modal
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bars.svg" alt="navbar">
+            Navbar
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/star-solid.svg" alt="rating">
+            Rating
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/server.svg" alt="slider">
+            Slider
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/vote-yea.svg" alt="toast">
+            Toast
+          </a>
+        </div>
+        <div class="drawer__list">
+          <p class="list__subheading">Customization</p>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/at.svg" alt="toast">
+            Variables
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bezier-curve.svg" alt="toast">
+            Utility Classes
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/columns.svg" alt="toast">
+            Components
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-------------------------------------
+                    CONTENT
+    -------------------------------------->
+    <section class="maincontent__content bd-5 typography__content">
+      <section class="maincontent__content--box">
+        <h1 class="h-4" id="colors">Typography</h1>
+        <p class="bd-5 maincontent__content--desc">
+          VISPA-UI includes an expertly-crafted Typography which has a total of 5 amazing google font-families which can make your UI building experience effortless.
+          <br />
+          VISPA-UI provides you seven themed colors and six variants each of ten beautiful colors.
+        </p>
+
+        <!-- FONT FAMILIES -->
+        <p class="h-5 maincontent__content--info" id="font-families">
+          Font Families of VISPA-UI
+        </p>
+        <p class="st-1 maincontent__content--info">
+          Poppins
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          <span style="font-weight: 500; color: var(--danger);">Poppins</span> is the default font-family of VISPA-UI.
+          To use <span style="font-weight: 500; color: var(--danger);">Poppins</span> in your project just add the class of <span style="font-style: italic; color: var(--primary);">poppins</span> to the container.
+        </p>
+        <p class="poppins bd-4 txt-center">This is a <span style="font-weight: 500; color: var(--danger); padding: 0 var(--space-xs);"> Poppins </span> text</p>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522poppins%2522%253EThis%2520is%2520a%2520Poppins%2520text%253C%252Fp%253E"
+            style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          Roboto
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use <span style="font-weight: 500; color: var(--danger);">Roboto</span> in your project just add the class of <span style="font-style: italic; color: var(--primary);">roboto</span> to the container.
+        </p>
+        <p class="roboto bd-4 txt-center">This is a <span style="font-weight: 500; color: var(--danger); padding: 0 var(--space-xs);"> Roboto </span> text</p>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522roboto%2522%253EThis%2520is%2520a%2520Roboto%2520text%253C%252Fp%253E"
+            style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          Source Sans Pro
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use <span style="font-weight: 500; color: var(--danger);">Source Sans Pro</span> in your project just add the class of <span style="font-style: italic; color: var(--primary);">source-sans-pro</span> to the container.
+        </p>
+        <p class="source-sans-pro bd-4 txt-center">This is a <span style="font-weight: 500; color: var(--danger); padding: 0 var(--space-xs);"> Source Sans Pro </span> text</p>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522source-sans-pro%2522%253EThis%2520is%2520a%2520Source%2520Sans%2520Pro%2520text%253C%252Fp%253E"
+            style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          Space Mono
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use <span style="font-weight: 500; color: var(--danger);">Space Mono</span> in your project just add the class of <span style="font-style: italic; color: var(--primary);">space-mono</span> to the container.
+        </p>
+        <p class="space-mono bd-4 txt-center">This is a <span style="font-weight: 500; color: var(--danger); padding: 0 var(--space-xs);"> Space Mono </span> text</p>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522space-mono%2522%253EThis%2520is%2520a%2520Space%2520Mono%2520text%253C%252Fp%253E"
+            style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          Staatliches
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use <span style="font-weight: 500; color: var(--danger);">Staatliches</span> in your project just add the class of <span style="font-style: italic; color: var(--primary);">staatliches</span> to the container.
+        </p>
+        <p class="staatliches bd-4 txt-center">This is a <span style="font-weight: 500; color: var(--danger); padding: 0 var(--space-xs);"> Staatliches </span> text</p>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522staatliches%2522%253EThis%2520is%2520a%2520Staatliches%2520text%253C%252Fp%253E"
+            style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- HEADINGS -->
+        <p class="h-5 maincontent__content--info" id="heading">
+          Headings in VISPA-UI
+        </p>
+
+        <p class="st-1 maincontent__content--info">
+          H1 Heading
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use <span style="font-weight: 500; color: var(--danger);">H1 Heading</span> in your project just add the class of <span style="font-style: italic; color: var(--primary);">h-1</span> to the container.
+        </p>
+        <p class="h-1 txt-center"><span style="color: var(--danger); padding: 0 var(--space-xs);"> H1 </span> Heading</p>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Ch1%2520class%253D%2522h-1%2522%253EH1%2520Heading%253C%252Fh1%253E"
+            style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          H2 Heading
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use <span style="font-weight: 500; color: var(--danger);">H2 Heading</span> in your project just add the class of <span style="font-style: italic; color: var(--primary);">h-2</span> to the container.
+        </p>
+        <p class="h-2 txt-center"><span style="color: var(--danger); padding: 0 var(--space-xs);"> H2 </span> Heading</p>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Ch2%2520class%253D%2522h-2%2522%253EH2%2520Heading%253C%252Fh2%253E"
+            style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          H3 Heading
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use <span style="font-weight: 500; color: var(--danger);">H3 Heading</span> in your project just add the class of <span style="font-style: italic; color: var(--primary);">h-3</span> to the container.
+        </p>
+        <p class="h-3 txt-center"><span style="color: var(--danger); padding: 0 var(--space-xs);"> H3 </span> Heading</p>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Ch3%2520class%253D%2522h-3%2522%253EH3%2520Heading%253C%252Fh3%253E"
+            style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          H4 Heading
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use <span style="font-weight: 500; color: var(--danger);">H4 Heading</span> in your project just add the class of <span style="font-style: italic; color: var(--primary);">h-4</span> to the container.
+        </p>
+        <p class="h-4 txt-center"><span style="color: var(--danger); padding: 0 var(--space-xs);"> H4 </span> Heading</p>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Ch4%2520class%253D%2522h-4%2522%253EH4%2520Heading%253C%252Fh4%253E"
+            style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          H5 Heading
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use <span style="font-weight: 500; color: var(--danger);">H5 Heading</span> in your project just add the class of <span style="font-style: italic; color: var(--primary);">h-5</span> to the container.
+        </p>
+        <p class="h-5 txt-center"><span style="color: var(--danger); padding: 0 var(--space-xs);"> H5 </span> Heading</p>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Ch5%2520class%253D%2522h-5%2522%253EH5%2520Heading%253C%252Fh5%253E"
+            style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          H6 Heading
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use <span style="font-weight: 500; color: var(--danger);">H6 Heading</span> in your project just add the class of <span style="font-style: italic; color: var(--primary);">h-6</span> to the container.
+        </p>
+        <p class="h-6 txt-center"><span style="color: var(--danger); padding: 0 var(--space-xs);"> H6 </span> Heading</p>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Ch6%2520class%253D%2522h-6%2522%253EH6%2520Heading%253C%252Fh6%253E"
+            style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- BODY STYLING -->
+        <p class="h-5 maincontent__content--info" id="body">
+          Body Styling in VISPA-UI
+        </p>
+
+        <p class="st-1 maincontent__content--info">
+          Body 1
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use <span style="font-weight: 500; color: var(--danger);">Body 1</span> in your project just add the class of <span style="font-style: italic; color: var(--primary);">bd-1</span> to the container.
+        </p>
+        <p class="bd-1 txt-center"><span style="color: var(--danger); padding: 0 var(--space-xs);"> Body 1 </span> Text</p>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522bd-1%2522%253EBody%25201%2520Text%253C%252Fp%253E"
+            style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          Body 2
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use <span style="font-weight: 500; color: var(--danger);">Body 2</span> in your project just add the class of <span style="font-style: italic; color: var(--primary);">bd-2</span> to the container.
+        </p>
+        <p class="bd-2 txt-center"><span style="color: var(--danger); padding: 0 var(--space-xs);"> Body 2 </span> Text</p>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522bd-2%2522%253EBody%25202%2520Text%253C%252Fp%253E"
+            style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          Body 3
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use <span style="font-weight: 500; color: var(--danger);">Body 3</span> in your project just add the class of <span style="font-style: italic; color: var(--primary);">bd-3</span> to the container.
+        </p>
+        <p class="bd-3 txt-center"><span style="color: var(--danger); padding: 0 var(--space-xs);"> Body 3 </span> Text</p>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522bd-3%2522%253EBody%25203%2520Text%253C%252Fp%253E"
+            style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          Body 4
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use <span style="font-weight: 500; color: var(--danger);">Body 4</span> in your project just add the class of <span style="font-style: italic; color: var(--primary);">bd-4</span> to the container.
+        </p>
+        <p class="bd-4 txt-center"><span style="color: var(--danger); padding: 0 var(--space-xs);"> Body 4 </span> Text</p>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522bd-4%2522%253EBody%25204%2520Text%253C%252Fp%253E"
+            style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          Body 5
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use <span style="font-weight: 500; color: var(--danger);">Body 5</span> in your project just add the class of <span style="font-style: italic; color: var(--primary);">bd-5</span> to the container.
+        </p>
+        <p class="bd-5 txt-center"><span style="color: var(--danger); padding: 0 var(--space-xs);"> Body 5 </span> Text</p>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522bd-5%2522%253EBody%25205%2520Text%253C%252Fp%253E"
+            style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          Body 6
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use <span style="font-weight: 500; color: var(--danger);">Body 6</span> in your project just add the class of <span style="font-style: italic; color: var(--primary);">bd-6</span> to the container.
+        </p>
+        <p class="bd-6 txt-center"><span style="color: var(--danger); padding: 0 var(--space-xs);"> Body 6 </span> Text</p>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522bd-6%2522%253EBody%25206%2520Text%253C%252Fp%253E"
+            style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- SUB-TITLES -->
+        <p class="h-5 maincontent__content--info" id="sub-title">
+          Sub-titles in VISPA-UI
+        </p>
+
+        <p class="st-1 maincontent__content--info">
+          Sub-title 1
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use <span style="font-weight: 500; color: var(--danger);">Sub-title 1</span> in your project just add the class of <span style="font-style: italic; color: var(--primary);">st-1</span> to the container.
+        </p>
+        <p class="st-1 txt-center"><span style="color: var(--danger); padding: 0 var(--space-xs);"> Sub-title 1 </span> Text</p>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522st-1%2522%253ESubtitle%25201%2520Text%253C%252Fp%253E"
+            style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          Sub-title 2
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use <span style="font-weight: 500; color: var(--danger);">Sub-title 2</span> in your project just add the class of <span style="font-style: italic; color: var(--primary);">st-2</span> to the container.
+        </p>
+        <p class="st-2 txt-center"><span style="color: var(--danger); padding: 0 var(--space-xs);"> Sub-title 2 </span> Text</p>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522st-2%2522%253ESubtitle%25202%2520Text%253C%252Fp%253E"
+            style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- CAPTIONS -->
+        <p class="h-5 maincontent__content--info" id="caption">
+          Captions of VISPA-UI
+        </p>
+
+        <p class="bd-5 maincontent__content--info">
+          To use <span style="font-weight: 500; color: var(--danger);">Caption</span> in your project just add the class of <span style="font-style: italic; color: var(--primary);">cp</span> to the container.
+        </p>
+        <p class="cp txt-center"><span style="color: var(--danger); padding: 0 var(--space-xs);"> Caption </span> Text</p>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522cp%2522%253ECaption%2520Text%253C%252Fp%253E"
+            style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin"
+            loading="lazy">
+          </iframe>
+        </div>
+      </section>
+
+      <!-------------------------------------
+                  CONTENT FOOTER 
+      -------------------------------------->
+      <footer class="footer">
+        <section class="navigation__wrapper">
+          <a href="../colors/colors.html" class="navigation__wrapper--item txt-center st-1">
+            <img class="icon-sm icon-dark maincontent__sidebar--icon" style="transform: rotate(-90deg);" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+            Colors
+          </a>
+          <a href="../utilities/utilities.html" class="navigation__wrapper--item txt-center st-1">
+            Utilities
+            <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+          </a>
+        </section>
+        <section class="footer__end">
+          <p class="footer__copyright bd-5">
+            Copyright &copy; 2022 
+            <a href="https://github.com/VishalPatil18">
+              Vishal Patil
+            </a>
+            . All Rights Reserved
+          </p>
+          <a href="https://github.com/VishalPatil18/VISPA-UI">Edit this page on Github</a>
+        </section>
+      </footer>
+    </section>
+
+    <aside class="maincontent__sidebar--right">
+      <h6 class="h-6 maincontent__sidebar--right--title">On this Page</h6>
+      <a class="bd-5" href="#font-families">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Font Families of VISPA-UI
+      </a>
+      <a class="bd-5" href="#heading">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Headings in VISPA-UI
+      </a>
+      <a class="bd-5" href="#body">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Body Styling in VISPA-UI
+      </a>
+      <a class="bd-5" href="#sub-title">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Sub-titles in VISPA-UI
+      </a>
+      <a class="bd-5" href="#caption">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Captions of VISPA-UI
+      </a>
+    </aside>
+  </main>
+</body>
+<script src="./_colors.js"></script>
+</html>
