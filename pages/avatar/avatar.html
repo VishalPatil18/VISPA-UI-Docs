@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://vispaui-postdev-deploy.netlify.app/css/main.css">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" type="image/x-icon" href="../../assets/VISPA_UI--logo.svg">
+  <title>VISPA-UI / Avatar</title>
+</head>
+<body class="poppins">
+  <!-------------------------------------
+                  NAVBAR 
+  -------------------------------------->
+  <header class="_navbar">
+    <img class="navbar__logo" src="../../assets/VISPA_UI--logo.svg" alt="vispa-ui--logo">
+    <a class="h-4" href="../../index.html">
+      <p>VISPA<span class="navbar__ui">UI</span></p>
+    </a>
+    <span class="navbar__version">v1.0</span>
+    <a class="h-5 button btn-lg btn-plain" href="#">Docs</a>
+    <a href="https://github.com/VishalPatil18/VISPA-UI">
+      <img class="icon-dark icon-xl" src="https://vispaui-postdev-deploy.netlify.app/assets/github.svg" alt="github">
+    </a>
+  </header>
+
+  <!-------------------------------------
+                MAIN BODY 
+  -------------------------------------->
+  <main class="maincontent">
+    <!-------------------------------------
+                  SIDEBAR 
+    -------------------------------------->
+    <aside class="maincontent__sidebar--left">
+      <div class="drawer">
+        <div class="drawer__list">
+          <p class="list__subheading">Getting Started</p>
+          <a href="../installation/installation.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/download.svg" alt="install">
+            Installation
+          </a>
+    
+          <a href="../colors/colors.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/palette.svg" alt="colors">
+            Colors
+          </a>
+    
+          <a href="../typography/typography.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/feather-alt.svg" alt="typography">
+            Typography
+          </a>
+
+          <a href="../utilities/utilities.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/cogs.svg" alt="utilities">
+            Utilities
+          </a>
+        </div>
+        <div class="drawer__list">
+          <p class="list__subheading">Components</p>
+          <a href="../alert/alert.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/warning.svg" alt="alert">
+            Alert
+          </a>
+          <a href="./avatar.html" class="drawer__item drawer__item--active">
+            <img class="icon-md icon-primary drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/portrait.svg" alt="avatar">
+            Avatar
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg" alt="badge">
+            Badge
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/clone.svg" alt="button">
+            Button
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/id-card.svg" alt="card">
+            Card
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/backspace.svg" alt="chips">
+            Chips
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/indent.svg" alt="drawer">
+            Drawer
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/th.svg" alt="grid">
+            Grid
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/images.svg" alt="image">
+            Image
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/edit.svg" alt="input">
+            Input
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/list-ol.svg" alt="list">
+            List
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/window-maximize.svg" alt="modal">
+            Modal
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bars.svg" alt="navbar">
+            Navbar
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/star-solid.svg" alt="rating">
+            Rating
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/server.svg" alt="slider">
+            Slider
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/vote-yea.svg" alt="toast">
+            Toast
+          </a>
+        </div>
+        <div class="drawer__list">
+          <p class="list__subheading">Customization</p>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/at.svg" alt="toast">
+            Variables
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bezier-curve.svg" alt="toast">
+            Utility Classes
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/columns.svg" alt="toast">
+            Components
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-------------------------------------
+                    CONTENT
+    -------------------------------------->
+    <section class="maincontent__content bd-5 typography__content">
+      <section class="maincontent__content--box">
+        <h1 class="h-4" id="colors">Avatar</h1>
+        <p class="bd-5 maincontent__content--desc">
+          VISPA-UI includes an expertly-crafted 7 varieties of <span style="font-weight: 500; color: var(--danger);">Avatars</span> which can make your UI building experience effortless.
+        </p>
+
+        <!-- BASIC AVATAR -->
+        <p class="h-5 maincontent__content--info" id="basic-avatar">
+          Basic
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Avatar</span> component you can use the <span style="font-style: italic; color: var(--primary);">avatar</span> class to the image.
+        </p>
+        <div class="txt-center">
+          <img class="avatar" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/profile_dark.png" alt="profile_img">
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522%2523%2522%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- EXTRA LARGE AVATAR -->
+        <p class="h-5 maincontent__content--info" id="extra-large-avatar">
+          eXtra Large Avatar
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">eXtra Large Avatar</span> component you can use the <span style="font-style: italic; color: var(--primary);">av-xl</span> class to the image.
+        </p>
+        <div class="txt-center">
+          <img class="avatar av-xl" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/profile_dark.png" alt="profile_img">
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522avatar%2520av-xl%2522%2520src%253D%2522%2523%2522%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- LARGE AVATAR -->
+        <p class="h-5 maincontent__content--info" id="large-avatar">
+          Large Avatar
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Large Avatar</span> component you can use the <span style="font-style: italic; color: var(--primary);">av-lg</span> class to the image.
+        </p>
+        <div class="txt-center">
+          <img class="avatar av-lg" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/profile_dark.png" alt="profile_img">
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522avatar%2520av-lg%2522%2520src%253D%2522%2523%2522%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- MEDIUM AVATAR -->
+        <p class="h-5 maincontent__content--info" id="medium-avatar">
+          Medium Avatar
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Medium Avatar</span> component you can use the <span style="font-style: italic; color: var(--primary);">av-md</span> class to the image.
+        </p>
+        <div class="txt-center">
+          <img class="avatar av-md" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/profile_dark.png" alt="profile_img">
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522avatar%2520av-md%2522%2520src%253D%2522%2523%2522%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- SMALL AVATAR -->
+        <p class="h-5 maincontent__content--info" id="small-avatar">
+          Small Avatar
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Small Avatar</span> component you can use the <span style="font-style: italic; color: var(--primary);">av-sm</span> class to the image.
+        </p>
+        <div class="txt-center">
+          <img class="avatar av-sm" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/profile_dark.png" alt="profile_img">
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522avatar%2520av-sm%2522%2520src%253D%2522%2523%2522%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- EXTRA SMALL AVATAR -->
+        <p class="h-5 maincontent__content--info" id="extra-small-avatar">
+          eXtra Small Avatar
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">eXtra Small Avatar</span> component you can use the <span style="font-style: italic; color: var(--primary);">av-xs</span> class to the image.
+        </p>
+        <div class="txt-center">
+          <img class="avatar av-xs" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/profile_dark.png" alt="profile_img">
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522avatar%2520av-xs%2522%2520src%253D%2522%2523%2522%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- SQUARE AVATAR -->
+        <p class="h-5 maincontent__content--info" id="square-avatar">
+          Square Avatar
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Square Avatar</span> component you can use the <span style="font-style: italic; color: var(--primary);">av-square</span> class to the image.
+        </p>
+        <div class="txt-center">
+          <img class="avatar av-square" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/profile_dark.png" alt="profile_img">
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522avatar%2520av-square%2522%2520src%253D%2522%2523%2522%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+      </section>
+
+      <!-------------------------------------
+                  CONTENT FOOTER 
+      -------------------------------------->
+      <footer class="footer">
+        <section class="navigation__wrapper">
+          <a href="../alert/alert.html" class="navigation__wrapper--item txt-center st-1">
+            <img class="icon-sm icon-dark maincontent__sidebar--icon" style="transform: rotate(-90deg);" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+            Alert
+          </a>
+          <a href="#" class="navigation__wrapper--item txt-center st-1">
+            Badge
+            <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+          </a>
+        </section>
+        <section class="footer__end">
+          <p class="footer__copyright bd-5">
+            Copyright &copy; 2022 
+            <a href="https://github.com/VishalPatil18">
+              Vishal Patil
+            </a>
+            . All Rights Reserved
+          </p>
+          <a href="https://github.com/VishalPatil18/VISPA-UI">Edit this page on Github</a>
+        </section>
+      </footer>
+    </section>
+
+    <aside class="maincontent__sidebar--right">
+      <h6 class="h-6 maincontent__sidebar--right--title">On this Page</h6>
+      <a class="bd-5" href="#basic-avatar">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Basic Avatar
+      </a>
+      <a class="bd-5" href="#extra-large-avatar">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        eXtra Large Avatar
+      </a>
+      <a class="bd-5" href="#large-avatar">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Large Avatar
+      </a>
+      <a class="bd-5" href="#medium-avatar">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Medium Avatar
+      </a>
+      <a class="bd-5" href="#small-avatar">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Small Avatar
+      </a>
+      <a class="bd-5" href="#extra-small-avatar">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        eXtra Small Avatar
+      </a>
+      <a class="bd-5" href="#square-avatar">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Square Avatar
+      </a>
+    </aside>
+  </main>
+</body>
+</html>

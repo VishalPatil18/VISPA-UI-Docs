@@ -136,7 +136,7 @@ body {
 
 .code__wrapper {
   width: 100%;
-  height: max-content;
+  height: fit-content;
 }
 
 .navigation__wrapper {
