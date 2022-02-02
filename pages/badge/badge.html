@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://vispaui-postdev-deploy.netlify.app/css/main.css">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" type="image/x-icon" href="../../assets/VISPA_UI--logo.svg">
+  <title>VISPA-UI / Badge</title>
+</head>
+<body class="poppins">
+  <!-------------------------------------
+                  NAVBAR 
+  -------------------------------------->
+  <header class="_navbar">
+    <img class="navbar__logo" src="../../assets/VISPA_UI--logo.svg" alt="vispa-ui--logo">
+    <a class="h-4" href="../../index.html">
+      <p>VISPA<span class="navbar__ui">UI</span></p>
+    </a>
+    <span class="navbar__version">v1.0</span>
+    <a class="h-5 button btn-lg btn-plain" href="#">Docs</a>
+    <a href="https://github.com/VishalPatil18/VISPA-UI">
+      <img class="icon-dark icon-xl" src="https://vispaui-postdev-deploy.netlify.app/assets/github.svg" alt="github">
+    </a>
+  </header>
+
+  <!-------------------------------------
+                MAIN BODY 
+  -------------------------------------->
+  <main class="maincontent">
+    <!-------------------------------------
+                  SIDEBAR 
+    -------------------------------------->
+    <aside class="maincontent__sidebar--left">
+      <div class="drawer">
+        <div class="drawer__list">
+          <p class="list__subheading">Getting Started</p>
+          <a href="../installation/installation.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/download.svg" alt="install">
+            Installation
+          </a>
+    
+          <a href="../colors/colors.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/palette.svg" alt="colors">
+            Colors
+          </a>
+    
+          <a href="../typography/typography.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/feather-alt.svg" alt="typography">
+            Typography
+          </a>
+
+          <a href="../utilities/utilities.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/cogs.svg" alt="utilities">
+            Utilities
+          </a>
+        </div>
+        <div class="drawer__list">
+          <p class="list__subheading">Components</p>
+          <a href="../alert/alert.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/warning.svg" alt="alert">
+            Alert
+          </a>
+          <a href="../avatar/avatar.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/portrait.svg" alt="avatar">
+            Avatar
+          </a>
+          <a href="./badge.html" class="drawer__item drawer__item--active">
+            <img class="icon-md icon-primary drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg" alt="badge">
+            Badge
+          </a>
+          <a href="../button/button.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/clone.svg" alt="button">
+            Button
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/id-card.svg" alt="card">
+            Card
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/backspace.svg" alt="chips">
+            Chips
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/indent.svg" alt="drawer">
+            Drawer
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/th.svg" alt="grid">
+            Grid
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/images.svg" alt="image">
+            Image
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/edit.svg" alt="input">
+            Input
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/list-ol.svg" alt="list">
+            List
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/window-maximize.svg" alt="modal">
+            Modal
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bars.svg" alt="navbar">
+            Navbar
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/star-solid.svg" alt="rating">
+            Rating
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/server.svg" alt="slider">
+            Slider
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/vote-yea.svg" alt="toast">
+            Toast
+          </a>
+        </div>
+        <div class="drawer__list">
+          <p class="list__subheading">Customization</p>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/at.svg" alt="toast">
+            Variables
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bezier-curve.svg" alt="toast">
+            Utility Classes
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/columns.svg" alt="toast">
+            Components
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-------------------------------------
+                    CONTENT
+    -------------------------------------->
+    <section class="maincontent__content bd-5 typography__content">
+      <section class="maincontent__content--box">
+        <h1 class="h-4" id="colors">Badge</h1>
+        <p class="bd-5 maincontent__content--desc">
+          VISPA-UI includes an expertly-crafted 14 varieties of <span style="font-weight: 500; color: var(--danger);">Badges</span> which can make your UI building experience effortless.
+        </p>
+
+        <!-- BASIC BADGE -->
+        <p class="h-5 maincontent__content--info" id="basic-badge">
+          Basic Badge
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Badge</span> component you can use the <span style="font-style: italic; color: var(--primary);">badge</span> class to the span.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <span class="badge__container">
+            <button class="button btn-solid-dark">Button</button>
+            <span class="badge bdg-primary">1228+</span>
+          </span>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522badge__container%2522%253E%250A%2520%2520%253Cbutton%253EButton%253C%252Fbutton%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2522%253E1228%252B%253C%252Fspan%253E%250A%253C%252Fspan%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- TOGGLE BADGE -->
+        <p class="h-5 maincontent__content--info" id="toggle-badge">
+          Toggle Badge
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Toggle Badge</span> component you can use the <span style="font-style: italic; color: var(--primary);">badge</span> ID to the badge. The toggle badge removes the badge when the button is clicked.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <span class="badge__container">
+            <button class="button btn-solid-success" id="bdg-hide-btn">Hide</button>
+            <span class="badge bdg-dark" id="badge">7+</span>
+          </span>
+          <script>
+            // Toggle Badge JS
+            const bdgHideBtn = document.getElementById("bdg-hide-btn");
+            const badgeContent = document.getElementById("badge");
+          
+            let isVisible = true;
+          
+            bdgHideBtn.addEventListener("click", () => {
+              badgeContent.style.display = !isVisible ? "flex" : "none";
+              isVisible = !isVisible;
+            });
+          </script>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522badge__container%2522%253E%250A%2520%2520%253Cbutton%2520id%253D%2522bdg-hide-btn%2522%253EHide%253C%252Fbutton%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2522%2520id%253D%2522badge%2522%253E7%252B%253C%252Fspan%253E%250A%253C%252Fspan%253E%250A%250A%253Cscript%253E%250A%2520%2520const%2520bdgHideBtn%2520%253D%2520document.getElementById%28%2522bdg-hide-btn%2522%29%253B%250A%2520%2520const%2520badgeContent%2520%253D%2520document.getElementById%28%2522badge%2522%29%253B%250A%250A%2520%2520let%2520isVisible%2520%253D%2520true%253B%250A%250A%2520%2520bdgHideBtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520badgeContent.style.display%2520%253D%2520%21isVisible%2520%253F%2520%2522flex%2522%2520%253A%2520%2522none%2522%253B%250A%2520%2520%2520%2520isVisible%2520%253D%2520%21isVisible%253B%250A%2520%2520%257D%29%253B%250A%253C%252Fscript%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 500px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- ICON BADGE -->
+        <p class="h-5 maincontent__content--info" id="icon-badge">
+          Icon Badge
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Icon Badge</span> component you can use the <span style="font-style: italic; color: var(--primary);">badge</span> class to the span along with the icon.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <span class="badge__container">
+            <img class="icon-xl" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/shopping-cart.svg" alt="shopping-cart">
+            <span class="badge bdg-danger">15</span>
+          </span>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522badge__container%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522icon-xl%2522%2520src%253D%2522%2523%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2522%253E15%253C%252Fspan%253E%250A%253C%252Fspan%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+        
+        <!-- PROFILE BADGE -->
+        <p class="h-5 maincontent__content--info" id="profile-badge">
+          Profile Badge
+        </p>
+
+        <p class="st-1 maincontent__content--info">
+          Large Badge
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Large Profile Badge</span> component you can use the <span style="font-style: italic; color: var(--primary);">badge__profile bdg-lg</span> classes to the span.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <span class="badge__container">
+            <img class="avatar av-lg" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/profile_dark.png" alt="profile_img">
+            <span class="badge badge__profile bdg-lg bdg-danger"></span>
+          </span>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522badge__container%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522%2523%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge__profile%2520bdg-lg%2522%253E%253C%252Fspan%253E%250A%253C%252Fspan%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          Medium Badge
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Medium Profile Badge</span> component you can use the <span style="font-style: italic; color: var(--primary);">badge__profile</span> class to the span.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <span class="badge__container">
+            <img class="avatar av-md" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/profile_dark.png" alt="profile_img">
+            <span class="badge badge__profile bdg-danger"></span>
+          </span>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522badge__container%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522%2523%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge__profile%2522%253E%253C%252Fspan%253E%250A%253C%252Fspan%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          Small Badge
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Small Profile Badge</span> component you can use the <span style="font-style: italic; color: var(--primary);">badge__profile bdg-sm</span> classes to the span.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <span class="badge__container">
+            <img class="avatar av-sm" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/profile_dark.png" alt="profile_img">
+            <span class="badge badge__profile bdg-sm bdg-danger"></span>
+          </span>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522badge__container%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522%2523%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge__profile%2520bdg-sm%2522%253E%253C%252Fspan%253E%250A%253C%252Fspan%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>  
+        
+        <!-- PRIMARY BADGE -->
+        <p class="h-5 maincontent__content--info" id="primary-badge">
+          Primary Badge
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Primary Badge</span> component you can use the <span style="font-style: italic; color: var(--primary);">bdg-primary</span> class to the span.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <span class="badge__container">
+            <img class="avatar av-lg" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/profile_dark.png" alt="profile_img">
+            <span class="badge badge__profile bdg-lg bdg-primary"></span>
+          </span>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522badge__container%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522%2523%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520bdg-primary%2522%253E%253C%252Fspan%253E%250A%253C%252Fspan%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- DANGER BADGE -->
+        <p class="h-5 maincontent__content--info" id="danger-badge">
+          Danger Badge
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Danger Badge</span> component you can use the <span style="font-style: italic; color: var(--primary);">bdg-danger</span> class to the span.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <span class="badge__container">
+            <img class="avatar av-lg" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/profile_dark.png" alt="profile_img">
+            <span class="badge badge__profile bdg-lg bdg-danger"></span>
+          </span>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522badge__container%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522%2523%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520bdg-danger%2522%253E%253C%252Fspan%253E%250A%253C%252Fspan%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- SUCCESS BADGE -->
+        <p class="h-5 maincontent__content--info" id="success-badge">
+          Success Badge
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Success Badge</span> component you can use the <span style="font-style: italic; color: var(--primary);">bdg-success</span> class to the span.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <span class="badge__container">
+            <img class="avatar av-lg" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/profile_dark.png" alt="profile_img">
+            <span class="badge badge__profile bdg-lg bdg-success"></span>
+          </span>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522badge__container%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522%2523%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520bdg-success%2522%253E%253C%252Fspan%253E%250A%253C%252Fspan%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- WARNING BADGE -->
+        <p class="h-5 maincontent__content--info" id="warning-badge">
+          Warning Badge
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Warning Badge</span> component you can use the <span style="font-style: italic; color: var(--primary);">bdg-warning</span> class to the span.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <span class="badge__container">
+            <img class="avatar av-lg" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/profile_dark.png" alt="profile_img">
+            <span class="badge badge__profile bdg-lg bdg-warning"></span>
+          </span>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522badge__container%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522%2523%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520bdg-warning%2522%253E%253C%252Fspan%253E%250A%253C%252Fspan%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- DARK BADGE -->
+        <p class="h-5 maincontent__content--info" id="dark-badge">
+          Dark Badge
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Dark Badge</span> component you can use the <span style="font-style: italic; color: var(--primary);">bdg-dark</span> class to the span.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <span class="badge__container">
+            <img class="avatar av-lg" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/profile_dark.png" alt="profile_img">
+            <span class="badge badge__profile bdg-lg bdg-dark"></span>
+          </span>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522badge__container%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522%2523%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520bdg-dark%2522%253E%253C%252Fspan%253E%250A%253C%252Fspan%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+      </section>
+
+      <!-------------------------------------
+                  CONTENT FOOTER 
+      -------------------------------------->
+      <footer class="footer">
+        <section class="navigation__wrapper">
+          <a href="../avatar/avatar.html" class="navigation__wrapper--item txt-center st-1">
+            <img class="icon-sm icon-dark maincontent__sidebar--icon" style="transform: rotate(-90deg);" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+            Avatar
+          </a>
+          <a href="../button/button.html" class="navigation__wrapper--item txt-center st-1">
+            Button
+            <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+          </a>
+        </section>
+        <section class="footer__end">
+          <p class="footer__copyright bd-5">
+            Copyright &copy; 2022 
+            <a href="https://github.com/VishalPatil18">
+              Vishal Patil
+            </a>
+            . All Rights Reserved
+          </p>
+          <a href="https://github.com/VishalPatil18/VISPA-UI">Edit this page on Github</a>
+        </section>
+      </footer>
+    </section>
+
+    <aside class="maincontent__sidebar--right">
+      <h6 class="h-6 maincontent__sidebar--right--title">On this Page</h6>
+      <a class="bd-5" href="#basic-badge">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Basic Badge
+      </a>
+      <a class="bd-5" href="#toggle-badge">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Toggle Badge
+      </a>
+      <a class="bd-5" href="#icon-badge">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Icon Badge
+      </a>
+      <a class="bd-5" href="#profile-badge">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Profile Badge
+      </a>
+      <a class="bd-5" href="#primary-badge">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Primary Badge
+      </a>
+      <a class="bd-5" href="#danger-badge">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Danger Badge
+      </a>
+      <a class="bd-5" href="#success-badge">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Success Badge
+      </a>
+      <a class="bd-5" href="#warning-badge">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Warning Badge
+      </a>
+      <a class="bd-5" href="#dark-badge">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Dark Badge
+      </a>
+    </aside>
+  </main>
+</body>
+</html>

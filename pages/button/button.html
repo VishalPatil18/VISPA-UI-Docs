@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://vispaui-postdev-deploy.netlify.app/css/main.css">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" type="image/x-icon" href="../../assets/VISPA_UI--logo.svg">
+  <title>VISPA-UI / Buttons</title>
+</head>
+<body class="poppins">
+  <!-------------------------------------
+                  NAVBAR 
+  -------------------------------------->
+  <header class="_navbar">
+    <img class="navbar__logo" src="../../assets/VISPA_UI--logo.svg" alt="vispa-ui--logo">
+    <a class="h-4" href="../../index.html">
+      <p>VISPA<span class="navbar__ui">UI</span></p>
+    </a>
+    <span class="navbar__version">v1.0</span>
+    <a class="h-5 button btn-lg btn-plain" href="#">Docs</a>
+    <a href="https://github.com/VishalPatil18/VISPA-UI">
+      <img class="icon-dark icon-xl" src="https://vispaui-postdev-deploy.netlify.app/assets/github.svg" alt="github">
+    </a>
+  </header>
+
+  <!-------------------------------------
+                MAIN BODY 
+  -------------------------------------->
+  <main class="maincontent">
+    <!-------------------------------------
+                  SIDEBAR 
+    -------------------------------------->
+    <aside class="maincontent__sidebar--left">
+      <div class="drawer">
+        <div class="drawer__list">
+          <p class="list__subheading">Getting Started</p>
+          <a href="../installation/installation.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/download.svg" alt="install">
+            Installation
+          </a>
+    
+          <a href="../colors/colors.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/palette.svg" alt="colors">
+            Colors
+          </a>
+    
+          <a href="../typography/typography.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/feather-alt.svg" alt="typography">
+            Typography
+          </a>
+
+          <a href="../utilities/utilities.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/cogs.svg" alt="utilities">
+            Utilities
+          </a>
+        </div>
+        <div class="drawer__list">
+          <p class="list__subheading">Components</p>
+          <a href="../alert/alert.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/warning.svg" alt="alert">
+            Alert
+          </a>
+          <a href="../avatar/avatar.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/portrait.svg" alt="avatar">
+            Avatar
+          </a>
+          <a href="../badge/badge.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg" alt="badge">
+            Badge
+          </a>
+          <a href="./button.html" class="drawer__item drawer__item--active">
+            <img class="icon-md icon-primary drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/clone.svg" alt="button">
+            Button
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/id-card.svg" alt="card">
+            Card
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/backspace.svg" alt="chips">
+            Chips
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/indent.svg" alt="drawer">
+            Drawer
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/th.svg" alt="grid">
+            Grid
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/images.svg" alt="image">
+            Image
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/edit.svg" alt="input">
+            Input
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/list-ol.svg" alt="list">
+            List
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/window-maximize.svg" alt="modal">
+            Modal
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bars.svg" alt="navbar">
+            Navbar
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/star-solid.svg" alt="rating">
+            Rating
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/server.svg" alt="slider">
+            Slider
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/vote-yea.svg" alt="toast">
+            Toast
+          </a>
+        </div>
+        <div class="drawer__list">
+          <p class="list__subheading">Customization</p>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/at.svg" alt="toast">
+            Variables
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bezier-curve.svg" alt="toast">
+            Utility Classes
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/columns.svg" alt="toast">
+            Components
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-------------------------------------
+                    CONTENT
+    -------------------------------------->
+    <section class="maincontent__content bd-5 typography__content">
+      <section class="maincontent__content--box">
+        <h1 class="h-4" id="colors">Buttons</h1>
+        <p class="bd-5 maincontent__content--desc">
+          VISPA-UI includes an expertly-crafted 18 varieties of <span style="font-weight: 500; color: var(--danger);">Buttons</span> which can make your UI building experience effortless.
+        </p>
+
+        <!-- BASIC BUTTON -->
+        <p class="h-5 maincontent__content--info" id="basic-button">
+          Basic Button
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Basic Button</span> component you have to add the <span style="font-style: italic; color: var(--primary);">button</span> class to the button element.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <button class="button">Button</button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2522%253EButton%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+        
+        <!-- SIZED BUTTONS -->
+        <p class="h-5 maincontent__content--info" id="sized-button">
+          Sized Buttons
+        </p>
+
+        <p class="st-1 maincontent__content--info">
+          Large Button
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Large Button</span> component you have to add the <span style="font-style: italic; color: var(--primary);">btn-lg</span> class to the button.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <button class="button btn-lg">Large</button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-lg%2522%253ELarge%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          Medium Button
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Medium Button</span> component you have to add the <span style="font-style: italic; color: var(--primary);">btn-md</span> class to the button.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <button class="button btn-md">Medium</button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-md%2522%253EMedium%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          Small Button
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Small Button</span> component you have to add the <span style="font-style: italic; color: var(--primary);">btn-sm</span> class to the button.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <button class="button btn-sm">Small</button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-sm%2522%253ESmall%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- PLAIN BUTTON -->
+        <p class="h-5 maincontent__content--info" id="plain-button">
+          Plain Button
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Plain Button</span> component you have to add the <span style="font-style: italic; color: var(--primary);">btn-plain</span> class to the button.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <button class="button btn-plain">Plain</button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-plain%2522%253EPlain%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- ROUND BUTTON -->
+        <p class="h-5 maincontent__content--info" id="round-button">
+          Round Button
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Round Button</span> component you have to add the <span style="font-style: italic; color: var(--primary);">btn-round</span> class to the button.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <button class="button btn-round btn-solid-primary">Round</button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-round%2522%253ERound%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- ACTION BUTTON -->
+        <p class="h-5 maincontent__content--info" id="action-button">
+          Action Button
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Action Button</span> component you have to add the <span style="font-style: italic; color: var(--primary);">btn-action</span> class to the button.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <button class="button btn-socialmedia btn-action btn-solid-primary">+</button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-action%2520btn-socialmedia%2522%253E%252B%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- ICON BUTTON -->
+        <p class="h-5 maincontent__content--info" id="icon-button">
+          Button With Icon
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Button with Icon</span> component you have to add the <span style="font-style: italic; color: var(--primary);">btn-w-icon</span> class to the button and <span style="font-style: italic; color: var(--primary);">button__icon</span> class to the icon.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <button class="button btn-w-icon btn-solid-primary">
+            <img class="icon-light icon-md button__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/envelope.svg" alt="message-btn">
+            W/Icon
+          </button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-w-icon%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522button__icon%2522%2520src%253D%2522%2523%2522%253E%250A%2520%2520W%252FIcon%250A%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- SOCIAL MEDIA BUTTONs -->
+        <p class="h-5 maincontent__content--info" id="socialmedia-button">
+          Social Media Buttons
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Social Media Buttons</span> component you have to add the <span style="font-style: italic; color: var(--primary);">btn-socialmedia</span> class to the button and <span style="font-style: italic; color: var(--primary);">button__icon</span> class to the icon.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm); gap: var(--space-sm);">
+          <button class="button btn-socialmedia btn-solid-primary"><img class="icon-light icon-md button__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/twitter.svg" alt="twitter"></button>
+
+          <button class="button btn-socialmedia btn-solid-secondary"><img class="icon-light icon-md button__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/facebook.svg" alt="facebook"></button>
+
+          <button class="button btn-socialmedia btn-solid-danger"><img class="icon-light icon-md button__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/instagram.svg" alt="instagram"></button>
+
+          <button class="button btn-socialmedia btn-solid-secondary"><img class="icon-light icon-md button__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/linkedin.svg" alt="linkedin"></button>
+
+          <button class="button btn-socialmedia btn-solid-dark"><img class="icon-light icon-md button__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/medium.svg" alt="medium"></button>
+
+          <button class="button btn-socialmedia btn-solid-dark"><img class="icon-light icon-md button__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/github.svg" alt="github"></button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-socialmedia%2520btn-solid-primary%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522icon-light%2520icon-md%2520button__icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Ftwitter.svg%2522%2520alt%253D%2522twitter%2522%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522button%2520btn-socialmedia%2520btn-solid-secondary%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522icon-light%2520icon-md%2520button__icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Ffacebook.svg%2522%2520alt%253D%2522facebook%2522%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522button%2520btn-socialmedia%2520btn-solid-danger%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522icon-light%2520icon-md%2520button__icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Finstagram.svg%2522%2520alt%253D%2522instagram%2522%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522button%2520btn-socialmedia%2520btn-solid-secondary%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522icon-light%2520icon-md%2520button__icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Flinkedin.svg%2522%2520alt%253D%2522linkedin%2522%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522button%2520btn-socialmedia%2520btn-solid-dark%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522icon-light%2520icon-md%2520button__icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fmedium.svg%2522%2520alt%253D%2522medium%2522%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522button%2520btn-socialmedia%2520btn-solid-dark%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522icon-light%2520icon-md%2520button__icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fgithub.svg%2522%2520alt%253D%2522github%2522%253E%250A%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 930px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- PRIMARY BUTTONS -->
+        <p class="h-5 maincontent__content--info" id="primary-button">
+          Primary Buttons
+        </p>
+
+        <p class="st-1 maincontent__content--info">
+          Primary Plain
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Primary Plain Button</span> component you have to add the <span style="font-style: italic; color: var(--primary);">btn-plain btn-primary</span> class to the button.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <button class="button btn-plain btn-primary">Primary Plain</button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-plain%2520btn-primary%2522%253EPrimary%2520Plain%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          Primary Outline
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Primary Outline Button</span> component you have to add the <span style="font-style: italic; color: var(--primary);">btn-outline-primary</span> class to the button.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <button class="button btn-outline-primary">Primary Outline</button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-outline-primary%2522%253EPrimary%2520Outline%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          Primary Solid
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Primary Solid Button</span> component you have to add the <span style="font-style: italic; color: var(--primary);">btn-solid-primary</span> class to the button.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <button class="button btn-solid-primary">Primary Solid</button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-solid-primary%2522%253EPrimary%2520Solid%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- SECONDARY BUTTONS -->
+        <p class="h-5 maincontent__content--info" id="secondary-button">
+          Secondary Buttons
+        </p>
+
+        <p class="st-1 maincontent__content--info">
+          Secondary Plain
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Secondary Plain Button</span> component you have to add the <span style="font-style: italic; color: var(--primary);">btn-plain btn-secondary</span> class to the button.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <button class="button btn-plain btn-secondary">Secondary Plain</button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-plain%2520btn-secondary%2522%253ESecondary%2520Plain%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          Secondary Outline
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Secondary Outline Button</span> component you have to add the <span style="font-style: italic; color: var(--primary);">btn-outline-secondary</span> class to the button.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <button class="button btn-outline-secondary">Secondary Outline</button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-outline-secondary%2522%253ESecondary%2520Outline%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          Secondary Solid
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Secondary Solid Button</span> component you have to add the <span style="font-style: italic; color: var(--primary);">btn-solid-secondary</span> class to the button.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <button class="button btn-solid-secondary">Secondary Solid</button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-solid-secondary%2522%253ESecondary%2520Solid%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- DANGER BUTTONS -->
+        <p class="h-5 maincontent__content--info" id="danger-button">
+          Danger Buttons
+        </p>
+
+        <p class="st-1 maincontent__content--info">
+          Danger Plain
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Danger Plain Button</span> component you have to add the <span style="font-style: italic; color: var(--primary);">btn-plain btn-danger</span> class to the button.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <button class="button btn-plain btn-danger">Danger Plain</button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-plain%2520btn-danger%2522%253EDanger%2520Plain%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          Danger Outline
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Danger Outline Button</span> component you have to add the <span style="font-style: italic; color: var(--primary);">btn-outline-danger</span> class to the button.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <button class="button btn-outline-danger">Danger Outline</button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-outline-danger%2522%253EDanger%2520Outline%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          Danger Solid
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Danger Solid Button</span> component you have to add the <span style="font-style: italic; color: var(--primary);">btn-solid-danger</span> class to the button.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <button class="button btn-solid-danger">Danger Solid</button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-solid-danger%2522%253EDanger%2520Solid%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- SUCCESS BUTTONS -->
+        <p class="h-5 maincontent__content--info" id="success-button">
+          Success Buttons
+        </p>
+
+        <p class="st-1 maincontent__content--info">
+          Success Plain
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Success Plain Button</span> component you have to add the <span style="font-style: italic; color: var(--primary);">btn-plain btn-success</span> class to the button.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <button class="button btn-plain btn-success">Success Plain</button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-plain%2520btn-success%2522%253ESuccess%2520Plain%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          Success Outline
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Success Outline Button</span> component you have to add the <span style="font-style: italic; color: var(--primary);">btn-outline-success</span> class to the button.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <button class="button btn-outline-success">Success Outline</button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-outline-success%2522%253ESuccess%2520Outline%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          Success Solid
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Success Solid Button</span> component you have to add the <span style="font-style: italic; color: var(--primary);">btn-solid-success</span> class to the button.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <button class="button btn-solid-success">Success Solid</button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-solid-success%2522%253ESuccess%2520Solid%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- WARNING BUTTONS -->
+        <p class="h-5 maincontent__content--info" id="warning-button">
+          Warning Buttons
+        </p>
+
+        <p class="st-1 maincontent__content--info">
+          Warning Plain
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Warning Plain Button</span> component you have to add the <span style="font-style: italic; color: var(--primary);">btn-plain btn-warning</span> class to the button.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <button class="button btn-plain btn-warning">Warning Plain</button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-plain%2520btn-warning%2522%253EWarning%2520Plain%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          Warning Outline
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Warning Outline Button</span> component you have to add the <span style="font-style: italic; color: var(--primary);">btn-outline-warning</span> class to the button.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <button class="button btn-outline-warning">Warning Outline</button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-outline-warning%2522%253EWarning%2520Outline%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          Warning Solid
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Warning Solid Button</span> component you have to add the <span style="font-style: italic; color: var(--primary);">btn-solid-warning</span> class to the button.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <button class="button btn-solid-warning">Warning Solid</button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-solid-warning%2522%253EWarning%2520Solid%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- DARK BUTTONS -->
+        <p class="h-5 maincontent__content--info" id="dark-button">
+          Dark Buttons
+        </p>
+
+        <p class="st-1 maincontent__content--info">
+          Dark Plain
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Dark Plain Button</span> component you have to add the <span style="font-style: italic; color: var(--primary);">btn-plain btn-dark</span> class to the button.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <button class="button btn-plain btn-dark">Dark Plain</button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-plain%2520btn-dark%2522%253EDark%2520Plain%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          Dark Outline
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Dark Outline Button</span> component you have to add the <span style="font-style: italic; color: var(--primary);">btn-outline-dark</span> class to the button.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <button class="button btn-outline-dark">Dark Outline</button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-outline-dark%2522%253EDark%2520Outline%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="st-1 maincontent__content--info">
+          Dark Solid
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Dark Solid Button</span> component you have to add the <span style="font-style: italic; color: var(--primary);">btn-solid-dark</span> class to the button.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <button class="button btn-solid-dark">Dark Solid</button>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-solid-dark%2522%253EDark%2520Solid%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+      </section>
+
+      <!-------------------------------------
+                  CONTENT FOOTER 
+      -------------------------------------->
+      <footer class="footer">
+        <section class="navigation__wrapper">
+          <a href="../badge/badge.html" class="navigation__wrapper--item txt-center st-1">
+            <img class="icon-sm icon-dark maincontent__sidebar--icon" style="transform: rotate(-90deg);" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+            Badge
+          </a>
+          <a href="#" class="navigation__wrapper--item txt-center st-1">
+            Card
+            <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+          </a>
+        </section>
+        <section class="footer__end">
+          <p class="footer__copyright bd-5">
+            Copyright &copy; 2022 
+            <a href="https://github.com/VishalPatil18">
+              Vishal Patil
+            </a>
+            . All Rights Reserved
+          </p>
+          <a href="https://github.com/VishalPatil18/VISPA-UI">Edit this page on Github</a>
+        </section>
+      </footer>
+    </section>
+
+    <aside class="maincontent__sidebar--right">
+      <h6 class="h-6 maincontent__sidebar--right--title">On this Page</h6>
+      <a class="bd-5" href="#basic-button">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Basic Button
+      </a>
+      <a class="bd-5" href="#sized-button">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Sized Buttons
+      </a>
+      <a class="bd-5" href="#plain-button">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Plain Button
+      </a>
+      <a class="bd-5" href="#round-button">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Round Button
+      </a>
+      <a class="bd-5" href="#action-button">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Action Button
+      </a>
+      <a class="bd-5" href="#icon-button">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Button with Icons
+      </a>
+      <a class="bd-5" href="#socialmedia-button">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Social Media Buttons
+      </a>
+      <a class="bd-5" href="#primary-button">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Primary Buttons
+      </a>
+      <a class="bd-5" href="#secondary-button">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Secondary Buttons
+      </a>
+      <a class="bd-5" href="#danger-button">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Danger Buttons
+      </a>
+      <a class="bd-5" href="#success-button">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Success Buttons
+      </a>
+      <a class="bd-5" href="#warning-button">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Warning Buttons
+      </a>
+      <a class="bd-5" href="#dark-button">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Dark Buttons
+      </a>
+    </aside>
+  </main>
+</body>
+</html>
