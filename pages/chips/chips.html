@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://vispaui-postdev-deploy.netlify.app/css/main.css">
   <link rel="stylesheet" href="../../style.css">
   <link rel="icon" type="image/x-icon" href="../../assets/VISPA_UI--logo.svg">
-  <title>VISPA-UI / Avatar</title>
+  <title>VISPA-UI / Chips</title>
 </head>
 <body class="poppins">
   <!-------------------------------------
@@ -62,8 +62,8 @@
             <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/warning.svg" alt="alert">
             Alert
           </a>
-          <a href="./avatar.html" class="drawer__item drawer__item--active">
-            <img class="icon-md icon-primary drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/portrait.svg" alt="avatar">
+          <a href="../avatar/avatar.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/portrait.svg" alt="avatar">
             Avatar
           </a>
           <a href="../badge/badge.html" class="drawer__item">
@@ -78,8 +78,8 @@
             <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/id-card.svg" alt="card">
             Card
           </a>
-          <a href="../chips/chips.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/backspace.svg" alt="chips">
+          <a href="./chips.html" class="drawer__item drawer__item--active">
+            <img class="icon-md icon-primary drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/backspace.svg" alt="chips">
             Chips
           </a>
           <a href="#" class="drawer__item">
@@ -146,140 +146,162 @@
     -------------------------------------->
     <section class="maincontent__content bd-5 typography__content">
       <section class="maincontent__content--box">
-        <h1 class="h-4" id="colors">Avatar</h1>
+        <h1 class="h-4" id="colors">Chips</h1>
         <p class="bd-5 maincontent__content--desc">
-          VISPA-UI includes an expertly-crafted 7 varieties of <span style="font-weight: 500; color: var(--danger);">Avatars</span> which can make your UI building experience effortless.
+          VISPA-UI includes an expertly-crafted 8 varieties of <span style="font-weight: 500; color: var(--danger);">Chips</span> which can make your UI building experience effortless.
         </p>
 
-        <!-- BASIC AVATAR -->
-        <p class="h-5 maincontent__content--info" id="basic-avatar">
-          Basic
+        <!-- BASIC CHIP -->
+        <p class="h-5 maincontent__content--info" id="basic-chip">
+          Basic Chip
         </p>
         <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Avatar</span> component you can use the <span style="font-style: italic; color: var(--primary);">avatar</span> class to the image.
+          To use the <span style="font-weight: 500; color: var(--danger);">Basic Chip</span> component give the <span style="font-style: italic; color: var(--primary);">chip</span> class to the span.
         </p>
-        <div class="txt-center">
-          <img class="avatar" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/profile_dark.png" alt="profile_img">
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <span class="chip">basic</span>
         </div>
         <div class="code__wrapper">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522%2523%2522%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522chip%2522%253Ebasic%253C%252Fspan%253E"
             sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
             loading="lazy">
           </iframe>
         </div>
 
-        <!-- EXTRA LARGE AVATAR -->
-        <p class="h-5 maincontent__content--info" id="extra-large-avatar">
-          eXtra Large Avatar
+        <!-- DRAGGABLE CHIP -->
+        <p class="h-5 maincontent__content--info" id="draggable-chip">
+          Draggable Chip
         </p>
         <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">eXtra Large Avatar</span> component you can use the <span style="font-style: italic; color: var(--primary);">av-xl</span> class to the image.
+          To use the <span style="font-weight: 500; color: var(--danger);">Draggable Chip</span> component set the <span style="font-style: italic; color: var(--primary);">draggable</span> property to <span style="font-style: italic; color: var(--primary);">true</span> of the span.
         </p>
-        <div class="txt-center">
-          <img class="avatar av-xl" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/profile_dark.png" alt="profile_img">
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <span draggable="true" class="chip">draggable</span>
         </div>
         <div class="code__wrapper">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522avatar%2520av-xl%2522%2520src%253D%2522%2523%2522%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520draggable%253D%2522true%2522%2520class%253D%2522chip%2522%253Edraggable%253C%252Fspan%253E"
             sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
             loading="lazy">
           </iframe>
         </div>
 
-        <!-- LARGE AVATAR -->
-        <p class="h-5 maincontent__content--info" id="large-avatar">
-          Large Avatar
+        <!-- DISMISSIBLE CHIP -->
+        <p class="h-5 maincontent__content--info" id="dismissible-chip">
+          Dismissible Chip
         </p>
         <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Large Avatar</span> component you can use the <span style="font-style: italic; color: var(--primary);">av-lg</span> class to the image.
+          To use the <span style="font-weight: 500; color: var(--danger);">Dismissible Chip</span> component give the <span style="font-style: italic; color: var(--primary);">chip__icon</span> class to the close icon.
         </p>
-        <div class="txt-center">
-          <img class="avatar av-lg" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/profile_dark.png" alt="profile_img">
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <span draggable="true" class="chip ch--warning">
+            🥭 mango
+            <img class="icon-sm chip__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg" alt="close-btn">
+          </span>
         </div>
         <div class="code__wrapper">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522avatar%2520av-lg%2522%2520src%253D%2522%2523%2522%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522chip%2522%253E%250A%2520%2520%25F0%259F%25A5%25AD%2520mango%250A%2520%2520%253Cimg%2520class%253D%2522icon-sm%2520chip__icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fclose.svg%2522%2520alt%253D%2522close-btn%2522%253E%250A%253C%252Fspan%253E"
             sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            style="width: 100%; height: 220px; border:0; transform: scale(1); overflow:hidden;"
             loading="lazy">
           </iframe>
         </div>
 
-        <!-- MEDIUM AVATAR -->
-        <p class="h-5 maincontent__content--info" id="medium-avatar">
-          Medium Avatar
+        <!-- PRIMARY CHIP -->
+        <p class="h-5 maincontent__content--info" id="primary-chip">
+          Primary Chip
         </p>
         <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Medium Avatar</span> component you can use the <span style="font-style: italic; color: var(--primary);">av-md</span> class to the image.
+          To use the <span style="font-weight: 500; color: var(--danger);">Primary Chip</span> component give the <span style="font-style: italic; color: var(--primary);">ch--primary</span> class to the span.
         </p>
-        <div class="txt-center">
-          <img class="avatar av-md" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/profile_dark.png" alt="profile_img">
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <span class="chip ch--primary">primary</span>
         </div>
         <div class="code__wrapper">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522avatar%2520av-md%2522%2520src%253D%2522%2523%2522%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522chip%2520ch--primary%2522%253Eprimary%253C%252Fspan%253E"
             sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
             loading="lazy">
           </iframe>
         </div>
 
-        <!-- SMALL AVATAR -->
-        <p class="h-5 maincontent__content--info" id="small-avatar">
-          Small Avatar
+        <!-- DANGER CHIP -->
+        <p class="h-5 maincontent__content--info" id="danger-chip">
+          Danger Chip
         </p>
         <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Small Avatar</span> component you can use the <span style="font-style: italic; color: var(--primary);">av-sm</span> class to the image.
+          To use the <span style="font-weight: 500; color: var(--danger);">Danger Chip</span> component give the <span style="font-style: italic; color: var(--primary);">ch--danger</span> class to the span.
         </p>
-        <div class="txt-center">
-          <img class="avatar av-sm" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/profile_dark.png" alt="profile_img">
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <span class="chip ch--danger">danger</span>
         </div>
         <div class="code__wrapper">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522avatar%2520av-sm%2522%2520src%253D%2522%2523%2522%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522chip%2520ch--danger%2522%253Edanger%253C%252Fspan%253E"
             sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
             loading="lazy">
           </iframe>
         </div>
 
-        <!-- EXTRA SMALL AVATAR -->
-        <p class="h-5 maincontent__content--info" id="extra-small-avatar">
-          eXtra Small Avatar
+        <!-- SUCCESS CHIP -->
+        <p class="h-5 maincontent__content--info" id="success-chip">
+          Success Chip
         </p>
         <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">eXtra Small Avatar</span> component you can use the <span style="font-style: italic; color: var(--primary);">av-xs</span> class to the image.
+          To use the <span style="font-weight: 500; color: var(--danger);">Success Chip</span> component give the <span style="font-style: italic; color: var(--primary);">ch--success</span> class to the span.
         </p>
-        <div class="txt-center">
-          <img class="avatar av-xs" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/profile_dark.png" alt="profile_img">
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <span class="chip ch--success">success</span>
         </div>
         <div class="code__wrapper">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522avatar%2520av-xs%2522%2520src%253D%2522%2523%2522%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522chip%2520ch--success%2522%253Esuccess%253C%252Fspan%253E"
             sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
             loading="lazy">
           </iframe>
         </div>
 
-        <!-- SQUARE AVATAR -->
-        <p class="h-5 maincontent__content--info" id="square-avatar">
-          Square Avatar
+        <!-- WARNING CHIP -->
+        <p class="h-5 maincontent__content--info" id="warning-chip">
+          Warning Chip
         </p>
         <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Square Avatar</span> component you can use the <span style="font-style: italic; color: var(--primary);">av-square</span> class to the image.
+          To use the <span style="font-weight: 500; color: var(--danger);">Warning Chip</span> component give the <span style="font-style: italic; color: var(--primary);">ch--warning</span> class to the span.
         </p>
-        <div class="txt-center">
-          <img class="avatar av-square" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/profile_dark.png" alt="profile_img">
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <span class="chip ch--warning">warning</span>
         </div>
         <div class="code__wrapper">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522avatar%2520av-square%2522%2520src%253D%2522%2523%2522%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522chip%2520ch--warning%2522%253Ewarning%253C%252Fspan%253E"
             sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- DARK CHIP -->
+        <p class="h-5 maincontent__content--info" id="dark-chip">
+          Dark Chip
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Dark Chip</span> component give the <span style="font-style: italic; color: var(--primary);">ch--dark</span> class to the span.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <span class="chip ch--dark">dark</span>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522chip%2520ch--dark%2522%253Edark%253C%252Fspan%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
             loading="lazy">
           </iframe>
         </div>
@@ -290,12 +312,12 @@
       -------------------------------------->
       <footer class="footer">
         <section class="navigation__wrapper">
-          <a href="../alert/alert.html" class="navigation__wrapper--item txt-center st-1">
+          <a href="../card/card.html" class="navigation__wrapper--item txt-center st-1">
             <img class="icon-sm icon-dark maincontent__sidebar--icon" style="transform: rotate(-90deg);" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-            Alert
+            Card
           </a>
-          <a href="../badge/badge.html" class="navigation__wrapper--item txt-center st-1">
-            Badge
+          <a href="#" class="navigation__wrapper--item txt-center st-1">
+            Drawer
             <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
           </a>
         </section>
@@ -314,33 +336,37 @@
 
     <aside class="maincontent__sidebar--right">
       <h6 class="h-6 maincontent__sidebar--right--title">On this Page</h6>
-      <a class="bd-5" href="#basic-avatar">
+      <a class="bd-5" href="#basic-chip">
         <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Basic Avatar
+        Basic Chip
       </a>
-      <a class="bd-5" href="#extra-large-avatar">
+      <a class="bd-5" href="#draggable-chip">
         <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        eXtra Large Avatar
+        Draggable Chip
       </a>
-      <a class="bd-5" href="#large-avatar">
+      <a class="bd-5" href="#dismissible-chip">
         <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Large Avatar
+        Dismissible Chip
       </a>
-      <a class="bd-5" href="#medium-avatar">
+      <a class="bd-5" href="#primary-chip">
         <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Medium Avatar
+        Primary Chip
       </a>
-      <a class="bd-5" href="#small-avatar">
+      <a class="bd-5" href="#danger-chip">
         <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Small Avatar
+        Danger Chip
       </a>
-      <a class="bd-5" href="#extra-small-avatar">
+      <a class="bd-5" href="#success-chip">
         <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        eXtra Small Avatar
+        Success Chip
       </a>
-      <a class="bd-5" href="#square-avatar">
+      <a class="bd-5" href="#warning-chip">
         <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Square Avatar
+        Warning Chip
+      </a>
+      <a class="bd-5" href="#dark-chip">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Dark Chip
       </a>
     </aside>
   </main>
