@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://vispaui-postdev-deploy.netlify.app/css/main.css">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" type="image/x-icon" href="../../assets/VISPA_UI--logo.svg">
+  <title>VISPA-UI / Input</title>
+</head>
+<body class="poppins">
+  <!-------------------------------------
+                  NAVBAR 
+  -------------------------------------->
+  <header class="_navbar">
+    <img class="navbar__logo" src="../../assets/VISPA_UI--logo.svg" alt="vispa-ui--logo">
+    <a class="h-4" href="../../index.html">
+      <p>VISPA<span class="navbar__ui">UI</span></p>
+    </a>
+    <span class="navbar__version">v1.0</span>
+    <a class="h-5 button btn-lg btn-plain" href="#">Docs</a>
+    <a href="https://github.com/VishalPatil18/VISPA-UI">
+      <img class="icon-dark icon-xl" src="https://vispaui-postdev-deploy.netlify.app/assets/github.svg" alt="github">
+    </a>
+  </header>
+
+  <!-------------------------------------
+                MAIN BODY 
+  -------------------------------------->
+  <main class="maincontent">
+    <!-------------------------------------
+                  SIDEBAR 
+    -------------------------------------->
+    <aside class="maincontent__sidebar--left">
+      <div class="drawer">
+        <div class="drawer__list">
+          <p class="list__subheading">Getting Started</p>
+          <a href="../installation/installation.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/download.svg" alt="install">
+            Installation
+          </a>
+    
+          <a href="../colors/colors.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/palette.svg" alt="colors">
+            Colors
+          </a>
+    
+          <a href="../typography/typography.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/feather-alt.svg" alt="typography">
+            Typography
+          </a>
+
+          <a href="../utilities/utilities.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/cogs.svg" alt="utilities">
+            Utilities
+          </a>
+        </div>
+        <div class="drawer__list">
+          <p class="list__subheading">Components</p>
+          <a href="../alert/alert.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/warning.svg" alt="alert">
+            Alert
+          </a>
+          <a href="../avatar/avatar.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/portrait.svg" alt="avatar">
+            Avatar
+          </a>
+          <a href="../badge/badge.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg" alt="badge">
+            Badge
+          </a>
+          <a href="../button/button.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/clone.svg" alt="button">
+            Button
+          </a>
+          <a href="../card/card.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/id-card.svg" alt="card">
+            Card
+          </a>
+          <a href="../chips/chips.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/backspace.svg" alt="chips">
+            Chips
+          </a>
+          <a href="../drawer/drawer.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/indent.svg" alt="drawer">
+            Drawer
+          </a>
+          <a href="../grid/grid.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/th.svg" alt="grid">
+            Grid
+          </a>
+          <a href="../image/image.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/images.svg" alt="image">
+            Image
+          </a>
+          <a href="./input.html" class="drawer__item drawer__item--active">
+            <img class="icon-md icon-primary drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/edit.svg" alt="input">
+            Input
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/list-ol.svg" alt="list">
+            List
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/window-maximize.svg" alt="modal">
+            Modal
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bars.svg" alt="navbar">
+            Navbar
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/star-solid.svg" alt="rating">
+            Rating
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/server.svg" alt="slider">
+            Slider
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/vote-yea.svg" alt="toast">
+            Toast
+          </a>
+        </div>
+        <div class="drawer__list">
+          <p class="list__subheading">Customization</p>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/at.svg" alt="toast">
+            Variables
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bezier-curve.svg" alt="toast">
+            Utility Classes
+          </a>
+          <a href="#" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/columns.svg" alt="toast">
+            Components
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-------------------------------------
+                    CONTENT
+    -------------------------------------->
+    <section class="maincontent__content bd-5 typography__content">
+      <section class="maincontent__content--box">
+        <h1 class="h-4" id="colors">Input</h1>
+        <p class="bd-5 maincontent__content--desc">
+          VISPA-UI includes an expertly-crafted 8 varieties of <span style="font-weight: 500; color: var(--danger);">Inputs</span> which can make your UI building experience effortless.
+        </p>
+
+        <!-- BASIC INPUT -->
+        <p class="h-5 maincontent__content--info" id="basic-input">
+          Basic Input
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Input</span> component give the <span style="font-style: italic; color: var(--primary);">input</span> class to the container. Copy the below code to use this input component.
+        </p>
+        <div class="txt-center" style="padding: var(--pd-md); margin-bottom: var(--space-sm);">
+          <div class="input">
+            <label class="input__label">Username *</label>	
+            <input class="input__field--text" type="text">
+          </div>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522input__label%2522%253EUsername%2520*%253C%252Flabel%253E%2509%250A%2520%2520%253Cinput%2520class%253D%2522input__field--text%2522%2520type%253D%2522text%2522%253E%250A%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- VALIDATION INPUT -->
+        <p class="h-5 maincontent__content--info" id="validation-input">
+          Validation Input
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Validation Input</span> component give the <span style="font-style: italic; color: var(--primary);">inp__error</span> class to the container. Copy the below code to use the validation input component.
+        </p>
+        <div class="txt-center" style="padding: var(--pd-md); margin-bottom: var(--space-sm);">
+          <div class="input inp__error">
+            <label class="input__label">Password *</label>
+            <input class="input__field--text" type="text">
+            <div class="inp__error--msg">
+                Wrong Password! Please Try again.
+            </div>
+          </div>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input%2520inp__error%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522input__label%2522%253EPassword%2520*%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520class%253D%2522input__field--text%2522%2520type%253D%2522text%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522inp__error--msg%2522%253E%250A%2520%2520%2520%2520%2520%2520Wrong%2520Password%21%2520Please%2520Try%2520again.%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 250px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- TEXTBOX INPUT -->
+        <p class="h-5 maincontent__content--info" id="textbox-input">
+          Textbox Input
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Textbox Input</span> component give the <span style="font-style: italic; color: var(--primary);">input__field--text</span> class to the textbox. Copy the below code to use the textbox input component.
+        </p>
+        <div class="txt-center" style="padding: var(--pd-md); margin-bottom: var(--space-sm);">
+          <div class="input">
+            <label class="input__label">Who are you?</label>	
+            <textarea class="input__field--text" placeholder="Don't feel shy. Come on write about yourself😀"></textarea>
+          </div>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522input__label%2522%253EWho%2520are%2520you%253F%253C%252Flabel%253E%2509%250A%2520%2520%253Ctextarea%2520class%253D%2522input__field--text%2522%253E%253C%252Ftextarea%253E%250A%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- RADIO INPUT -->
+        <p class="h-5 maincontent__content--info" id="radio-input">
+          Radio Inputs
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Radio</span> component give the <span style="font-style: italic; color: var(--primary);">radio</span> class to the container. Copy the below code to use the Radio input component.
+        </p>
+        <div class="txt-center" style="padding: var(--pd-md); margin-bottom: var(--space-sm);">
+          <div class="radio">
+            <label class="radio__label" for="checked-radio">
+              <input class="input__field--radio" id="checked-radio" name="checked" type="radio" checked>
+              Checked
+            </label>
+            
+            <label class="radio__label" for="unchecked-radio">
+              <input class="input__field--radio" id="unchecked-radio" name="unchecked" type="radio">
+              Unchecked
+            </label>
+            
+            <label class="radio__label disabled" for="disabled-radio">
+              <input class="input__field--radio disabled__input" id="disabled-radio" name="disabled" type="radio" disabled>
+              Disabled
+            </label>
+          </div>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522radio%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522radio__label%2522%2520for%253D%2522checked-radio%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input__field--radio%2522%2520id%253D%2522checked-radio%2522%2520name%253D%2522checked%2522%2520type%253D%2522radio%2522%2520checked%253E%250A%2520%2520%2520%2520Checked%250A%2520%2520%253C%252Flabel%253E%250A%250A%2520%2520%253Clabel%2520class%253D%2522radio__label%2522%2520for%253D%2522unchecked-radio%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input__field--radio%2522%2520id%253D%2522unchecked-radio%2522%2520name%253D%2522unchecked%2522%2520type%253D%2522radio%2522%253E%250A%2520%2520%2520%2520Unchecked%250A%2520%2520%253C%252Flabel%253E%250A%250A%2520%2520%253Clabel%2520class%253D%2522radio__label%2520disabled%2522%2520for%253D%2522disabled-radio%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input__field--radio%2520disabled__input%2522%2520id%253D%2522disabled-radio%2522%2520name%253D%2522disabled%2522%2520type%253D%2522radio%2522%2520disabled%253E%250A%2520%2520%2520%2520Disabled%250A%2520%2520%253C%252Flabel%253E%250A%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 550px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- CHECKBOX INPUT -->
+        <p class="h-5 maincontent__content--info" id="checkbox-input">
+          Checkbox Inputs
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Checkbox</span> component give the <span style="font-style: italic; color: var(--primary);">checkbox</span> class to the container. Copy the below code to use the Radio input component.
+        </p>
+        <div class="txt-center" style="padding: var(--pd-md); margin-bottom: var(--space-sm);">
+          <div class="checkbox">
+            <label class="radio__label" for="checked-box">
+              <input class="input__field--checkbox" id="checked-box" name="checked" type="checkbox" checked>
+              Checked
+            </label>
+            
+            <label class="radio__label" for="unchecked-box">
+              <input class="input__field--checkbox" id="unchecked-box" name="unchecked" type="checkbox">
+              Unchecked   
+            </label>
+            
+            <label class="radio__label disabled" for="disabled-box">
+              <input class="input__field--checkbox disabled__input" id="disabled-box" name="disabled" type="checkbox" disabled>
+              Disabled
+            </label>
+          </div>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522checkbox%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522radio__label%2522%2520for%253D%2522checked-box%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input__field--checkbox%2522%2520id%253D%2522checked-box%2522%2520name%253D%2522checked%2522%2520type%253D%2522checkbox%2522%2520checked%253E%250A%2520%2520%2520%2520Checked%250A%2520%2520%253C%252Flabel%253E%250A%250A%2520%2520%253Clabel%2520class%253D%2522radio__label%2522%2520for%253D%2522unchecked-box%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input__field--checkbox%2522%2520id%253D%2522unchecked-box%2522%2520name%253D%2522unchecked%2522%2520type%253D%2522checkbox%2522%253E%250A%2520%2520%2520%2520Unchecked%2520%2520%2520%250A%2520%2520%253C%252Flabel%253E%250A%250A%2520%2520%253Clabel%2520class%253D%2522radio__label%2520disabled%2522%2520for%253D%2522disabled-box%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input__field--checkbox%2520disabled__input%2522%2520id%253D%2522disabled-box%2522%2520name%253D%2522disabled%2522%2520type%253D%2522checkbox%2522%2520disabled%253E%250A%2520%2520%2520%2520Disabled%250A%2520%2520%253C%252Flabel%253E%250A%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 550px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- INPUT WITH ICONS -->
+        <p class="h-5 maincontent__content--info" id="icons-input">
+          Inputs with Icons
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Inputs with Icons</span> component give the <span style="font-style: italic; color: var(--primary);">input__icons</span> class to the container. Copy the below code to use the Inputs with Icons component.
+        </p>
+        <div class="txt-center" style="padding: var(--pd-md); margin-bottom: var(--space-sm);">
+          <div class="input input__icons">
+            <label class="input__label">Email</label>	
+            <input class="input__field--text email" type="text" placeholder="bablu_tailor@gmail.com">
+        
+            <label class="input__label">Password</label>	
+            <input class="input__field--text password" type="text" placeholder="********">
+          </div>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input%2520input__icons%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522input__label%2522%253EEmail%253C%252Flabel%253E%2509%250A%2520%2520%253Cinput%2520class%253D%2522input__field--text%2520email%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522bablu_tailor%2540gmail.com%2522%253E%250A%250A%2520%2520%253Clabel%2520class%253D%2522input__label%2522%253EPassword%253C%252Flabel%253E%2509%250A%2520%2520%253Cinput%2520class%253D%2522input__field--text%2520password%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522********%2522%253E%250A%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 300px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- SEARCH INPUT -->
+        <p class="h-5 maincontent__content--info" id="search-input">
+          Search Input
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Search Input</span> component give the <span style="font-style: italic; color: var(--primary);">search</span> class to the input element. Copy the below code to use the Search Input Component.
+        </p>
+        <div class="txt-center" style="padding: var(--pd-md); margin-bottom: var(--space-sm);">
+          <div class="input input__icons">
+            <input class="input__field--text search" type="text" placeholder="Search...">
+          </div>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input%2520input__icons%2522%253E%250A%2520%2520%253Cinput%2520class%253D%2522input__field--text%2520search%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Search...%2522%253E%250A%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- PREMIUM INPUT -->
+        <p class="h-5 maincontent__content--info" id="premium-input">
+          Premium Input
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Premium Input</span> component give the <span style="font-style: italic; color: var(--primary);">input__premium</span> class to the container. Copy the below code to use the Premium Inputs Component.
+        </p>
+        <div class="txt-center" style="padding: var(--pd-md); margin-bottom: var(--space-sm);">
+          <div class="input input__icons input__premium">
+            <div class="input__username">
+              <input class="input__field--text user" type="text" placeholder="bablu_tailor">
+              <label class="input__label">Username</label>
+            </div>
+        
+            <div class="input__email">
+              <input class="input__field--text email" type="text" placeholder="bablu_tailor@gmail.com">
+              <label class="input__label">Email</label>	
+            </div>
+        
+            <div class="input__password">
+              <input class="input__field--text password" type="text" placeholder="********">
+              <label class="input__label">Password</label>
+            </div>
+          </div>
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input%2520input__icons%2520input__premium%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input__username%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input__field--text%2520user%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522bablu_tailor%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522input__label%2522%253EUsername%253C%252Flabel%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522input__email%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input__field--text%2520email%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522bablu_tailor%2540gmail.com%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522input__label%2522%253EEmail%253C%252Flabel%253E%2509%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522input__password%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input__field--text%2520password%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522********%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522input__label%2522%253EPassword%253C%252Flabel%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 550px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
+      </section>
+
+      <!-------------------------------------
+                  CONTENT FOOTER 
+      -------------------------------------->
+      <footer class="footer">
+        <section class="navigation__wrapper">
+          <a href="../image/image.html" class="navigation__wrapper--item txt-center st-1">
+            <img class="icon-sm icon-dark maincontent__sidebar--icon" style="transform: rotate(-90deg);" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+            Image
+          </a>
+          <a href="#" class="navigation__wrapper--item txt-center st-1">
+            List
+            <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+          </a>
+        </section>
+        <section class="footer__end">
+          <p class="footer__copyright bd-5">
+            Copyright &copy; 2022 
+            <a href="https://github.com/VishalPatil18">
+              Vishal Patil
+            </a>
+            . All Rights Reserved
+          </p>
+          <a href="https://github.com/VishalPatil18/VISPA-UI">Edit this page on Github</a>
+        </section>
+      </footer>
+    </section>
+
+    <aside class="maincontent__sidebar--right">
+      <h6 class="h-6 maincontent__sidebar--right--title">On this Page</h6>
+      <a class="bd-5" href="#basic-input">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Basic Input
+      </a>
+      <a class="bd-5" href="#validation-input">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Validation Input
+      </a>
+      <a class="bd-5" href="#textbox-input">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Textbox Input
+      </a>
+      <a class="bd-5" href="#radio-input">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Radio Inputs
+      </a>
+      <a class="bd-5" href="#checkbox-input">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Checkbox Input
+      </a>
+      <a class="bd-5" href="#icons-input">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Inputs with Icons
+      </a>
+      <a class="bd-5" href="#search-input">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Search Input
+      </a>
+      <a class="bd-5" href="#premium-input">
+        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
+        Premium Input
+      </a>
+    </aside>
+  </main>
+</body>
+</html>
