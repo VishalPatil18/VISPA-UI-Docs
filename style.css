@@ -1,11 +1,14 @@
 @import url('./pages/installation/_installation.css');
 @import url('./pages/colors/_colors.css');
 @import url('./pages/utilities/utilities.css');
+@import url('./pages/drawer/_drawer.css');
+@import url('./pages/grid/_grid.css');
 
 body {
   color: var(--dark);
   display: flex;
   flex-direction: column;
+  font-family: 'Poppins', sans-serif;
 }
 
 /*
@@ -102,7 +105,8 @@ body {
   transition: 0.2s ease-in;
 }
 
-.hero2, .hero3 {
+.hero2,
+.hero3 {
   flex-direction: row;
   padding: var(--pd-xxxl);
 }
@@ -154,6 +158,10 @@ body {
   transition: 0.2s ease-in;
 }
 
+.example__wrapper {
+  margin: var(--space-lg) 0;
+}
+
 /*
 ***************** SIDEBAR *****************
 */
@@ -201,6 +209,7 @@ body {
 .maincontent__sidebar--right--title {
   padding-bottom: var(--space-md);
 }
+
 /*
 ***************** FOOTER *****************
 */
@@ -261,7 +270,7 @@ body {
   text-align: center;
 }
 
-.footer__copyright > a{
+.footer__copyright > a {
   color: var(--primary);
 }
 

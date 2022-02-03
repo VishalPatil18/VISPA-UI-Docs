@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://vispaui-postdev-deploy.netlify.app/css/main.css"
+    />
+    <link rel="stylesheet" href="../../style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../assets/VISPA_UI--logo.svg"
+    />
+    <title>VISPA-UI / Drawer</title>
+  </head>
+
+  <body class="poppins">
+    <!-------------------------------------
+                  NAVBAR 
+  -------------------------------------->
+    <header class="_navbar">
+      <img
+        class="navbar__logo"
+        src="../../assets/VISPA_UI--logo.svg"
+        alt="vispa-ui--logo"
+      />
+      <a class="h-4" href="../../index.html">
+        <p>VISPA<span class="navbar__ui">UI</span></p>
+      </a>
+      <span class="navbar__version">v1.0</span>
+      <a class="h-5 button btn-lg btn-plain" href="#">Docs</a>
+      <a href="https://github.com/VishalPatil18/VISPA-UI">
+        <img
+          class="icon-dark icon-xl"
+          src="https://vispaui-postdev-deploy.netlify.app/assets/github.svg"
+          alt="github"
+        />
+      </a>
+    </header>
+
+    <!-------------------------------------
+                MAIN BODY 
+  -------------------------------------->
+    <main class="maincontent">
+      <!-------------------------------------
+                  SIDEBAR 
+    -------------------------------------->
+      <aside class="maincontent__sidebar--left">
+        <div class="drawer">
+          <div class="drawer__list">
+            <p class="list__subheading">Getting Started</p>
+            <a href="../installation/installation.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/download.svg"
+                alt="install"
+              />
+              Installation
+            </a>
+
+            <a href="../colors/colors.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/palette.svg"
+                alt="colors"
+              />
+              Colors
+            </a>
+
+            <a href="../typography/typography.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/feather-alt.svg"
+                alt="typography"
+              />
+              Typography
+            </a>
+
+            <a href="../utilities/utilities.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/cogs.svg"
+                alt="utilities"
+              />
+              Utilities
+            </a>
+          </div>
+          <div class="drawer__list">
+            <p class="list__subheading">Components</p>
+            <a href="../alert/alert.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/warning.svg"
+                alt="alert"
+              />
+              Alert
+            </a>
+            <a href="../avatar/avatar.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/portrait.svg"
+                alt="avatar"
+              />
+              Avatar
+            </a>
+            <a href="../badge/badge.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg"
+                alt="badge"
+              />
+              Badge
+            </a>
+            <a href="../button/button.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/clone.svg"
+                alt="button"
+              />
+              Button
+            </a>
+            <a href="../card/card.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/id-card.svg"
+                alt="card"
+              />
+              Card
+            </a>
+            <a href="../chips/chips.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/backspace.svg"
+                alt="chips"
+              />
+              Chips
+            </a>
+            <a href="./drawer.html" class="drawer__item drawer__item--active">
+              <img
+                class="icon-md icon-primary drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/indent.svg"
+                alt="drawer"
+              />
+              Drawer
+            </a>
+            <a href="../grid/grid.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/th.svg"
+                alt="grid"
+              />
+              Grid
+            </a>
+            <a href="#" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/images.svg"
+                alt="image"
+              />
+              Image
+            </a>
+            <a href="#" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/edit.svg"
+                alt="input"
+              />
+              Input
+            </a>
+            <a href="#" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/list-ol.svg"
+                alt="list"
+              />
+              List
+            </a>
+            <a href="#" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/window-maximize.svg"
+                alt="modal"
+              />
+              Modal
+            </a>
+            <a href="#" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bars.svg"
+                alt="navbar"
+              />
+              Navbar
+            </a>
+            <a href="#" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/star-solid.svg"
+                alt="rating"
+              />
+              Rating
+            </a>
+            <a href="#" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/server.svg"
+                alt="slider"
+              />
+              Slider
+            </a>
+            <a href="#" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/vote-yea.svg"
+                alt="toast"
+              />
+              Toast
+            </a>
+          </div>
+          <div class="drawer__list">
+            <p class="list__subheading">Customization</p>
+            <a href="#" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/at.svg"
+                alt="toast"
+              />
+              Variables
+            </a>
+            <a href="#" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bezier-curve.svg"
+                alt="toast"
+              />
+              Utility Classes
+            </a>
+            <a href="#" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/columns.svg"
+                alt="toast"
+              />
+              Components
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <!-------------------------------------
+                    CONTENT
+    -------------------------------------->
+      <section class="maincontent__content bd-5 typography__content">
+        <section class="maincontent__content--box">
+          <h1 class="h-4" id="colors">Drawer</h1>
+          <p class="bd-5 maincontent__content--desc">
+            VISPA-UI includes an expertly-crafted 4 varieties of
+            <span style="font-weight: 500; color: var(--danger)">Drawers</span>
+            which can make your UI building experience effortless.
+          </p>
+
+          <!-- BASIC DRAWER -->
+          <p class="h-5 maincontent__content--info" id="basic-drawer">
+            Basic Drawer
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            To use the <span style="font-weight: 500; color: var(--danger)">Basic Drawer</span> component copy the below mentioned code and paste it in your drawer's container. Make sure to give a width to your container. We've made our drawer flexible and it takes 100% width of the container.
+          </p>
+          <div class="txt-center drawer__container example__wrapper">
+            <div class="drawer__wrapper">
+              <div class="drawer">
+                <div class="drawer__list">
+                  <a href="#" class="drawer__item">
+                    <img
+                      class="icon-md drawer__item--icon"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/home.svg"
+                      alt="home"
+                    />
+                    Home
+                  </a>
+
+                  <a href="#" class="drawer__item drawer__item--active">
+                    <img
+                      class="icon-md icon-primary drawer__item--icon"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/grip-horizontal.svg"
+                      alt="my-courses"
+                    />
+                    My Courses
+                  </a>
+
+                  <a href="#" class="drawer__item">
+                    <img
+                      class="icon-md drawer__item--icon"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/shopping-cart.svg"
+                      alt="my-cart"
+                    />
+                    My Cart
+                  </a>
+                </div>
+                <div class="drawer__list">
+                  <p class="list__subheading">LIBRARY</p>
+                  <a href="#" class="drawer__item">
+                    <img
+                      class="icon-md drawer__item--icon"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/envelope.svg"
+                      alt="messages"
+                    />
+                    Messages
+                  </a>
+                  <a href="#" class="drawer__item">
+                    <img
+                      class="icon-md drawer__item--icon"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/users.svg"
+                      alt="community"
+                    />
+                    Community
+                  </a>
+                  <a href="#" class="drawer__item">
+                    <img
+                      class="icon-md drawer__item--icon"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg"
+                      alt="albums"
+                    />
+                    Albums
+                  </a>
+                </div>
+                <div class="drawer__list">
+                  <p class="list__subheading">DASHBOARD</p>
+                  <a href="#" class="drawer__item">
+                    <img
+                      class="icon-md drawer__item--icon"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/html5.svg"
+                      alt="html"
+                    />
+                    HTML5
+                  </a>
+                  <a href="#" class="drawer__item">
+                    <img
+                      class="icon-md drawer__item--icon"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/css3.svg"
+                      alt="css"
+                    />
+                    CSS3
+                  </a>
+                  <a href="#" class="drawer__item">
+                    <img
+                      class="icon-md drawer__item--icon"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/js.svg"
+                      alt="js"
+                    />
+                    JavaScript
+                  </a>
+                  <a href="#" class="drawer__item">
+                    <img
+                      class="icon-md drawer__item--icon"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/react.svg"
+                      alt="react"
+                    />
+                    React
+                  </a>
+                  <a href="#" class="drawer__item">
+                    <img
+                      class="icon-md drawer__item--icon"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/node-js.svg"
+                      alt="node"
+                    />
+                    Node
+                  </a>
+                </div>
+                <div class="drawer__list">
+                  <p class="list__subheading">My Account</p>
+                  <a href="#" class="drawer__item">
+                    <img
+                      class="icon-md drawer__item--icon"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/user.svg"
+                      alt="profile"
+                    />
+                    Profile
+                  </a>
+                  <a href="#" class="drawer__item">
+                    <img
+                      class="icon-md drawer__item--icon"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/lock.svg"
+                      alt="security"
+                    />
+                    Security
+                  </a>
+                  <a href="#" class="drawer__item">
+                    <img
+                      class="icon-md drawer__item--icon"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/cog.svg"
+                      alt="settings"
+                    />
+                    Settings
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="body__aside--drawer">
+              <h5 class="h-5">Body Title</h5>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. In
+              assumenda magni, tenetur minus tempore illum numquam reiciendis
+              ipsam excepturi ab libero necessitatibus dolor esse debitis,
+              delectus accusamus placeat dignissimos? Enim! Minus perferendis
+              modi magni, aperiam ratione at doloribus necessitatibus! Provident
+              iure facilis sit maxime corporis, suscipit aspernatur expedita
+              aperiam ea iusto maiores soluta, neque nesciunt voluptates?
+              Praesentium repellat qui corporis. Unde exercitationem odio ullam
+              incidunt veritatis similique nesciunt, inventore voluptas
+              reiciendis. Velit, doloribus sequi aut harum possimus soluta
+              quibusdam modi beatae quam minima provident, et perferendis sunt
+              nemo. Pariatur, nesciunt. Unde exercitationem odio ullam incidunt
+              veritatis similique nesciunt, inventore voluptas reiciendis.
+              Velit, doloribus sequi aut harum possimus soluta quibusdam modi
+              beatae quam minima provident, et perferendis sunt nemo. Pariatur,
+              nesciunt.
+            </div>
+          </div>
+          <div class="code__wrapper">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522drawer%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522drawer__list%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-md%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fhome.svg%2522%2520alt%253D%2522home%2522%253E%250A%2520%2520%2520%2520%2520%2520Home%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2520drawer__item--active%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-md%2520icon-primary%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fgrip-horizontal.svg%2522%2520alt%253D%2522my-courses%2522%253E%250A%2520%2520%2520%2520%2520%2520My%2520Courses%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-md%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fshopping-cart.svg%2522%2520alt%253D%2522my-cart%2522%253E%250A%2520%2520%2520%2520%2520%2520My%2520Cart%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522drawer__list%2522%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522list__subheading%2522%253ELIBRARY%253C%252Fp%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-md%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fenvelope.svg%2522%2520alt%253D%2522messages%2522%253E%250A%2520%2520%2520%2520%2520%2520Messages%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-md%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fusers.svg%2522%2520alt%253D%2522community%2522%253E%250A%2520%2520%2520%2520%2520%2520Community%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-md%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fbookmark.svg%2522%2520alt%253D%2522albums%2522%253E%250A%2520%2520%2520%2520%2520%2520Albums%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522drawer__list%2522%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522list__subheading%2522%253EDASHBOARD%253C%252Fp%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-md%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fhtml5.svg%2522%2520alt%253D%2522html%2522%253E%250A%2520%2520%2520%2520%2520%2520HTML5%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-md%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fcss3.svg%2522%2520alt%253D%2522css%2522%253E%250A%2520%2520%2520%2520%2520%2520CSS3%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2509%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-md%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fjs.svg%2522%2520alt%253D%2522js%2522%253E%250A%2520%2520%2520%2520%2520%2520JavaScript%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-md%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Freact.svg%2522%2520alt%253D%2522react%2522%253E%250A%2520%2520%2520%2520%2520%2520React%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-md%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fnode-js.svg%2522%2520alt%253D%2522node%2522%253E%2520%250A%2520%2520%2520%2520%2520%2520Node%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522drawer__list%2522%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522list__subheading%2522%253EMy%2520Account%253C%252Fp%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-md%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fuser.svg%2522%2520alt%253D%2522profile%2522%253E%250A%2520%2520%2520%2520%2520%2520Profile%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-md%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Flock.svg%2522%2520alt%253D%2522security%2522%253E%250A%2520%2520%2520%2520%2520%2520Security%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-md%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fcog.svg%2522%2520alt%253D%2522settings%2522%253E%250A%2520%2520%2520%2520%2520%2520Settings%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin"
+              style="
+                width: 100%;
+                height: 800px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              loading="lazy"
+            >
+            </iframe>
+          </div>
+
+          <!-- LARGE ICON DRAWER -->
+          <p class="h-5 maincontent__content--info" id="large-icon-drawer">
+            Large Icon Drawer
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            To use the
+            <span style="font-weight: 500; color: var(--danger)">Large Icon Drawer</span>
+            component copy the below mentioned code and paste it in your drawer's container. Make sure to give a width to your container. We've made our drawer flexible and it takes 100% width of the container.
+          </p>
+          <div class="txt-center drawer__container example__wrapper">
+            <div class="drawer__wrapper">
+              <div class="drawer dw__lgicon">
+                <div class="drawer__list">
+                  <a href="#" class="drawer__item">
+                    <img class="icon-lg drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/home.svg" alt="">
+                    Home
+                  </a>
+            
+                  <a href="#" class="drawer__item drawer__item--active">
+                    <img class="icon-lg icon-primary drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/grip-horizontal.svg" alt="">
+                    My Courses
+                  </a>
+            
+                  <a href="#" class="drawer__item">
+                    <img class="icon-lg drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/shopping-cart.svg" alt="">
+                    My Cart
+                  </a>
+                </div>
+                <div class="drawer__list">
+                  <p class="list__subheading">LIBRARY</p>
+                  <a href="#" class="drawer__item">
+                    <img class="icon-lg drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/envelope.svg" alt="messages">
+                    Messages
+                  </a>
+                  <a href="#" class="drawer__item">
+                    <img class="icon-lg drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/users.svg" alt="community">
+                    Community
+                  </a>
+                  <a href="#" class="drawer__item">
+                    <img class="icon-lg drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg" alt="albums">
+                    Albums
+                  </a>
+                </div>
+                <div class="drawer__list">
+                  <p class="list__subheading">DASHBOARD</p>
+                  <a href="#" class="drawer__item">
+                    <img class="icon-lg drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/html5.svg" alt="">
+                    HTML5
+                  </a>
+                  <a href="#" class="drawer__item">
+                    <img class="icon-lg drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/css3.svg" alt="">
+                    CSS3
+                  </a>
+                  <a href="#" class="drawer__item">
+                    <img class="icon-lg drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/js.svg" alt="">
+                    JavaScript
+                  </a>
+                  <a href="#" class="drawer__item">
+                    <img class="icon-lg drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/react.svg" alt="">
+                    React
+                  </a>
+                  <a href="#" class="drawer__item">
+                    <img class="icon-lg drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/node-js.svg" alt="">
+                    Node
+                  </a>
+                </div>
+                <div class="drawer__list">
+                  <p class="list__subheading">My Account</p>
+                  <a href="#" class="drawer__item">
+                    <img class="icon-lg drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/user.svg" alt="">
+                    Profile
+                  </a>
+                  <a href="#" class="drawer__item">
+                    <img class="icon-lg drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/lock.svg" alt="">
+                    Security
+                  </a>
+                  <a href="#" class="drawer__item">
+                    <img class="icon-lg drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/cog.svg" alt="">
+                    Settings
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="body__aside--drawer">
+              <h5 class="h-5">Body Title</h5>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. In
+              assumenda magni, tenetur minus tempore illum numquam reiciendis
+              ipsam excepturi ab libero necessitatibus dolor esse debitis,
+              delectus accusamus placeat dignissimos? Enim! Minus perferendis
+              modi magni, aperiam ratione at doloribus necessitatibus! Provident
+              iure facilis sit maxime corporis, suscipit aspernatur expedita
+              aperiam ea iusto maiores soluta, neque nesciunt voluptates?
+              Praesentium repellat qui corporis. Unde exercitationem odio ullam
+              incidunt veritatis similique nesciunt, inventore voluptas
+              reiciendis. Velit, doloribus sequi aut harum possimus soluta
+              quibusdam modi beatae quam minima provident, et perferendis sunt
+              nemo. Pariatur, nesciunt. Unde exercitationem odio ullam incidunt
+              veritatis similique nesciunt, inventore voluptas reiciendis.
+              Velit, doloribus sequi aut harum possimus soluta quibusdam modi
+              beatae quam minima provident, et perferendis sunt nemo. Pariatur,
+              nesciunt.
+            </div>
+          </div>
+          <div class="code__wrapper">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522drawer%2520dw__lgicon%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522drawer__list%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-lg%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fhome.svg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520Home%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2520drawer__item--active%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-lg%2520icon-primary%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fgrip-horizontal.svg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520My%2520Courses%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-lg%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fshopping-cart.svg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520My%2520Cart%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522drawer__list%2522%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522list__subheading%2522%253ELIBRARY%253C%252Fp%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-lg%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fenvelope.svg%2522%2520alt%253D%2522messages%2522%253E%250A%2520%2520%2520%2520%2520%2520Messages%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-lg%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fusers.svg%2522%2520alt%253D%2522community%2522%253E%250A%2520%2520%2520%2520%2520%2520Community%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-lg%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fbookmark.svg%2522%2520alt%253D%2522albums%2522%253E%250A%2520%2520%2520%2520%2520%2520Albums%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522drawer__list%2522%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522list__subheading%2522%253EDASHBOARD%253C%252Fp%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-lg%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fhtml5.svg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520HTML5%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-lg%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fcss3.svg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520CSS3%250A%2520%2520%2520%2520%253C%252Fa%253E%2509%250A%2509%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-lg%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fjs.svg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520JavaScript%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-lg%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Freact.svg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520React%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-lg%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fnode-js.svg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520Node%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522drawer__list%2522%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522list__subheading%2522%253EMy%2520Account%253C%252Fp%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-lg%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fuser.svg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520Profile%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-lg%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Flock.svg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520Security%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-lg%2520drawer__item--icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fcog.svg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520Settings%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin"
+              style="
+                width: 100%;
+                height: 800px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              loading="lazy">
+            </iframe>
+          </div>
+
+          <!-- PREMIUM DRAWER -->
+          <p class="h-5 maincontent__content--info" id="premium-drawer">
+            Premium Drawer
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            To use the <span style="font-weight: 500; color: var(--danger)">Premium Drawer</span> component copy the below mentioned code and paste it in your drawer's container. Make sure to give a width to your container. We've made our drawer flexible and it takes 100% width of the container.
+          </p>
+          <div class="txt-center example__wrapper">
+            <ul class="list li__premium">
+              <li class="list__item">
+                <img class="icon-md list__icon icon-dark" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/home.svg" alt="home-btn">
+                Home
+              </li>
+              <li class="list__item list__item--active">
+                <img class="icon-md list__icon icon-primary" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/user.svg" alt="profile-btn">
+                Profile
+              </li>
+              <li class="list__item"><img class="icon-md list__icon icon-dark" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/comment.svg" alt="message-btn">
+                Messages
+              </li>
+              <li class="list__item">
+                <img class="icon-md list__icon icon-dark" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/cog.svg" alt="">
+                Settings
+              </li>
+            </ul>
+          </div>
+          <div class="code__wrapper">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list%2520li__premium%2522%253E%250A%2520%2520%253Cli%2520class%253D%2522list__item%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-md%2520list__icon%2520icon-dark%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fhome.svg%2522%2520alt%253D%2522home-btn%2522%253E%250A%2520%2520%2520%2520Home%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list__item%2520list__item--active%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-md%2520list__icon%2520icon-primary%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fuser.svg%2522%2520alt%253D%2522profile-btn%2522%253E%250A%2520%2520%2520%2520Profile%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list__item%2522%253E%253Cimg%2520class%253D%2522icon-md%2520list__icon%2520icon-dark%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fcomment.svg%2522%2520alt%253D%2522message-btn%2522%253E%250A%2520%2520%2520%2520Messages%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list__item%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-md%2520list__icon%2520icon-dark%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fcog.svg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520Settings%250A%2520%2520%253C%252Fli%253E%250A%253C%252Ful%253E"
+              sandbox="allow-scripts allow-same-origin"
+              style="
+                width: 100%;
+                height: 700px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              loading="lazy">
+            </iframe>
+          </div>
+        </section>
+
+        <!-------------------------------------
+                  CONTENT FOOTER 
+      -------------------------------------->
+        <footer class="footer">
+          <section class="navigation__wrapper">
+            <a href="../chips/chips.html" class="navigation__wrapper--item txt-center st-1" >
+              <img
+                class="icon-sm icon-dark maincontent__sidebar--icon"
+                style="transform: rotate(-90deg)"
+                src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+                alt="angle-icon"
+              />
+              Chips
+            </a>
+            <a href="../grid/grid.html" class="navigation__wrapper--item txt-center st-1">
+              Grid
+              <img
+                class="icon-sm icon-dark maincontent__sidebar--icon"
+                src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+                alt="angle-icon"
+              />
+            </a>
+          </section>
+          <section class="footer__end">
+            <p class="footer__copyright bd-5">
+              Copyright &copy; 2022
+              <a href="https://github.com/VishalPatil18"> Vishal Patil </a>
+              . All Rights Reserved
+            </p>
+            <a href="https://github.com/VishalPatil18/VISPA-UI"
+              >Edit this page on Github</a
+            >
+          </section>
+        </footer>
+      </section>
+
+      <aside class="maincontent__sidebar--right">
+        <h6 class="h-6 maincontent__sidebar--right--title">On this Page</h6>
+        <a class="bd-5" href="#basic-drawer">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Basic Drawer
+        </a>
+        <a class="bd-5" href="#large-icon-drawer">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Large Icon Drawer
+        </a>
+        <a class="bd-5" href="#premium-drawer">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Premium Drawer
+        </a>
+      </aside>
+    </main>
+  </body>
+</html>
