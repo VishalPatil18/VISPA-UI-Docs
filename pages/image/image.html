@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://vispaui-postdev-deploy.netlify.app/css/main.css">
   <link rel="stylesheet" href="../../style.css">
   <link rel="icon" type="image/x-icon" href="../../assets/VISPA_UI--logo.svg">
-  <title>VISPA-UI / Colors</title>
+  <title>VISPA-UI / Images</title>
 </head>
 <body class="poppins">
   <!-------------------------------------
@@ -41,8 +41,8 @@
             Installation
           </a>
     
-          <a href="./colors.html" class="drawer__item drawer__item--active">
-            <img class="icon-md icon-primary drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/palette.svg" alt="colors">
+          <a href="../colors/colors.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/palette.svg" alt="colors">
             Colors
           </a>
     
@@ -90,8 +90,8 @@
             <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/th.svg" alt="grid">
             Grid
           </a>
-          <a href="../image/image.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/images.svg" alt="image">
+          <a href="./image.html" class="drawer__item drawer__item--active">
+            <img class="icon-md icon-primary drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/images.svg" alt="image">
             Image
           </a>
           <a href="../input/input.html" class="drawer__item">
@@ -144,82 +144,68 @@
     <!-------------------------------------
                     CONTENT
     -------------------------------------->
-    <section class="maincontent__content bd-5 colors__content">
+    <section class="maincontent__content bd-5 typography__content">
       <section class="maincontent__content--box">
-        <h1 class="h-4" id="colors">Colors</h1>
+        <h1 class="h-4" id="colors">Images</h1>
         <p class="bd-5 maincontent__content--desc">
-          VISPA-UI includes an expertly-crafted Color Palette which has a total of 67 amazing colors which can make your UI building experience effortless.
-          <br />
-          VISPA-UI provides you seven themed colors and six variants each of ten beautiful colors.
+          VISPA-UI includes an expertly-crafted 3 varieties of <span style="font-weight: 500; color: var(--danger);">Image Utility Classes</span> which can make your UI building experience effortless.
         </p>
 
-        <p class="h-5 maincontent__content--info" id="themed-colors">
-          The Themed colors are
+        <!-- BASIC IMAGE -->
+        <p class="h-5 maincontent__content--info" id="basic-image">
+          Basic Image
         </p>
-        <div class="color-palette" id="themed-cp">
-          <div class="color-palette--color">
-            <div class="color--primary color txt-center">#23A6F0</div>
-            <p>Primary</p>
-          </div>
-          <div class="color-palette--color">
-            <div class="color--secondary color txt-center">#0F56B3</div>
-            <p>Secondary</p>
-          </div>
-          <div class="color-palette--color">
-            <div class="color--success color txt-center">#48C774</div>
-            <p>Success</p>
-          </div>
-          <div class="color-palette--color">
-            <div class="color--danger color txt-center">#FF3860</div>
-            <p>Danger</p>
-          </div>
-          <div class="color-palette--color">
-            <div class="color--warning color txt-center">#FDE047</div>
-            <p>Warning</p>
-          </div>
-          <div class="color-palette--color">
-            <div class="color--dark color txt-center">#263238</div>
-            <p>Dark</p>
-          </div>
-          <div class="color-palette--color">
-            <div class="color--light color txt-center">#E9F3FD</div>
-            <p>Light</p>
-          </div>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Image</span> component give the <span style="font-style: italic; color: var(--primary);">img</span> class to the Image. The default width and height are 400px.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <img class="img" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/image.jpg" alt="image">
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522img%2522%2520src%253D%2522%2523%2522%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
         </div>
 
-        <p class="h-5 maincontent__content--info" id="default-colors">
-          The Default colors are
+        <!-- ROUND IMAGE -->
+        <p class="h-5 maincontent__content--info" id="round-image">
+          Round Image
         </p>
-        <div class="default__cp" id="default-cp">
-          <p class="bd-5">Aqua</p>
-          <div class="color-palette" id="cp-aqua"></div>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Round Image</span> component give the <span style="font-style: italic; color: var(--primary);">img-round</span> class to the Image.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <img class="img img-round" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/image.jpg" alt="image">
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522img%2520img-round%2522%2520src%253D%2522%2523%2522%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
+        </div>
 
-          <p class="bd-5">Blue</p>
-          <div class="color-palette" id="cp-blue"></div>
-
-          <p class="bd-5">Green</p>
-          <div class="color-palette" id="cp-green"></div>
-
-          <p class="bd-5">Grey</p>
-          <div class="color-palette" id="cp-grey"></div>
-
-          <p class="bd-5">Indigo</p>
-          <div class="color-palette" id="cp-indigo"></div>
-
-          <p class="bd-5">Orange</p>
-          <div class="color-palette" id="cp-orange"></div>
-
-          <p class="bd-5">Pink</p>
-          <div class="color-palette" id="cp-pink"></div>
-
-          <p class="bd-5">Purple</p>
-          <div class="color-palette" id="cp-purple"></div>
-
-          <p class="bd-5">Red</p>
-          <div class="color-palette" id="cp-red"></div>
-
-          <p class="bd-5">Yellow</p>
-          <div class="color-palette" id="cp-yellow"></div>
+        <!-- RESPONSIVE IMAGE -->
+        <p class="h-5 maincontent__content--info" id="res-image">
+          Responsive Image
+        </p>
+        <p class="bd-5 maincontent__content--info">
+          To use the <span style="font-weight: 500; color: var(--danger);">Responsive Image</span> component give the <span style="font-style: italic; color: var(--primary);">img-res</span> class to the Image. When you increase/decrease the size of the screen the image size also get's decreased using responsive image class.
+        </p>
+        <div class="txt-center" style="padding-bottom: var(--space-sm);">
+          <img class="img img-res" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/image.jpg" alt="image">
+        </div>
+        <div class="code__wrapper">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522img%2520img-res%2522%2520src%253D%2522%2523%2522%253E"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            loading="lazy">
+          </iframe>
         </div>
       </section>
 
@@ -228,12 +214,12 @@
       -------------------------------------->
       <footer class="footer">
         <section class="navigation__wrapper">
-          <a href="../installation/installation.html" class="navigation__wrapper--item txt-center st-1">
+          <a href="../grid/grid.html" class="navigation__wrapper--item txt-center st-1">
             <img class="icon-sm icon-dark maincontent__sidebar--icon" style="transform: rotate(-90deg);" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-            Installation
+            Grid
           </a>
-          <a href="../typography/typography.html" class="navigation__wrapper--item txt-center st-1">
-            Typography
+          <a href="../input/input.html" class="navigation__wrapper--item txt-center st-1">
+            Input
             <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
           </a>
         </section>
@@ -252,20 +238,19 @@
 
     <aside class="maincontent__sidebar--right">
       <h6 class="h-6 maincontent__sidebar--right--title">On this Page</h6>
-      <a class="bd-5" href="#colors">
+      <a class="bd-5" href="#basic-image">
         <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Colors
+        Basic Image
       </a>
-      <a class="bd-5" href="#themed-colors">
+      <a class="bd-5" href="#round-image">
         <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Themed Color Palette
+        Round Image
       </a>
-      <a class="bd-5" href="#default-colors">
+      <a class="bd-5" href="#res-image">
         <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Default Color Palette
+        Responsive Image
       </a>
     </aside>
   </main>
 </body>
-<script src="./_colors.js"></script>
 </html>
