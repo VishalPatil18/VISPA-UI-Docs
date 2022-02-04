@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://vispaui-postdev-deploy.netlify.app/css/main.css">
   <link rel="stylesheet" href="../../style.css">
   <link rel="icon" type="image/x-icon" href="../../assets/VISPA_UI--logo.svg">
-  <title>VISPA-UI / Chips</title>
+  <title>VISPA-UI / Utility Classes</title>
 </head>
 <body class="poppins">
   <!-------------------------------------
@@ -78,8 +78,8 @@
             <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/id-card.svg" alt="card">
             Card
           </a>
-          <a href="./chips.html" class="drawer__item drawer__item--active">
-            <img class="icon-md icon-primary drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/backspace.svg" alt="chips">
+          <a href="../chips/chips.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/backspace.svg" alt="chips">
             Chips
           </a>
           <a href="../drawer/drawer.html" class="drawer__item">
@@ -129,8 +129,8 @@
             <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/at.svg" alt="toast">
             Variables
           </a>
-          <a href="../utilityclasses/utilityclasses.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bezier-curve.svg" alt="toast">
+          <a href="./utilityclasses.html" class="drawer__item drawer__item--active">
+            <img class="icon-md icon-primary drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bezier-curve.svg" alt="toast">
             Utility Classes
           </a>
         </div>
@@ -142,162 +142,103 @@
     -------------------------------------->
     <section class="maincontent__content bd-5 typography__content">
       <section class="maincontent__content--box">
-        <h1 class="h-4" id="colors">Chips</h1>
+        <h1 class="h-4" id="rating">Utility Classes</h1>
         <p class="bd-5 maincontent__content--desc">
-          VISPA-UI includes an expertly-crafted 8 varieties of <span style="font-weight: 500; color: var(--danger);">Chips</span> which can make your UI building experience effortless.
+          VISPA-UI includes an expertly-crafted 28 <span style="font-weight: 500; color: var(--danger);">Utility Classes</span> which you can customize as per your projects requirements, which can make your UI building experience effortless.
         </p>
 
-        <!-- BASIC CHIP -->
-        <p class="h-5 maincontent__content--info" id="basic-chip">
-          Basic Chip
+        <!-- HEADINGS -->
+        <p class="h-5 maincontent__content--info" id="headings">
+          Headings
         </p>
         <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Basic Chip</span> component give the <span style="font-style: italic; color: var(--primary);">chip</span> class to the span.
+          VISPA-UI has 6 <span style="font-weight: 500; color: var(--danger);">Headings</span> which have the values as given below. To overwrite the Heading Classes just use the same name and overwrite the properties as per your requirements in your CSS file. Easy right? So, what are you waiting for? Go now and customize the Headings.
         </p>
-        <div class="txt-center" style="padding-bottom: var(--space-sm);">
-          <span class="chip">basic</span>
-        </div>
         <div class="code__wrapper">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522chip%2522%253Ebasic%253C%252Fspan%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=css&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=.h-1%2520%257B%250A%2520%2520font-size%253A%25209.6rem%253B%250A%2520%2520font-weight%253A%2520900%253B%250A%257D%250A%250A.h-2%2520%257B%250A%2520%2520font-size%253A%25206rem%253B%250A%2520%2520font-weight%253A%2520900%253B%250A%257D%250A%250A.h-3%2520%257B%250A%2520%2520font-size%253A%25204.8rem%253B%250A%2520%2520font-weight%253A%2520700%253B%250A%257D%250A%250A.h-4%2520%257B%250A%2520%2520font-size%253A%25203.4rem%253B%250A%2520%2520font-weight%253A%2520700%253B%250A%257D%250A%250A.h-5%2520%257B%250A%2520%2520font-size%253A%25202.4rem%253B%250A%2520%2520font-weight%253A%2520600%253B%250A%257D%250A%250A.h-6%2520%257B%250A%2520%2520font-size%253A%25202rem%253B%250A%2520%2520font-weight%253A%2520600%253B%250A%257D"
             sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            style="width: 100%; height: 800px; border:0; transform: scale(1); overflow:hidden;"
             loading="lazy">
           </iframe>
         </div>
 
-        <!-- DRAGGABLE CHIP -->
-        <p class="h-5 maincontent__content--info" id="draggable-chip">
-          Draggable Chip
+        <!-- BODY -->
+        <p class="h-5 maincontent__content--info" id="bodyfonts">
+          Body Fonts
         </p>
         <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Draggable Chip</span> component set the <span style="font-style: italic; color: var(--primary);">draggable</span> property to <span style="font-style: italic; color: var(--primary);">true</span> of the span.
+          VISPA-UI has 6 <span style="font-weight: 500; color: var(--danger);">Body Fonts</span> which have the values as given below. To overwrite the Body Font Classes just use the same name and overwrite the properties as per your requirements in your CSS file. Easy right? So, what are you waiting for? Go now and customize the Body Fonts.
         </p>
-        <div class="txt-center" style="padding-bottom: var(--space-sm);">
-          <span draggable="true" class="chip">draggable</span>
-        </div>
         <div class="code__wrapper">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520draggable%253D%2522true%2522%2520class%253D%2522chip%2522%253Edraggable%253C%252Fspan%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=css&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=.bd-1%2520%257B%250A%2520%2520font-size%253A%25206rem%253B%250A%2520%2520font-weight%253A%2520400%253B%250A%257D%250A%250A.bd-2%2520%257B%250A%2520%2520font-size%253A%25204.8rem%253B%250A%2520%2520font-weight%253A%2520400%253B%250A%257D%250A%250A.bd-3%2520%257B%250A%2520%2520font-size%253A%25203.4rem%253B%250A%2520%2520font-weight%253A%2520400%253B%250A%257D%250A%250A.bd-4%2520%257B%250A%2520%2520font-size%253A%25202.4rem%253B%250A%2520%2520font-weight%253A%2520400%253B%250A%257D%250A%250A.bd-5%2520%257B%250A%2520%2520font-size%253A%25201.6rem%253B%250A%2520%2520font-weight%253A%2520300%253B%250A%257D%250A%250A.bd-6%2520%257B%250A%2520%2520font-size%253A%25200.8rem%253B%250A%2520%2520font-weight%253A%2520300%253B%250A%257D"
             sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            style="width: 100%; height: 800px; border:0; transform: scale(1); overflow:hidden;"
             loading="lazy">
           </iframe>
         </div>
 
-        <!-- DISMISSIBLE CHIP -->
-        <p class="h-5 maincontent__content--info" id="dismissible-chip">
-          Dismissible Chip
+        <!-- SUBTITLES -->
+        <p class="h-5 maincontent__content--info" id="subtitles">
+          Subtitles
         </p>
         <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Dismissible Chip</span> component give the <span style="font-style: italic; color: var(--primary);">chip__icon</span> class to the close icon.
+          VISPA-UI has 2 <span style="font-weight: 500; color: var(--danger);">Subtitles</span> which have the values as given below. To overwrite the Sub-title Classes just use the same name and overwrite the properties as per your requirements in your CSS file. Easy right? So, what are you waiting for? Go now and customize the Sub-titles.
         </p>
-        <div class="txt-center" style="padding-bottom: var(--space-sm);">
-          <span draggable="true" class="chip ch--warning">
-            🥭 mango
-            <img class="icon-sm chip__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg" alt="close-btn">
-          </span>
-        </div>
         <div class="code__wrapper">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522chip%2522%253E%250A%2520%2520%25F0%259F%25A5%25AD%2520mango%250A%2520%2520%253Cimg%2520class%253D%2522icon-sm%2520chip__icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fclose.svg%2522%2520alt%253D%2522close-btn%2522%253E%250A%253C%252Fspan%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=css&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=.st-1%2520%257B%250A%2520%2520font-size%253A%25201.6rem%253B%250A%2520%2520font-weight%253A%2520700%253B%250A%257D%250A%250A.st-2%2520%257B%250A%2520%2520font-size%253A%25201.4rem%253B%250A%2520%2520font-weight%253A%2520700%253B%250A%257D%250A"
             sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 220px; border:0; transform: scale(1); overflow:hidden;"
+            style="width: 100%; height: 350px; border:0; transform: scale(1); overflow:hidden;"
             loading="lazy">
           </iframe>
         </div>
 
-        <!-- PRIMARY CHIP -->
-        <p class="h-5 maincontent__content--info" id="primary-chip">
-          Primary Chip
+        <!-- CAPTION -->
+        <p class="h-5 maincontent__content--info" id="caption">
+          Caption
         </p>
         <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Primary Chip</span> component give the <span style="font-style: italic; color: var(--primary);">ch--primary</span> class to the span.
+          VISPA-UI has <span style="font-weight: 500; color: var(--danger);">Caption</span> which have the values as given below. To overwrite the Caption Class just use the same name and overwrite the properties as per your requirements in your CSS file. Easy right? So, what are you waiting for? Go now and customize the Caption.
         </p>
-        <div class="txt-center" style="padding-bottom: var(--space-sm);">
-          <span class="chip ch--primary">primary</span>
-        </div>
         <div class="code__wrapper">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522chip%2520ch--primary%2522%253Eprimary%253C%252Fspan%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=css&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=.cp%2520%257B%250A%2520%2520color%253A%2520%2523818181%253B%250A%2520%2520font-size%253A%25201.2rem%253B%250A%2520%2520font-weight%253A%2520300%253B%250A%257D"
             sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
             loading="lazy">
           </iframe>
         </div>
 
-        <!-- DANGER CHIP -->
-        <p class="h-5 maincontent__content--info" id="danger-chip">
-          Danger Chip
+        <!-- TEXT CENTER -->
+        <p class="h-5 maincontent__content--info" id="textcenter">
+          Text Center
         </p>
         <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Danger Chip</span> component give the <span style="font-style: italic; color: var(--primary);">ch--danger</span> class to the span.
+          VISPA-UI has <span style="font-weight: 500; color: var(--danger);">Text Center</span> utility class which have the values as given below. To overwrite the Text-center Class just use the same name and overwrite the properties as per your requirements in your CSS file. Easy right? So, what are you waiting for? Go now and customize the Text-center.
         </p>
-        <div class="txt-center" style="padding-bottom: var(--space-sm);">
-          <span class="chip ch--danger">danger</span>
-        </div>
         <div class="code__wrapper">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522chip%2520ch--danger%2522%253Edanger%253C%252Fspan%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=css&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=.txt-center%2520%257B%250A%2520%2520align-items%253A%2520center%253B%250A%2520%2520display%253A%2520flex%253B%250A%2520%2520justify-content%253A%2520center%253B%250A%257D"
             sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
             loading="lazy">
           </iframe>
         </div>
 
-        <!-- SUCCESS CHIP -->
-        <p class="h-5 maincontent__content--info" id="success-chip">
-          Success Chip
+        <!-- ICON SIZES -->
+        <p class="h-5 maincontent__content--info" id="iconsizes">
+          Icon Sizes
         </p>
         <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Success Chip</span> component give the <span style="font-style: italic; color: var(--primary);">ch--success</span> class to the span.
+          VISPA-UI has <span style="font-weight: 500; color: var(--danger);">Icon Sizes</span> utility classes which have the values as given below. To overwrite the Icon Sizes Classes just use the same name and overwrite the properties as per your requirements in your CSS file. Easy right? So, what are you waiting for? Go now and customize the Icon-sizes.
         </p>
-        <div class="txt-center" style="padding-bottom: var(--space-sm);">
-          <span class="chip ch--success">success</span>
-        </div>
         <div class="code__wrapper">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522chip%2520ch--success%2522%253Esuccess%253C%252Fspan%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=css&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=.icon-xs%2520%257B%250A%2520%2520height%253A%252012px%253B%250A%2520%2520width%253A%252012px%253B%250A%257D%250A%250A.icon-sm%2520%257B%250A%2520%2520height%253A%252015px%253B%250A%2520%2520width%253A%252015px%253B%250A%257D%250A%250A.icon-md%2520%257B%250A%2520%2520height%253A%252020px%253B%250A%2520%2520width%253A%252020px%253B%250A%257D%250A%250A.icon-lg%2520%257B%250A%2520%2520height%253A%252025px%253B%250A%2520%2520width%253A%252025px%253B%250A%257D%250A%250A.icon-xl%2520%257B%250A%2520%2520height%253A%252035px%253B%250A%2520%2520width%253A%252035px%253B%250A%257D"
             sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
-
-        <!-- WARNING CHIP -->
-        <p class="h-5 maincontent__content--info" id="warning-chip">
-          Warning Chip
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Warning Chip</span> component give the <span style="font-style: italic; color: var(--primary);">ch--warning</span> class to the span.
-        </p>
-        <div class="txt-center" style="padding-bottom: var(--space-sm);">
-          <span class="chip ch--warning">warning</span>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522chip%2520ch--warning%2522%253Ewarning%253C%252Fspan%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
-
-        <!-- DARK CHIP -->
-        <p class="h-5 maincontent__content--info" id="dark-chip">
-          Dark Chip
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Dark Chip</span> component give the <span style="font-style: italic; color: var(--primary);">ch--dark</span> class to the span.
-        </p>
-        <div class="txt-center" style="padding-bottom: var(--space-sm);">
-          <span class="chip ch--dark">dark</span>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522chip%2520ch--dark%2522%253Edark%253C%252Fspan%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+            style="width: 100%; height: 650px; border:0; transform: scale(1); overflow:hidden;"
             loading="lazy">
           </iframe>
         </div>
@@ -308,12 +249,12 @@
       -------------------------------------->
       <footer class="footer">
         <section class="navigation__wrapper">
-          <a href="../card/card.html" class="navigation__wrapper--item txt-center st-1">
+          <a href="../variables/variables.html" class="navigation__wrapper--item txt-center st-1">
             <img class="icon-sm icon-dark maincontent__sidebar--icon" style="transform: rotate(-90deg);" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-            Card
+            Variables
           </a>
-          <a href="../drawer/drawer.html" class="navigation__wrapper--item txt-center st-1">
-            Drawer
+          <a href="../installation/installation.html" class="navigation__wrapper--item txt-center st-1">
+            Installation
             <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
           </a>
         </section>
@@ -330,39 +271,34 @@
       </footer>
     </section>
 
+    <!-------------------------------------
+                RIGHT SIDEBAR 
+    -------------------------------------->
     <aside class="maincontent__sidebar--right">
       <h6 class="h-6 maincontent__sidebar--right--title">On this Page</h6>
-      <a class="bd-5" href="#basic-chip">
+      <a class="bd-5" href="#headings">
         <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Basic Chip
+        Headings
       </a>
-      <a class="bd-5" href="#draggable-chip">
+      <a class="bd-5" href="#bodyfonts">
         <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Draggable Chip
+        Body Fonts
       </a>
-      <a class="bd-5" href="#dismissible-chip">
+      <a class="bd-5" href="#subtitles">
         <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Dismissible Chip
+        Subtitles
       </a>
-      <a class="bd-5" href="#primary-chip">
+      <a class="bd-5" href="#caption">
         <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Primary Chip
+        Caption
       </a>
-      <a class="bd-5" href="#danger-chip">
+      <a class="bd-5" href="#textcenter">
         <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Danger Chip
+        Text Center
       </a>
-      <a class="bd-5" href="#success-chip">
+      <a class="bd-5" href="#iconsizes">
         <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Success Chip
-      </a>
-      <a class="bd-5" href="#warning-chip">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Warning Chip
-      </a>
-      <a class="bd-5" href="#dark-chip">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Dark Chip
+        Icon Sizes
       </a>
     </aside>
   </main>
