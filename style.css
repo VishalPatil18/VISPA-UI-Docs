@@ -298,6 +298,7 @@ body {
 .footer__end {
   border-top: 1px solid var(--grey-1);
   display: flex;
+  width: 100%;
   justify-content: space-between;
   padding-top: var(--space-md);
 }
