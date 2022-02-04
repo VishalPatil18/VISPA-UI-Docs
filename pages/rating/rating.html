@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://vispaui-postdev-deploy.netlify.app/css/main.css">
   <link rel="stylesheet" href="../../style.css">
   <link rel="icon" type="image/x-icon" href="../../assets/VISPA_UI--logo.svg">
-  <title>VISPA-UI / Grid</title>
+  <title>VISPA-UI / Rating</title>
 </head>
 <body class="poppins">
   <!-------------------------------------
@@ -86,8 +86,8 @@
             <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/indent.svg" alt="drawer">
             Drawer
           </a>
-          <a href="./grid.html" class="drawer__item drawer__item--active">
-            <img class="icon-md icon-primary drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/th.svg" alt="grid">
+          <a href="../grid/grid.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/th.svg" alt="grid">
             Grid
           </a>
           <a href="../image/image.html" class="drawer__item">
@@ -110,8 +110,8 @@
             <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bars.svg" alt="navbar">
             Navbar
           </a>
-          <a href="../rating/rating.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/star-solid.svg" alt="rating">
+          <a href="./rating.html" class="drawer__item drawer__item--active">
+            <img class="icon-md icon-primary drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/star-solid.svg" alt="rating">
             Rating
           </a>
           <a href="#" class="drawer__item">
@@ -146,67 +146,54 @@
     -------------------------------------->
     <section class="maincontent__content bd-5 typography__content">
       <section class="maincontent__content--box">
-        <h1 class="h-4" id="colors">Grid</h1>
+        <h1 class="h-4" id="rating">Rating</h1>
         <p class="bd-5 maincontent__content--desc">
-          VISPA-UI includes an expertly-crafted 14 varieties of <span style="font-weight: 500; color: var(--danger);">Grid Utility Classes</span> which can make your UI building experience effortless.
+          VISPA-UI includes an expertly-crafted <span style="font-weight: 500; color: var(--danger);">Rating</span> component which can make your UI building experience effortless.
         </p>
 
-        <!-- GRID COLUMNS -->
-        <p class="h-5 maincontent__content--info" id="grid-columns">
-          Grid Columns
-        </p>
         <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Grid</span> component give the <span style="font-style: italic; color: var(--primary);">Grid</span> class to the container which gives the container a display of Grid and to specify the columns use the <span style="font-style: italic; color: var(--primary);">grid-cols-#</span> replacing the # with the number of columns you want in your grid.
+          To use the <span style="font-weight: 500; color: var(--danger);">Rating</span> component copy the code below to use it in your project. Make sure to include the JavaScript code for the same.
         </p>
-        <div class="txt-center" style="padding-bottom: var(--space-sm);">
-          <div class="grid grid-cols-4 grid__eg">
-            <div class="txt-center">1</div>
-            <div class="txt-center">2</div>
-            <div class="txt-center">3</div>
-            <div class="txt-center">4</div>
-            <div class="txt-center">5</div>
-            <div class="txt-center">6</div>
-            <div class="txt-center">7</div>
-            <div class="txt-center">8</div>
-            <div class="txt-center">9</div>
-            <div class="txt-center">10</div>
+        <div class="txt-center" style="margin-bottom: var(--space-md);">
+          <div class="rating">
+            <img class="icon-xl rating__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/star.svg" alt="star">
+            <img class="icon-xl rating__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/star.svg" alt="star">
+            <img class="icon-xl rating__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/star.svg" alt="star">
+            <img class="icon-xl rating__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/star.svg" alt="star">
+            <img class="icon-xl rating__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/star.svg" alt="star">
           </div>
+
+          <script>
+            const stars = [...document.getElementsByClassName("rating__icon")];
+          
+            function ratingHandler(stars) {
+              const starOutline = "https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/star.svg";
+              const starSolid = "https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/star-solid.svg";
+              stars.map((star) => {
+                star.onclick = () => {
+                  let i = stars.indexOf(star);
+                  if(star.attributes.src.nodeValue === starOutline) {
+                    for (i; i >= 0; --i){
+                      stars[i].attributes.src.nodeValue = starSolid;
+                      stars[i].classList.add("icon-warning");
+                    }
+                  } else {
+                    for (i; i < stars.length; ++i){
+                      stars[i].attributes.src.nodeValue = starOutline;
+                      stars[i].classList.remove("icon-warning");
+                    }
+                  }
+                };
+              });
+            }
+            ratingHandler(stars);
+          </script>
         </div>
         <div class="code__wrapper">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid%2520grid-cols-4%2522%253E%250A%2520%2520%253Cdiv%253E1%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%253E2%253C%252Fdiv%253E%250A%2520%2520...%250A%2520%2520%253Cdiv%253E10%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522rating%2522%253E%250A%2520%2520%253Cimg%2520%250A%2520%2520%2520%2520class%253D%2522icon-xl%2520rating__icon%2522%2520%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fstar.svg%2522%250A%2520%2520%2520%2520alt%253D%2522star%2522%253E%250A%2520%2520%253Cimg%2520%250A%2520%2520%2520%2520class%253D%2522icon-xl%2520rating__icon%2522%2520%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fstar.svg%2522%250A%2520%2520%2520%2520alt%253D%2522star%2522%253E%250A%2520%2520%253Cimg%2520%250A%2520%2520%2520%2520class%253D%2522icon-xl%2520rating__icon%2522%2520%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fstar.svg%2522%250A%2520%2520%2520%2520alt%253D%2522star%2522%253E%250A%2520%2520%253Cimg%2520%250A%2520%2520%2520%2520class%253D%2522icon-xl%2520rating__icon%2522%2520%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fstar.svg%2522%250A%2520%2520%2520%2520alt%253D%2522star%2522%253E%250A%2520%2520%253Cimg%2520%250A%2520%2520%2520%2520class%253D%2522icon-xl%2520rating__icon%2522%2520%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fstar.svg%2522%250A%2520%2520%2520%2520alt%253D%2522star%2522%253E%250A%253C%252Fdiv%253E%250A%250A%253Cscript%253E%250A%2520%2520const%2520stars%2520%253D%2520%255B...document.getElementsByClassName%28%2522rating__icon%2522%29%255D%253B%250A%250A%2520%2520function%2520ratingHandler%28stars%29%2520%257B%250A%2520%2520%2520%2520const%2520starOutline%2520%253D%2520%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fstar.svg%2522%253B%250A%2520%2520%2520%2520const%2520starSolid%2520%253D%2520%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fstar-solid.svg%2522%253B%250A%2520%2520%2520%2520stars.map%28%28star%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520star.onclick%2520%253D%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520let%2520i%2520%253D%2520stars.indexOf%28star%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520if%28star.attributes.src.nodeValue%2520%253D%253D%253D%2520starOutline%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520for%2520%28i%253B%2520i%2520%253E%253D%25200%253B%2520--i%29%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520stars%255Bi%255D.attributes.src.nodeValue%2520%253D%2520starSolid%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520stars%255Bi%255D.classList.add%28%2522icon-warning%2522%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%2520else%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520for%2520%28i%253B%2520i%2520%253C%2520stars.length%253B%2520%252B%252Bi%29%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520stars%255Bi%255D.attributes.src.nodeValue%2520%253D%2520starOutline%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520stars%255Bi%255D.classList.remove%28%2522icon-warning%2522%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%257D%253B%250A%2520%2520%2520%2520%257D%29%253B%250A%2520%2520%257D%250A%2520%2520ratingHandler%28stars%29%253B%250A%253C%252Fscript%253E"
             sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 250px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
-
-        <!-- GRID ROWS -->
-        <p class="h-5 maincontent__content--info" id="grid-rows">
-          Grid Rows
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Grid</span> component give the <span style="font-style: italic; color: var(--primary);">Grid</span> class to the container which gives the container a display of Grid and to specify the rows use the <span style="font-style: italic; color: var(--primary);">grid-rows-#</span> replacing the # with the number of rows you want in your grid.
-        </p>
-        <div class="txt-center" style="padding-bottom: var(--space-sm);">
-          <div class="grid grid-rows-3 grid__eg" style="grid-auto-flow: column;">
-            <div class="txt-center">1</div>
-            <div class="txt-center">2</div>
-            <div class="txt-center">3</div>
-            <div class="txt-center">4</div>
-            <div class="txt-center">5</div>
-            <div class="txt-center">6</div>
-            <div class="txt-center">7</div>
-            <div class="txt-center">8</div>
-            <div class="txt-center">9</div>
-            <div class="txt-center">10</div>
-          </div>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid%2520grid-rows-3%2522%253E%250A%2520%2520%253Cdiv%253E1%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%253E2%253C%252Fdiv%253E%250A%2520%2520...%250A%2520%2520%253Cdiv%253E10%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 250px; border:0; transform: scale(1); overflow:hidden;"
+            style="width: 100%; height: 800px; border:0; transform: scale(1); overflow:hidden;"
             loading="lazy">
           </iframe>
         </div>
@@ -217,12 +204,12 @@
       -------------------------------------->
       <footer class="footer">
         <section class="navigation__wrapper">
-          <a href="../drawer/drawer.html" class="navigation__wrapper--item txt-center st-1">
+          <a href="../navbar/navbar.html" class="navigation__wrapper--item txt-center st-1">
             <img class="icon-sm icon-dark maincontent__sidebar--icon" style="transform: rotate(-90deg);" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-            Drawer
+            Navbar
           </a>
-          <a href="../image/image.html" class="navigation__wrapper--item txt-center st-1">
-            Image
+          <a href="#" class="navigation__wrapper--item txt-center st-1">
+            Slider
             <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
           </a>
         </section>
@@ -241,13 +228,9 @@
 
     <aside class="maincontent__sidebar--right">
       <h6 class="h-6 maincontent__sidebar--right--title">On this Page</h6>
-      <a class="bd-5" href="#grid-columns">
+      <a class="bd-5" href="#rating">
         <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Grid Columns
-      </a>
-      <a class="bd-5" href="#grid-rows">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Grid Rows
+        Rating Component
       </a>
     </aside>
   </main>

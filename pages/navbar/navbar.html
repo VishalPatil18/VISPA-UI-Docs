@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://vispaui-postdev-deploy.netlify.app/css/main.css">
   <link rel="stylesheet" href="../../style.css">
   <link rel="icon" type="image/x-icon" href="../../assets/VISPA_UI--logo.svg">
-  <title>VISPA-UI / Grid</title>
+  <title>VISPA-UI / Navbars</title>
 </head>
 <body class="poppins">
   <!-------------------------------------
@@ -86,8 +86,8 @@
             <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/indent.svg" alt="drawer">
             Drawer
           </a>
-          <a href="./grid.html" class="drawer__item drawer__item--active">
-            <img class="icon-md icon-primary drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/th.svg" alt="grid">
+          <a href="../grid/grid.html" class="drawer__item">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/th.svg" alt="grid">
             Grid
           </a>
           <a href="../image/image.html" class="drawer__item">
@@ -106,8 +106,8 @@
             <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/window-maximize.svg" alt="modal">
             Modal
           </a>
-          <a href="../navbar/navbar.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bars.svg" alt="navbar">
+          <a href="./navbar.html" class="drawer__item drawer__item--active">
+            <img class="icon-md icon-primary drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bars.svg" alt="navbar">
             Navbar
           </a>
           <a href="../rating/rating.html" class="drawer__item">
@@ -146,67 +146,53 @@
     -------------------------------------->
     <section class="maincontent__content bd-5 typography__content">
       <section class="maincontent__content--box">
-        <h1 class="h-4" id="colors">Grid</h1>
+        <h1 class="h-4" id="colors">Navbars</h1>
         <p class="bd-5 maincontent__content--desc">
-          VISPA-UI includes an expertly-crafted 14 varieties of <span style="font-weight: 500; color: var(--danger);">Grid Utility Classes</span> which can make your UI building experience effortless.
+          VISPA-UI includes an expertly-crafted 2 varieties of <span style="font-weight: 500; color: var(--danger);">Navbars</span> which can make your UI building experience effortless.
         </p>
 
-        <!-- GRID COLUMNS -->
-        <p class="h-5 maincontent__content--info" id="grid-columns">
-          Grid Columns
+        <!-- BASIC NAVBAR -->
+        <p class="h-5 maincontent__content--info" id="basic-navbar">
+          Basic Navbar
         </p>
         <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Grid</span> component give the <span style="font-style: italic; color: var(--primary);">Grid</span> class to the container which gives the container a display of Grid and to specify the columns use the <span style="font-style: italic; color: var(--primary);">grid-cols-#</span> replacing the # with the number of columns you want in your grid.
+          To use the <span style="font-weight: 500; color: var(--danger);">Basic Navbar</span> component copy the code below to use it in your project.
         </p>
-        <div class="txt-center" style="padding-bottom: var(--space-sm);">
-          <div class="grid grid-cols-4 grid__eg">
-            <div class="txt-center">1</div>
-            <div class="txt-center">2</div>
-            <div class="txt-center">3</div>
-            <div class="txt-center">4</div>
-            <div class="txt-center">5</div>
-            <div class="txt-center">6</div>
-            <div class="txt-center">7</div>
-            <div class="txt-center">8</div>
-            <div class="txt-center">9</div>
-            <div class="txt-center">10</div>
-          </div>
+        <div class="txt-center" style="margin-bottom: var(--space-md);">
+          <a href="https://vispaui-postdev-deploy.netlify.app/css/_components/navbar/_navbar.html" target="_blank">
+            <button class="button btn-solid-primary" id="basic-modal-btn">
+              View Basic Navbar
+            </button>
+          </a>
         </div>
         <div class="code__wrapper">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid%2520grid-cols-4%2522%253E%250A%2520%2520%253Cdiv%253E1%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%253E2%253C%252Fdiv%253E%250A%2520%2520...%250A%2520%2520%253Cdiv%253E10%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cheader%2520class%253D%2522navbar%2522%253E%250A%2520%2520%253Cimg%2520%250A%2520%2520%2520%2520class%253D%2522icon-lg%2520icon-light%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Flinux.svg%2522%250A%2520%2520%2520%2520alt%253D%2522logo%2522%250A%2520%2520%253E%250A%2520%2520%253Cspan%2520class%253D%2522navbar__text%2522%253ETITLE%253C%252Fspan%253E%250A%2520%2520%253Cul%2520class%253D%2522navbar__list%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522button%2520btn-plain%2520navbar__btn%2522%253EHome%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522button%2520btn-plain%2520navbar__btn%2522%253EAbout%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522button%2520btn-plain%2520navbar__btn%2520navbar__btn--active%2522%253EBlogs%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522button%2520btn-plain%2520navbar__btn%2522%253EContact%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522button%2520btn-plain%2520navbar__btn%2522%253EFeedback%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input%2520input__icons%2520navbar__search%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input__field--text%2520search%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Search...%2522%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fheader%253E"
             sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 250px; border:0; transform: scale(1); overflow:hidden;"
+            style="width: 100%; height: 600px; border:0; transform: scale(1); overflow:hidden;"
             loading="lazy">
           </iframe>
         </div>
 
-        <!-- GRID ROWS -->
-        <p class="h-5 maincontent__content--info" id="grid-rows">
-          Grid Rows
+        <!-- NAVBAR WITH ICONS -->
+        <p class="h-5 maincontent__content--info" id="icon-navbar">
+          Navbar with Icons
         </p>
         <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Grid</span> component give the <span style="font-style: italic; color: var(--primary);">Grid</span> class to the container which gives the container a display of Grid and to specify the rows use the <span style="font-style: italic; color: var(--primary);">grid-rows-#</span> replacing the # with the number of rows you want in your grid.
+          To use the <span style="font-weight: 500; color: var(--danger);">Navbar with Icons</span> component copy the code below to use it in your project.
         </p>
-        <div class="txt-center" style="padding-bottom: var(--space-sm);">
-          <div class="grid grid-rows-3 grid__eg" style="grid-auto-flow: column;">
-            <div class="txt-center">1</div>
-            <div class="txt-center">2</div>
-            <div class="txt-center">3</div>
-            <div class="txt-center">4</div>
-            <div class="txt-center">5</div>
-            <div class="txt-center">6</div>
-            <div class="txt-center">7</div>
-            <div class="txt-center">8</div>
-            <div class="txt-center">9</div>
-            <div class="txt-center">10</div>
-          </div>
+        <div class="txt-center" style="margin-bottom: var(--space-md);">
+          <a href="https://vispaui-postdev-deploy.netlify.app/css/_components/navbar/_navbar.html" target="_blank">
+            <button class="button btn-solid-primary" id="basic-modal-btn">
+              View Navbar w/icons
+            </button>
+          </a>
         </div>
         <div class="code__wrapper">
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid%2520grid-rows-3%2522%253E%250A%2520%2520%253Cdiv%253E1%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%253E2%253C%252Fdiv%253E%250A%2520%2520...%250A%2520%2520%253Cdiv%253E10%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cheader%2520class%253D%2522navbar%2520nb__icons%2522%253E%250A%2520%2520%253Cimg%2520%250A%2520%2520%2520%2520class%253D%2522icon-lg%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Flinux.svg%2522%250A%2520%2520%2520%2520alt%253D%2522logo%2522%250A%2520%2520%253E%250A%2520%2520%253Cspan%2520class%253D%2522navbar__text%2522%253ETITLE%253C%252Fspan%253E%250A%2520%2520%253Cdiv%2520class%253D%2522input%2520input__icons%2520navbar__search%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input__field--text%2520search%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Search...%2522%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cul%2520class%253D%2522navbar__list%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522navbar__btn%2522%253E%253Cimg%2520class%253D%2522icon-md%2520icon-dark%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fhome.svg%2522%2520alt%253D%2522home-btn%2522%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522navbar__btn%2522%253E%253Cimg%2520class%253D%2522icon-md%2520icon-dark%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fflag.svg%2522%2520alt%253D%2522flag-btn%2522%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522navbar__btn%2522%253E%253Cimg%2520class%253D%2522icon-md%2520icon-dark%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fvideo.svg%2522%2520alt%253D%2522video-btn%2522%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522navbar__btn%2522%253E%253Cimg%2520class%253D%2522icon-md%2520icon-dark%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fshopping-bag.svg%2522%2520alt%253D%2522cart-btn%2522%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522navbar__btn%2522%253E%253Cimg%2520class%253D%2522icon-md%2520icon-dark%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fusers.svg%2522%2520alt%253D%2522users-btn%2522%253E%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E%250A%2520%2520%253Cul%2520class%253D%2522navbar__list%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522navbar__btn%2520navbar__user%2522%253E%253Cimg%2520class%253D%2522profile__img%2520icon-lg%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fprofile_dark.png%2522%2520alt%253D%2522profile%2522%253EBablu%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522navbar__btn%2522%253E%253Cimg%2520class%253D%2522icon-md%2520icon-dark%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fplus-circle.svg%2522%2520alt%253D%2522add-btn%2522%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522navbar__btn%2522%253E%253Cimg%2520class%253D%2522icon-md%2520icon-dark%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fcomments.svg%2522%2520alt%253D%2522chats-btn%2522%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522navbar__btn%2522%253E%253Cimg%2520class%253D%2522icon-md%2520icon-dark%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fbell.svg%2522%2520alt%253D%2522noti-btn%2522%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522navbar__btn%2522%253E%253Cimg%2520class%253D%2522icon-md%2520icon-dark%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Farrow-alt-circle-down.svg%2522%2520alt%253D%2522menu%2522%253E%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E%250A%253C%252Fheader%253E"
             sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 250px; border:0; transform: scale(1); overflow:hidden;"
+            style="width: 100%; height: 800px; border:0; transform: scale(1); overflow:hidden;"
             loading="lazy">
           </iframe>
         </div>
@@ -217,12 +203,12 @@
       -------------------------------------->
       <footer class="footer">
         <section class="navigation__wrapper">
-          <a href="../drawer/drawer.html" class="navigation__wrapper--item txt-center st-1">
+          <a href="../modal/modal.html" class="navigation__wrapper--item txt-center st-1">
             <img class="icon-sm icon-dark maincontent__sidebar--icon" style="transform: rotate(-90deg);" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-            Drawer
+            Modal
           </a>
-          <a href="../image/image.html" class="navigation__wrapper--item txt-center st-1">
-            Image
+          <a href="../rating/rating.html" class="navigation__wrapper--item txt-center st-1">
+            Rating
             <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
           </a>
         </section>
@@ -241,13 +227,13 @@
 
     <aside class="maincontent__sidebar--right">
       <h6 class="h-6 maincontent__sidebar--right--title">On this Page</h6>
-      <a class="bd-5" href="#grid-columns">
+      <a class="bd-5" href="#basic-navbar">
         <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Grid Columns
+        Basic Navbar
       </a>
-      <a class="bd-5" href="#grid-rows">
+      <a class="bd-5" href="#icon-navbar">
         <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Grid Rows
+        Navbar with Icons
       </a>
     </aside>
   </main>
