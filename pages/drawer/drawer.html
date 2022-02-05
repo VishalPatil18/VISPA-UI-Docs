@@ -4,52 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://vispaui-postdev-deploy.netlify.app/css/main.css"
-    />
+    <link rel="stylesheet" href="https://vispaui-postdev-deploy.netlify.app/css/main.css" />
     <link rel="stylesheet" href="../../style.css" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="../../assets/VISPA_UI--logo.svg"
-    />
+    <link rel="icon" type="image/x-icon" href="../../assets/VISPA_UI--logo.svg" />
     <title>VISPA-UI / Drawer</title>
   </head>
-
-  <body class="poppins">
+  <body>
     <!-------------------------------------
                   NAVBAR 
-  -------------------------------------->
+    -------------------------------------->
     <header class="_navbar">
-      <img
-        class="navbar__logo"
-        src="../../assets/VISPA_UI--logo.svg"
-        alt="vispa-ui--logo"
-      />
+      <img class="navbar__logo" src="../../assets/VISPA_UI--logo.svg" alt="vispa-ui--logo" />
+      <img class="navbar__menu--btn icon-xl icon-primary" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bars.svg" id="menu-btn" alt="menu-btn">
       <a class="h-4" href="../../index.html">
         <p>VISPA<span class="navbar__ui">UI</span></p>
       </a>
       <span class="navbar__version">v1.0</span>
-      <a class="h-5 button btn-lg btn-plain" href="#">Docs</a>
+      <a class="h-5 button btn-lg btn-plain" href="../alert/alert.html">Docs</a>
       <a href="https://github.com/VishalPatil18/VISPA-UI">
-        <img
-          class="icon-dark icon-xl"
-          src="https://vispaui-postdev-deploy.netlify.app/assets/github.svg"
-          alt="github"
-        />
+        <img class="icon-dark icon-xl" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/github.svg" alt="github" />
       </a>
     </header>
 
     <!-------------------------------------
                 MAIN BODY 
-  -------------------------------------->
+    -------------------------------------->
     <main class="maincontent">
       <!-------------------------------------
                   SIDEBAR 
-    -------------------------------------->
+      -------------------------------------->
       <aside class="maincontent__sidebar--left">
-        <div class="drawer">
+        <div class="drawer" id="sidebar-el">
+          <button class="button btn-plain sidebar__close--btn" id="sidebar-close-btn">
+            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/times.svg" alt="close">
+          </button>
           <div class="drawer__list">
             <p class="list__subheading">Getting Started</p>
             <a href="../installation/installation.html" class="drawer__item">
@@ -243,7 +231,7 @@
 
       <!-------------------------------------
                     CONTENT
-    -------------------------------------->
+      -------------------------------------->
       <section class="maincontent__content bd-5 typography__content">
         <section class="maincontent__content--box">
           <h1 class="h-4" id="colors">Drawer</h1>
@@ -622,33 +610,25 @@
         </footer>
       </section>
 
+      <!-------------------------------------
+                RIGHT SIDEBAR 
+      -------------------------------------->
       <aside class="maincontent__sidebar--right">
         <h6 class="h-6 maincontent__sidebar--right--title">On this Page</h6>
         <a class="bd-5" href="#basic-drawer">
-          <img
-            class="icon-sm icon-dark maincontent__sidebar--icon"
-            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
-            alt="angle-icon"
-          />
+          <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon" />
           Basic Drawer
         </a>
         <a class="bd-5" href="#large-icon-drawer">
-          <img
-            class="icon-sm icon-dark maincontent__sidebar--icon"
-            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
-            alt="angle-icon"
-          />
+          <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon" />
           Large Icon Drawer
         </a>
         <a class="bd-5" href="#premium-drawer">
-          <img
-            class="icon-sm icon-dark maincontent__sidebar--icon"
-            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
-            alt="angle-icon"
-          />
+          <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon" />
           Premium Drawer
         </a>
       </aside>
     </main>
   </body>
+  <script src="../../script.js" defer></script>
 </html>
