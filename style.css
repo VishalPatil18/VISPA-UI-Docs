@@ -456,9 +456,10 @@ body {
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.5);
     overflow-y: hidden;
+    cursor: pointer;
   }
   
-  .drawer {
+  #sidebar-el {
     display: none;
     position: absolute;
     top: 0;
