@@ -1,3 +1,7 @@
+.maincontent__installation {
+  height: calc(100vh - 75px);
+}
+
 .colors__link {
   margin-left: auto;
 }
