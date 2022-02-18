@@ -11,9 +11,9 @@ menuBtn.addEventListener("click", () => {
 sidebarCloseBtn.addEventListener("click", () => {
   sidebarContainer.style.display = "none";
   sidebarEl.style.display = "none";
-})
+});
 
-window.addEventListener("click", e => {
+window.addEventListener("click", (e) => {
   if (e.target == sidebarContainer) {
     sidebarEl.style.display = "none";
     sidebarContainer.style.display = "none";

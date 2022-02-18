@@ -1,10 +1,10 @@
 .grid__eg {
-  width: 100%;
   gap: var(--space-sm);
+  width: 100%;
 }
 
 .grid__eg > div {
-  height: 50px;
-  border-radius: var(--br-sm);
   background-color: var(--primary);
+  border-radius: var(--br-sm);
+  height: 50px;
 }

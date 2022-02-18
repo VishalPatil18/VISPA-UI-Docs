@@ -1,653 +1,1528 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://vispaui-postdev-deploy.netlify.app/css/main.css">
-  <link rel="stylesheet" href="../../style.css">
-  <link rel="icon" type="image/x-icon" href="../../assets/VISPA_UI--logo.svg">
-  <title>VISPA-UI / Modal</title>
-</head>
-<body>
-  <!-------------------------------------
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- HIGHLIGHT.JS STYLESHEET -->
+    <link
+      rel="stylesheet"
+      href="../../highlight/styles/atom-one-dark-reasonable.min.css"
+    />
+
+    <!-- VENDOR STYLESHEET -->
+    <link
+      rel="stylesheet"
+      href="https://vispaui-postdev-deploy.netlify.app/css/main.css"
+    />
+
+    <!-- MAIN STYLESHEET -->
+    <link rel="stylesheet" href="../../style.css" />
+
+    <!-- FAVICON -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../assets/VISPA_UI--logo.svg"
+    />
+
+    <!-- TITLE -->
+    <title>VISPA-UI / Modal</title>
+  </head>
+  <body>
+    <!-------------------------------------
                   NAVBAR 
   -------------------------------------->
-  <header class="_navbar">
-    <img class="navbar__logo" src="../../assets/VISPA_UI--logo.svg" alt="vispa-ui--logo">
-    <img class="navbar__menu--btn icon-xl icon-primary" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bars.svg" id="menu-btn" alt="menu-btn">
-    <a class="h-4" href="../../index.html">
-      <p>VISPA<span class="navbar__ui">UI</span></p>
-    </a>
-    <span class="navbar__version">v1.0</span>
-    <a class="h-5 button btn-lg btn-plain" href="../alert/alert.html">Docs</a>
-    <a href="https://github.com/VishalPatil18/VISPA-UI">
-      <img class="icon-dark icon-xl" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/github.svg" alt="github">
-    </a>
-  </header>
+    <header class="_navbar">
+      <img
+        class="navbar__logo"
+        src="../../assets/VISPA_UI--logo.svg"
+        alt="vispa-ui--logo"
+      />
+      <img
+        class="navbar__menu--btn icon-xl icon-primary"
+        src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bars.svg"
+        id="menu-btn"
+        alt="menu-btn"
+      />
+      <a class="h-4" href="../../index.html">
+        <p>VISPA<span class="navbar__ui">UI</span></p>
+      </a>
+      <span class="navbar__version">v1.0</span>
+      <a class="h-5 button btn-lg btn-plain" href="../alert/alert.html">Docs</a>
+      <a href="https://github.com/VishalPatil18/VISPA-UI">
+        <img
+          class="icon-dark icon-xl"
+          src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/github.svg"
+          alt="github"
+        />
+      </a>
+    </header>
 
-  <!-------------------------------------
+    <!-------------------------------------
                 MAIN BODY 
   -------------------------------------->
-  <main class="maincontent">
-    <!-------------------------------------
+    <main class="maincontent">
+      <!-------------------------------------
                   SIDEBAR 
     -------------------------------------->
-    <aside class="maincontent__sidebar--left">
-      <div class="drawer" id="sidebar-el">
-        <button class="button btn-plain sidebar__close--btn" id="sidebar-close-btn">
-          <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/times.svg" alt="close">
-        </button> 
-        <div class="drawer__list">
-          <p class="list__subheading">Getting Started</p>
-          <a href="../installation/installation.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/download.svg" alt="install">
-            Installation
-          </a>
-    
-          <a href="../colors/colors.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/palette.svg" alt="colors">
-            Colors
-          </a>
-    
-          <a href="../typography/typography.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/feather-alt.svg" alt="typography">
-            Typography
-          </a>
+      <aside class="maincontent__sidebar--left">
+        <div class="drawer" id="sidebar-el">
+          <button
+            class="button btn-plain sidebar__close--btn"
+            id="sidebar-close-btn"
+          >
+            <img
+              class="icon-md icon-dark drawer__item--icon"
+              src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/times.svg"
+              alt="close"
+            />
+          </button>
+          <div class="drawer__list">
+            <p class="list__subheading">Getting Started</p>
+            <a href="../installation/installation.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/download.svg"
+                alt="install"
+              />
+              Installation
+            </a>
 
-          <a href="../utilities/utilities.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/cogs.svg" alt="utilities">
-            Utilities
-          </a>
-        </div>
-        <div class="drawer__list">
-          <p class="list__subheading">Components</p>
-          <a href="../alert/alert.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/warning.svg" alt="alert">
-            Alert
-          </a>
-          <a href="../avatar/avatar.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/portrait.svg" alt="avatar">
-            Avatar
-          </a>
-          <a href="../badge/badge.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg" alt="badge">
-            Badge
-          </a>
-          <a href="../button/button.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/clone.svg" alt="button">
-            Button
-          </a>
-          <a href="../card/card.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/id-card.svg" alt="card">
-            Card
-          </a>
-          <a href="../chips/chips.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/backspace.svg" alt="chips">
-            Chips
-          </a>
-          <a href="../drawer/drawer.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/indent.svg" alt="drawer">
-            Drawer
-          </a>
-          <a href="../grid/grid.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/th.svg" alt="grid">
-            Grid
-          </a>
-          <a href="../image/image.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/images.svg" alt="image">
-            Image
-          </a>
-          <a href="../input/input.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/edit.svg" alt="input">
-            Input
-          </a>
-          <a href="../list/list.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/list-ol.svg" alt="list">
-            List
-          </a>
-          <a href="./modal.html" class="drawer__item drawer__item--active">
-            <img class="icon-md icon-primary drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/window-maximize.svg" alt="modal">
-            Modal
-          </a>
-          <a href="../navbar/navbar.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bars.svg" alt="navbar">
-            Navbar
-          </a>
-          <a href="../rating/rating.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/star-solid.svg" alt="rating">
-            Rating
-          </a>
-          <a href="../slider/slider.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/server.svg" alt="slider">
-            Slider
-          </a>
-          <a href="../toast/toast.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/vote-yea.svg" alt="toast">
-            Toast
-          </a>
-        </div>
-        <div class="drawer__list">
-          <p class="list__subheading">Customization</p>
-          <a href="../variables/variables.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/at.svg" alt="toast">
-            Variables
-          </a>
-          <a href="../utilityclasses/utilityclasses.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bezier-curve.svg" alt="toast">
-            Utility Classes
-          </a>
-        </div>
-      </div>
-    </aside>
+            <a href="../colors/colors.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/palette.svg"
+                alt="colors"
+              />
+              Colors
+            </a>
 
-    <!-------------------------------------
+            <a href="../typography/typography.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/feather-alt.svg"
+                alt="typography"
+              />
+              Typography
+            </a>
+
+            <a href="../utilities/utilities.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/cogs.svg"
+                alt="utilities"
+              />
+              Utilities
+            </a>
+          </div>
+          <div class="drawer__list">
+            <p class="list__subheading">Components</p>
+            <a href="../alert/alert.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/warning.svg"
+                alt="alert"
+              />
+              Alert
+            </a>
+            <a href="../avatar/avatar.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/portrait.svg"
+                alt="avatar"
+              />
+              Avatar
+            </a>
+            <a href="../badge/badge.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg"
+                alt="badge"
+              />
+              Badge
+            </a>
+            <a href="../button/button.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/clone.svg"
+                alt="button"
+              />
+              Button
+            </a>
+            <a href="../card/card.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/id-card.svg"
+                alt="card"
+              />
+              Card
+            </a>
+            <a href="../chips/chips.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/backspace.svg"
+                alt="chips"
+              />
+              Chips
+            </a>
+            <a href="../drawer/drawer.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/indent.svg"
+                alt="drawer"
+              />
+              Drawer
+            </a>
+            <a href="../grid/grid.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/th.svg"
+                alt="grid"
+              />
+              Grid
+            </a>
+            <a href="../image/image.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/images.svg"
+                alt="image"
+              />
+              Image
+            </a>
+            <a href="../input/input.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/edit.svg"
+                alt="input"
+              />
+              Input
+            </a>
+            <a href="../list/list.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/list-ol.svg"
+                alt="list"
+              />
+              List
+            </a>
+            <a href="./modal.html" class="drawer__item drawer__item--active">
+              <img
+                class="icon-md icon-primary drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/window-maximize.svg"
+                alt="modal"
+              />
+              Modal
+            </a>
+            <a href="../navbar/navbar.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bars.svg"
+                alt="navbar"
+              />
+              Navbar
+            </a>
+            <a href="../rating/rating.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/star-solid.svg"
+                alt="rating"
+              />
+              Rating
+            </a>
+            <a href="../slider/slider.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/server.svg"
+                alt="slider"
+              />
+              Slider
+            </a>
+            <a href="../toast/toast.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/vote-yea.svg"
+                alt="toast"
+              />
+              Toast
+            </a>
+          </div>
+          <div class="drawer__list">
+            <p class="list__subheading">Customization</p>
+            <a href="../variables/variables.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/at.svg"
+                alt="toast"
+              />
+              Variables
+            </a>
+            <a
+              href="../utilityclasses/utilityclasses.html"
+              class="drawer__item"
+            >
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bezier-curve.svg"
+                alt="toast"
+              />
+              Utility Classes
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <!-------------------------------------
                     CONTENT
     -------------------------------------->
-    <section class="maincontent__content bd-5 typography__content">
-      <section class="maincontent__content--box">
-        <h1 class="h-4" id="colors">Modal</h1>
-        <p class="bd-5 maincontent__content--desc">
-          VISPA-UI includes an expertly-crafted 8 varieties of <span style="font-weight: 500; color: var(--danger);">Modals</span> which can make your UI building experience effortless.
-        </p>
+      <section class="maincontent__content bd-5 typography__content">
+        <section class="maincontent__content--box">
+          <h1 class="h-4" id="colors">Modal</h1>
+          <p class="bd-5 maincontent__content--desc">
+            VISPA-UI includes an expertly-crafted 8 varieties of
+            <span class="word-highlight-red">Modals</span> which can make your
+            UI building experience effortless.
+          </p>
 
-        <!-- BASIC MODAL -->
-        <p class="h-5 maincontent__content--info" id="basic-modal">
-          Basic Modal
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Basic Modal</span> component copy the code below to use it in your project. Make sure to include the JavaScript also.
-        </p>
-        <div class="txt-center" style="padding: var(--space-md) var(--space-xxxl);">
-          <button class="button btn-solid-primary" id="basic-modal-btn">Basic Modal</button>
+          <!-- BASIC MODAL -->
+          <p class="h-5 maincontent__content--info" id="basic-modal">
+            Basic Modal
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            To use the
+            <span class="word-highlight-red">Basic Modal</span> component copy
+            the code below to use it in your project. Make sure to include the
+            JavaScript also.
+          </p>
+          <div class="txt-center input-eg bring-to-top">
+            <button class="button btn-solid-primary" id="basic-modal-btn">
+              Basic Modal
+            </button>
 
-          <div class="modal__container" id="basic-modal-container" style="z-index: 999;">
-            <section class="modal mdl__basic" id="basic-modal-el">
-              <header class="modal__title">
-                <h1 class="h-5">Modal Title</h1>
-              </header>
-              <main class="modal__body">
-                <p class="bd-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis blanditiis, explicabo deleniti rerum.</p>
-              </main>
-              <footer class="modal__footer">
-                <button class="button btn-solid-primary modal__footer--btn">ACTION 1</button>
-                <button class="button btn-outline-primary modal__footer--btn">ACTION 2</button>
-              </footer>
-            </section>
+            <div class="txt-center input-eg bring-to-top">
+              <section class="modal mdl__basic" id="basic-modal-el">
+                <header class="modal__title">
+                  <h1 class="h-5">Modal Title</h1>
+                </header>
+                <main class="modal__body">
+                  <p class="bd-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis blanditiis, explicabo deleniti rerum.
+                  </p>
+                </main>
+                <footer class="modal__footer">
+                  <button class="button btn-solid-primary modal__footer--btn">
+                    ACTION 1
+                  </button>
+                  <button class="button btn-outline-primary modal__footer--btn">
+                    ACTION 2
+                  </button>
+                </footer>
+              </section>
+            </div>
+
+            <script async>
+              const basicModalBtn = document.getElementById("basic-modal-btn");
+              const basicModalContainer = document.getElementById(
+                "basic-modal-container"
+              );
+              const basicModalEl = document.getElementById("basic-modal-el");
+
+              basicModalBtn.addEventListener("click", () => {
+                basicModalContainer.style.display = "flex";
+                basicModalEl.style.display = "flex";
+              });
+
+              window.addEventListener("click", (e) => {
+                if (e.target == basicModalContainer) {
+                  basicModalContainer.style.display = "none";
+                  basicModalEl.style.display = "none";
+                }
+              });
+            </script>
           </div>
 
-          <script async>
-            const basicModalBtn = document.getElementById("basic-modal-btn");
-            const basicModalContainer = document.getElementById("basic-modal-container");
-            const basicModalEl = document.getElementById("basic-modal-el");
-            
-            basicModalBtn.addEventListener("click", () => {
-              basicModalContainer.style.display = "flex";
-              basicModalEl.style.display = "flex";
-            });
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;button 
+  class=&quot;button btn-solid-primary&quot; 
+  id=&quot;basic-modal-btn&quot;
+&gt;
+  Basic Modal
+&lt;/button&gt;
 
-            window.addEventListener("click", e => {
-              if (e.target == basicModalContainer) {
-                basicModalContainer.style.display = "none";
-                basicModalEl.style.display = "none";
-              }
-            });
-          </script>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-solid-primary%2522%2520id%253D%2522basic-modal-btn%2522%253EBasic%2520Modal%253C%252Fbutton%253E%250A%250A%253Cdiv%2520class%253D%2522modal__container%2522%2520id%253D%2522basic-modal-container%2522%253E%250A%2520%2520%253Csection%2520class%253D%2522modal%2520mdl__basic%2522%2520id%253D%2522basic-modal-el%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522modal__title%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522h-5%2522%253EModal%2520Title%253C%252Fh1%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%2520%2520%2520%2520%253Cmain%2520class%253D%2522modal__body%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522bd-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520%2520%2520%2520%2520Omnis%2520blanditiis%252C%2520explicabo%2520deleniti%2520rerum.%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fmain%253E%250A%2520%2520%2520%2520%253Cfooter%2520class%253D%2522modal__footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520btn-solid-primary%2520modal__footer--btn%2522%253EACTION%25201%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520btn-outline-primary%2520modal__footer--btn%2522%253EACTION%25202%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Ffooter%253E%250A%2520%2520%253C%252Fsection%253E%250A%253C%252Fdiv%253E%250A%250A%253Cscript%253E%250A%2520%2520const%2520basicModalBtn%2520%253D%2520document.getElementById%28%2522basic-modal-btn%2522%29%253B%250A%2520%2520const%2520basicModalContainer%2520%253D%2520document.getElementById%28%2522basic-modal-container%2522%29%253B%250A%2520%2520const%2520basicModalEl%2520%253D%2520document.getElementById%28%2522basic-modal-el%2522%29%253B%250A%250A%2520%2520basicModalBtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520basicModalContainer.style.display%2520%253D%2520%2522flex%2522%253B%250A%2520%2520%2520%2520basicModalEl.style.display%2520%253D%2520%2522flex%2522%253B%250A%2520%2520%257D%29%253B%250A%250A%2520%2520window.addEventListener%28%2522click%2522%252C%2520e%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520if%2520%28e.target%2520%253D%253D%2520basicModalContainer%29%2520%257B%250A%2520%2520%2520%2520%2520%2520basicModalContainer.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%2520%2520%2520%2520basicModalEl.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%2520%2520%257D%250A%2520%2520%257D%29%253B%250A%253C%252Fscript%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 800px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
+&lt;div class=&quot;modal__container&quot; id=&quot;basic-modal-container&quot;&gt;
+  &lt;section class=&quot;modal mdl__basic&quot; id=&quot;basic-modal-el&quot;&gt;
+    &lt;header class=&quot;modal__title&quot;&gt;
+      &lt;h1 class=&quot;h-5&quot;&gt;Modal Title&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;main class=&quot;modal__body&quot;&gt;
+      &lt;p class=&quot;bd-5&quot;&gt;
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Omnis blanditiis, explicabo deleniti rerum.
+      &lt;/p&gt;
+    &lt;/main&gt;
+    &lt;footer class=&quot;modal__footer&quot;&gt;
+      &lt;button class=&quot;button btn-solid-primary modal__footer--btn&quot;&gt;
+        ACTION 1
+      &lt;/button&gt;
+      &lt;button class=&quot;button btn-outline-primary modal__footer--btn&quot;&gt;
+        ACTION 2
+      &lt;/button&gt;
+    &lt;/footer&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
 
-        <!-- MODAL WITH ICONS -->
-        <p class="h-5 maincontent__content--info" id="icon-modal">
-          Modal with Icons
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Modal with Icons</span> component copy the code below to use it in your project. Make sure to include the JavaScript also.
-        </p>
-        <div class="txt-center" style="padding: var(--space-md) var(--space-xxxl);">
-          <button class="button btn-solid-primary" id="icon-modal-btn">Modal w/icons</button>
+&lt;!-- JavaScript --&gt;
+&lt;script&gt;
+  const basicModalBtn = document.getElementById(&quot;basic-modal-btn&quot;);
+  const basicModalContainer = document.getElementById(&quot;basic-modal-container&quot;);
+  const basicModalEl = document.getElementById(&quot;basic-modal-el&quot;);
 
-          <div class="modal__container" id="icon-modal-container" style="z-index: 999;">
-            <section class="modal mdl__icons mdl-primary" id="icon-modal-el">
-              <header class="modal__title">
-                <h1 class="h-5">Modal Title</h1>
-                <button class="button btn-action btn-plain-icon modal__title--close" id="modal-close-btn"><img class="icon-light icon-lg button__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg" alt="twitter"></button>
-              </header>
-              <main class="modal__body">
-                <p class="bd-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis blanditiis, explicabo deleniti rerum.</p>
-              </main>
-              <footer class="modal__footer">
-                <button class="button btn-solid-primary modal__footer--btn">ACTION 1</button>
-                <button class="button btn-outline-primary modal__footer--btn">ACTION 2</button>
-              </footer>
-            </section>
+  basicModalBtn.addEventListener(&quot;click&quot;, () =&gt; {
+    basicModalContainer.style.display = &quot;flex&quot;;
+    basicModalEl.style.display = &quot;flex&quot;;
+  });
+
+  window.addEventListener(&quot;click&quot;, e =&gt; {
+    if (e.target == basicModalContainer) {
+      basicModalContainer.style.display = &quot;none&quot;;
+      basicModalEl.style.display = &quot;none&quot;;
+    }
+  });
+&lt;/script&gt;
+            </code>
+          </pre>
           </div>
 
-          <script async>
-            const iconModalBtn = document.getElementById("icon-modal-btn");
-            const iconModalContainer = document.getElementById("icon-modal-container");
-            const iconModalEl = document.getElementById("icon-modal-el");
-            const modalCloseBtn = document.getElementById("modal-close-btn");
-            
-            iconModalBtn.addEventListener("click", () => {
-              iconModalContainer.style.display = "flex";
-              iconModalEl.style.display = "flex";
-            });
+          <!-- MODAL WITH ICONS -->
+          <p class="h-5 maincontent__content--info" id="icon-modal">
+            Modal with Icons
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            To use the
+            <span class="word-highlight-red">Modal with Icons</span> component
+            copy the code below to use it in your project. Make sure to include
+            the JavaScript also.
+          </p>
+          <div class="txt-center input-eg">
+            <button class="button btn-solid-primary" id="icon-modal-btn">
+              Modal w/icons
+            </button>
 
-            modalCloseBtn.addEventListener("click", () => {
-              iconModalContainer.style.display = "none";
-              iconModalEl.style.display = "none";
-            })
-          </script>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-solid-primary%2522%2520id%253D%2522icon-modal-btn%2522%253EModal%2520w%252Ficons%253C%252Fbutton%253E%250A%250A%253Cdiv%2520class%253D%2522modal__container%2522%2520id%253D%2522icon-modal-container%2522%253E%250A%2520%2520%253Csection%2520class%253D%2522modal%2520mdl__icons%2520mdl-primary%2522%2520id%253D%2522icon-modal-el%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522modal__title%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522h-5%2522%253EModal%2520Title%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520btn-action%2520btn-plain-icon%2520modal__title--close%2522%2520id%253D%2522modal-close-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522icon-light%2520icon-lg%2520button__icon%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fclose.svg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522twitter%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%2520%2520%2520%2520%253Cmain%2520class%253D%2522modal__body%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522bd-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520%2520%2520%2520%2520Omnis%2520blanditiis%252C%2520explicabo%2520deleniti%2520rerum.%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fmain%253E%250A%2520%2520%2520%2520%253Cfooter%2520class%253D%2522modal__footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520btn-solid-primary%2520modal__footer--btn%2522%253EACTION%25201%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520btn-outline-primary%2520modal__footer--btn%2522%253EACTION%25202%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Ffooter%253E%250A%2520%2520%253C%252Fsection%253E%250A%253C%252Fdiv%253E%250A%250A%253Cscript%253E%250A%2520%2520const%2520iconModalBtn%2520%253D%2520document.getElementById%28%2522icon-modal-btn%2522%29%253B%250A%2520%2520const%2520iconModalContainer%2520%253D%2520document.getElementById%28%2522icon-modal-container%2522%29%253B%250A%2520%2520const%2520iconModalEl%2520%253D%2520document.getElementById%28%2522icon-modal-el%2522%29%253B%250A%2520%2520const%2520modalCloseBtn%2520%253D%2520document.getElementById%28%2522modal-close-btn%2522%29%253B%250A%250A%2520%2520iconModalBtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520iconModalContainer.style.display%2520%253D%2520%2522flex%2522%253B%250A%2520%2520%2520%2520iconModalEl.style.display%2520%253D%2520%2522flex%2522%253B%250A%2520%2520%257D%29%253B%250A%250A%2520%2520modalCloseBtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520iconModalContainer.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%2520%2520iconModalEl.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%257D%29%250A%253C%252Fscript%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 800px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
+            <div
+              class="modal__container bring-to-top"
+              id="icon-modal-container"
+            >
+              <section class="modal mdl__icons mdl-primary" id="icon-modal-el">
+                <header class="modal__title">
+                  <h1 class="h-5">Modal Title</h1>
+                  <button
+                    class="button btn-action btn-plain-icon modal__title--close"
+                    id="modal-close-btn"
+                  >
+                    <img
+                      class="icon-light icon-lg button__icon"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg"
+                      alt="twitter"
+                    />
+                  </button>
+                </header>
+                <main class="modal__body">
+                  <p class="bd-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis blanditiis, explicabo deleniti rerum.
+                  </p>
+                </main>
+                <footer class="modal__footer">
+                  <button class="button btn-solid-primary modal__footer--btn">
+                    ACTION 1
+                  </button>
+                  <button class="button btn-outline-primary modal__footer--btn">
+                    ACTION 2
+                  </button>
+                </footer>
+              </section>
+            </div>
 
-        <!-- SHARE LINK MODAL -->
-        <p class="h-5 maincontent__content--info" id="sharelink-modal">
-          Share Link Modal
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Share Link Modal</span> component copy the code below to use it in your project. Make sure to include the JavaScript also.
-        </p>
-        <div class="txt-center" style="padding: var(--space-md) var(--space-xxxl);">
-          <button class="button btn-solid-primary" id="sharelink-modal-btn">Share Link Modal</button>
+            <script async>
+              const iconModalBtn = document.getElementById("icon-modal-btn");
+              const iconModalContainer = document.getElementById(
+                "icon-modal-container"
+              );
+              const iconModalEl = document.getElementById("icon-modal-el");
+              const modalCloseBtn = document.getElementById("modal-close-btn");
 
-          <div class="modal__container" id="sharelink-modal-container" style="z-index: 999;">
-            <section class="modal mdl__icons mdl-primary mdl__share" id="sharelink-modal-el">
-              <header class="modal__title">
-                <h1 class="h-5">Share Modal</h1>
-                <button class="button btn-action btn-plain-icon modal__title--close" id="sharelink-modal-close-btn"><img class="icon-light icon-lg button__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg" alt="close"></button>
-              </header>
-              <main class="modal__body">
-                <p class="bd-5">Share the link via</p>
-                <div class="modal__body--btn-cntr">
-                  <button class="button btn-socialmedia btn-solid-primary"><img class="icon-light icon-md button__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/twitter.svg" alt="twitter"></button>
-        
-                  <button class="button btn-socialmedia btn-solid-secondary"><img class="icon-light icon-md button__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/facebook.svg" alt="facebook"></button>
-        
-                  <button class="button btn-socialmedia btn-solid-danger"><img class="icon-light icon-md button__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/instagram.svg" alt="instagram"></button>
-        
-                  <button class="button btn-socialmedia btn-solid-secondary"><img class="icon-light icon-md button__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/linkedin.svg" alt="linkedin"></button>
-        
-                  <button class="button btn-socialmedia btn-solid-danger"><img class="icon-light icon-md button__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/youtube.svg" alt="youtube"></button>
-                </div>
-              </main>
-              <footer class="modal__footer">
-                <div class="link__container">
-                  <span class="modal__footer--link">example.com/share-this-link</span>
-                  <button class="button btn-solid-primary modal__footer--btn">Copy</button>
-                </div>
-              </footer>
-            </section>
+              iconModalBtn.addEventListener("click", () => {
+                iconModalContainer.style.display = "flex";
+                iconModalEl.style.display = "flex";
+              });
+
+              modalCloseBtn.addEventListener("click", () => {
+                iconModalContainer.style.display = "none";
+                iconModalEl.style.display = "none";
+              });
+            </script>
+          </div>
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;button 
+  class=&quot;button btn-solid-primary&quot; 
+  id=&quot;icon-modal-btn&quot;
+&gt;
+  Modal w/icons
+&lt;/button&gt;
+
+&lt;div class=&quot;modal__container&quot; id=&quot;icon-modal-container&quot;&gt;
+  &lt;section class=&quot;modal mdl__icons mdl-primary&quot; id=&quot;icon-modal-el&quot;&gt;
+    &lt;header class=&quot;modal__title&quot;&gt;
+      &lt;h1 class=&quot;h-5&quot;&gt;Modal Title&lt;/h1&gt;
+      &lt;button 
+        class=&quot;button btn-action btn-plain-icon modal__title--close&quot; 
+        id=&quot;modal-close-btn&quot;
+      &gt;
+        &lt;img
+              class=&quot;icon-light icon-lg button__icon&quot;
+              src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg&quot;
+        /&gt;
+      &lt;/button&gt;
+    &lt;/header&gt;
+    &lt;main class=&quot;modal__body&quot;&gt;
+      &lt;p class=&quot;bd-5&quot;&gt;
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Omnis blanditiis, explicabo deleniti rerum.
+      &lt;/p&gt;
+    &lt;/main&gt;
+    &lt;footer class=&quot;modal__footer&quot;&gt;
+      &lt;button class=&quot;button btn-solid-primary modal__footer--btn&quot;&gt;
+        ACTION 1
+      &lt;/button&gt;
+      &lt;button class=&quot;button btn-outline-primary modal__footer--btn&quot;&gt;
+        ACTION 2
+      &lt;/button&gt;
+    &lt;/footer&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+
+&lt;!-- JavaScript --&gt;
+&lt;script&gt;
+  const iconModalBtn = document.getElementById(&quot;icon-modal-btn&quot;);
+  const iconModalContainer = document.getElementById(&quot;icon-modal-container&quot;);
+  const iconModalEl = document.getElementById(&quot;icon-modal-el&quot;);
+  const modalCloseBtn = document.getElementById(&quot;modal-close-btn&quot;);
+
+  iconModalBtn.addEventListener(&quot;click&quot;, () =&gt; {
+    iconModalContainer.style.display = &quot;flex&quot;;
+    iconModalEl.style.display = &quot;flex&quot;;
+  });
+
+  modalCloseBtn.addEventListener(&quot;click&quot;, () =&gt; {
+    iconModalContainer.style.display = &quot;none&quot;;
+    iconModalEl.style.display = &quot;none&quot;;
+  })
+&lt;/script&gt;
+            </code>
+          </pre>
           </div>
 
-          <script async>
-            const sharelinkModalBtn = document.getElementById("sharelink-modal-btn");
-            const sharelinkModalContainer = document.getElementById("sharelink-modal-container");
-            const sharelinkModalEl = document.getElementById("sharelink-modal-el");
-            const sharelinkModalCloseBtn = document.getElementById("sharelink-modal-close-btn");
-            
-            sharelinkModalBtn.addEventListener("click", () => {
-              sharelinkModalContainer.style.display = "flex";
-              sharelinkModalEl.style.display = "flex";
-            });
+          <!-- SHARE LINK MODAL -->
+          <p class="h-5 maincontent__content--info" id="sharelink-modal">
+            Share Link Modal
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            To use the
+            <span class="word-highlight-red">Share Link Modal</span> component
+            copy the code below to use it in your project. Make sure to include
+            the JavaScript also.
+          </p>
+          <div class="txt-center input-eg">
+            <button class="button btn-solid-primary" id="sharelink-modal-btn">
+              Share Link Modal
+            </button>
 
-            sharelinkModalCloseBtn.addEventListener("click", () => {
-              sharelinkModalContainer.style.display = "none";
-              sharelinkModalEl.style.display = "none";
-            })
-          </script>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-solid-primary%2522%2520id%253D%2522sharelink-modal-btn%2522%253EShare%2520Link%2520Modal%253C%252Fbutton%253E%250A%250A%253Cdiv%2520class%253D%2522modal__container%2522%2520id%253D%2522sharelink-modal-container%2522%2520style%253D%2522z-index%253A%2520999%253B%2522%253E%250A%2520%2520%253Csection%2520class%253D%2522modal%2520mdl__icons%2520mdl-primary%2520mdl__share%2522%2520id%253D%2522sharelink-modal-el%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522modal__title%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522h-5%2522%253EShare%2520Modal%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522button%2520btn-action%2520btn-plain-icon%2520modal__title--close%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522sharelink-modal-close-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522icon-light%2520icon-lg%2520button__icon%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fclose.svg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522close%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%2520%2520%2520%2520%253Cmain%2520class%253D%2522modal__body%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522bd-5%2522%253EShare%2520the%2520link%2520via%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal__body--btn-cntr%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520btn-socialmedia%2520btn-solid-primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522icon-light%2520icon-md%2520button__icon%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Ftwitter.svg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522twitter%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520btn-socialmedia%2520btn-solid-secondary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522icon-light%2520icon-md%2520button__icon%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Ffacebook.svg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522facebook%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520btn-socialmedia%2520btn-solid-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522icon-light%2520icon-md%2520button__icon%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Finstagram.svg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522instagram%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520btn-socialmedia%2520btn-solid-secondary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522icon-light%2520icon-md%2520button__icon%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Flinkedin.svg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522linkedin%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520btn-socialmedia%2520btn-solid-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522icon-light%2520icon-md%2520button__icon%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fyoutube.svg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522youtube%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fmain%253E%250A%2520%2520%2520%2520%253Cfooter%2520class%253D%2522modal__footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522link__container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522modal__footer--link%2522%253Eexample.com%252Fshare-this-link%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520btn-solid-primary%2520modal__footer--btn%2522%253ECopy%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Ffooter%253E%250A%2520%2520%253C%252Fsection%253E%250A%253C%252Fdiv%253E%250A%250A%253Cscript%2520async%253E%250A%2520%2520const%2520sharelinkModalBtn%2520%253D%2520document.getElementById%28%2522sharelink-modal-btn%2522%29%253B%250A%2520%2520const%2520sharelinkModalContainer%2520%253D%2520document.getElementById%28%2522sharelink-modal-container%2522%29%253B%250A%2520%2520const%2520sharelinkModalEl%2520%253D%2520document.getElementById%28%2522sharelink-modal-el%2522%29%253B%250A%2520%2520const%2520sharelinkModalCloseBtn%2520%253D%2520document.getElementById%28%2522sharelink-modal-close-btn%2522%29%253B%250A%250A%2520%2520sharelinkModalBtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520sharelinkModalContainer.style.display%2520%253D%2520%2522flex%2522%253B%250A%2520%2520%2520%2520sharelinkModalEl.style.display%2520%253D%2520%2522flex%2522%253B%250A%2520%2520%257D%29%253B%250A%250A%2520%2520sharelinkModalCloseBtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520sharelinkModalContainer.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%2520%2520sharelinkModalEl.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%257D%29%250A%253C%252Fscript%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 800px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
+            <div
+              class="modal__container bring-to-top"
+              id="sharelink-modal-container"
+            >
+              <section
+                class="modal mdl__icons mdl-primary mdl__share"
+                id="sharelink-modal-el"
+              >
+                <header class="modal__title">
+                  <h1 class="h-5">Share Modal</h1>
+                  <button
+                    class="button btn-action btn-plain-icon modal__title--close"
+                    id="sharelink-modal-close-btn"
+                  >
+                    <img
+                      class="icon-light icon-lg button__icon"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg"
+                      alt="close"
+                    />
+                  </button>
+                </header>
+                <main class="modal__body">
+                  <p class="bd-5">Share the link via</p>
+                  <div class="modal__body--btn-cntr">
+                    <button class="button btn-socialmedia btn-solid-primary">
+                      <img
+                        class="icon-light icon-md button__icon"
+                        src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/twitter.svg"
+                        alt="twitter"
+                      />
+                    </button>
 
-        <!-- PRIMARY MODAL -->
-        <p class="h-5 maincontent__content--info" id="primary-modal">
-          Primary Modal
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Primary Modal</span> component give the <span style="font-style: italic; color: var(--primary);">mdl-primary</span> class to the modal element. Copy the code below to use it in your project. Make sure to include the JavaScript also.
-        </p>
-        <div class="txt-center" style="padding: var(--space-md) var(--space-xxxl);">
-          <button class="button btn-solid-primary" id="primary-modal-btn">Primary Modal</button>
+                    <button class="button btn-socialmedia btn-solid-secondary">
+                      <img
+                        class="icon-light icon-md button__icon"
+                        src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/facebook.svg"
+                        alt="facebook"
+                      />
+                    </button>
 
-          <div class="modal__container" id="primary-modal-container" style="z-index: 999;">
-            <section class="modal mdl__icons mdl-primary" id="primary-modal-el">
-              <header class="modal__title">
-                <h1 class="h-5">Modal Title</h1>
-                <button class="button btn-action btn-plain-icon modal__title--close" id="primarymodal-close-btn"><img class="icon-light icon-lg button__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg" alt="close"></button>
-              </header>
-              <main class="modal__body">
-                <p class="bd-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis blanditiis, explicabo deleniti rerum.</p>
-              </main>
-              <footer class="modal__footer">
-                <button class="button btn-solid-primary modal__footer--btn">ACTION 1</button>
-                <button class="button btn-outline-primary modal__footer--btn">ACTION 2</button>
-              </footer>
-            </section>
+                    <button class="button btn-socialmedia btn-solid-danger">
+                      <img
+                        class="icon-light icon-md button__icon"
+                        src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/instagram.svg"
+                        alt="instagram"
+                      />
+                    </button>
+
+                    <button class="button btn-socialmedia btn-solid-secondary">
+                      <img
+                        class="icon-light icon-md button__icon"
+                        src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/linkedin.svg"
+                        alt="linkedin"
+                      />
+                    </button>
+
+                    <button class="button btn-socialmedia btn-solid-danger">
+                      <img
+                        class="icon-light icon-md button__icon"
+                        src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/youtube.svg"
+                        alt="youtube"
+                      />
+                    </button>
+                  </div>
+                </main>
+                <footer class="modal__footer">
+                  <div class="link__container">
+                    <span class="modal__footer--link"
+                      >example.com/share-this-link</span
+                    >
+                    <button class="button btn-solid-primary modal__footer--btn">
+                      Copy
+                    </button>
+                  </div>
+                </footer>
+              </section>
+            </div>
+
+            <script async>
+              const sharelinkModalBtn = document.getElementById(
+                "sharelink-modal-btn"
+              );
+              const sharelinkModalContainer = document.getElementById(
+                "sharelink-modal-container"
+              );
+              const sharelinkModalEl =
+                document.getElementById("sharelink-modal-el");
+              const sharelinkModalCloseBtn = document.getElementById(
+                "sharelink-modal-close-btn"
+              );
+
+              sharelinkModalBtn.addEventListener("click", () => {
+                sharelinkModalContainer.style.display = "flex";
+                sharelinkModalEl.style.display = "flex";
+              });
+
+              sharelinkModalCloseBtn.addEventListener("click", () => {
+                sharelinkModalContainer.style.display = "none";
+                sharelinkModalEl.style.display = "none";
+              });
+            </script>
+          </div>
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;button class=&quot;button btn-solid-primary&quot; id=&quot;sharelink-modal-btn&quot;&gt;
+  Share Link Modal
+&lt;/button&gt;
+
+&lt;div class=&quot;modal__container&quot; id=&quot;sharelink-modal-container&quot;&gt;
+  &lt;section class=&quot;modal mdl__icons mdl-primary mdl__share&quot; id=&quot;sharelink-modal-el&quot;&gt;
+    &lt;header class=&quot;modal__title&quot;&gt;
+      &lt;h1 class=&quot;h-5&quot;&gt;Share Modal&lt;/h1&gt;
+      &lt;button 
+        class=&quot;button btn-action btn-plain-icon modal__title--close&quot;
+        id=&quot;sharelink-modal-close-btn&quot;
+      &gt;
+        &lt;img 
+          class=&quot;icon-light icon-lg button__icon&quot; 
+          src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg&quot;
+        /&gt;
+      &lt;/button&gt;
+    &lt;/header&gt;
+    &lt;main class=&quot;modal__body&quot;&gt;
+      &lt;p class=&quot;bd-5&quot;&gt;Share the link via&lt;/p&gt;
+      &lt;div class=&quot;modal__body--btn-cntr&quot;&gt;
+        &lt;button class=&quot;button btn-socialmedia btn-solid-primary&quot;&gt;
+          &lt;img 
+            class=&quot;icon-light icon-md button__icon&quot;
+            src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/twitter.svg&quot;
+          /&gt;
+        &lt;/button&gt;
+        &lt;button class=&quot;button btn-socialmedia btn-solid-secondary&quot;&gt;
+          &lt;img 
+            class=&quot;icon-light icon-md button__icon&quot;
+            src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/facebook.svg&quot;
+            /&gt;
+        &lt;/button&gt;
+        &lt;button class=&quot;button btn-socialmedia btn-solid-danger&quot;&gt;
+          &lt;img 
+            class=&quot;icon-light icon-md button__icon&quot;
+            src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/instagram.svg&quot;
+            /&gt;
+        &lt;/button&gt;
+        &lt;button class=&quot;button btn-socialmedia btn-solid-secondary&quot;&gt;
+          &lt;img 
+            class=&quot;icon-light icon-md button__icon&quot;
+            src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/linkedin.svg&quot;
+            /&gt;
+        &lt;/button&gt;
+        &lt;button class=&quot;button btn-socialmedia btn-solid-danger&quot;&gt;
+          &lt;img 
+            class=&quot;icon-light icon-md button__icon&quot;
+            src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/youtube.svg&quot;
+            /&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/main&gt;
+    &lt;footer class=&quot;modal__footer&quot;&gt;
+      &lt;div class=&quot;link__container&quot;&gt;
+        &lt;span class=&quot;modal__footer--link&quot;&gt;example.com/share-this-link&lt;/span&gt;
+        &lt;button class=&quot;button btn-solid-primary modal__footer--btn&quot;&gt;Copy&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/footer&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+
+&lt;!-- JavaScript --&gt;
+&lt;script async&gt;
+  const sharelinkModalBtn = document.getElementById(&quot;sharelink-modal-btn&quot;);
+  const sharelinkModalContainer = document.getElementById(&quot;sharelink-modal-container&quot;);
+  const sharelinkModalEl = document.getElementById(&quot;sharelink-modal-el&quot;);
+  const sharelinkModalCloseBtn = document.getElementById(&quot;sharelink-modal-close-btn&quot;);
+
+  sharelinkModalBtn.addEventListener(&quot;click&quot;, () =&gt; {
+    sharelinkModalContainer.style.display = &quot;flex&quot;;
+    sharelinkModalEl.style.display = &quot;flex&quot;;
+  });
+
+  sharelinkModalCloseBtn.addEventListener(&quot;click&quot;, () =&gt; {
+    sharelinkModalContainer.style.display = &quot;none&quot;;
+    sharelinkModalEl.style.display = &quot;none&quot;;
+  })
+&lt;/script&gt;
+            </code>
+          </pre>
           </div>
 
-          <script async>
-            const primaryModalBtn = document.getElementById("primary-modal-btn");
-            const primaryModalContainer = document.getElementById("primary-modal-container");
-            const primaryModalEl = document.getElementById("primary-modal-el");
-            const primaryModalCloseBtn = document.getElementById("primarymodal-close-btn");
-            
-            primaryModalBtn.addEventListener("click", () => {
-              primaryModalContainer.style.display = "flex";
-              primaryModalEl.style.display = "flex";
-            });
+          <!-- PRIMARY MODAL -->
+          <p class="h-5 maincontent__content--info" id="primary-modal">
+            Primary Modal
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            To use the
+            <span class="word-highlight-red">Primary Modal</span> component give
+            the <span class="classname-highlight">mdl-primary</span> class to
+            the modal element. Copy the code below to use it in your project.
+            Make sure to include the JavaScript also.
+          </p>
+          <div class="txt-center input-eg">
+            <button class="button btn-solid-primary" id="primary-modal-btn">
+              Primary Modal
+            </button>
 
-            primaryModalCloseBtn.addEventListener("click", () => {
-              primaryModalContainer.style.display = "none";
-              primaryModalEl.style.display = "none";
-            })
-          </script>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-solid-primary%2522%2520id%253D%2522primary-modal-btn%2522%253EPrimary%2520Modal%253C%252Fbutton%253E%250A%250A%253Cdiv%2520class%253D%2522modal__container%2522%2520id%253D%2522primary-modal-container%2522%253E%250A%2520%2520%253Csection%2520class%253D%2522modal%2520mdl__icons%2520mdl-primary%2522%2520id%253D%2522primary-modal-el%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522modal__title%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522h-5%2522%253EModal%2520Title%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522button%2520btn-action%2520btn-plain-icon%2520modal__title--close%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522primarymodal-close-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522icon-light%2520icon-lg%2520button__icon%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fclose.svg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522close%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%2520%2520%2520%2520%253Cmain%2520class%253D%2522modal__body%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522bd-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520%2520%2520%2520%2520Omnis%2520blanditiis%252C%2520explicabo%2520deleniti%2520rerum.%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fmain%253E%250A%2520%2520%2520%2520%253Cfooter%2520class%253D%2522modal__footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520btn-solid-primary%2520modal__footer--btn%2522%253EACTION%25201%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520btn-outline-primary%2520modal__footer--btn%2522%253EACTION%25202%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Ffooter%253E%250A%2520%2520%253C%252Fsection%253E%250A%253C%252Fdiv%253E%250A%250A%253Cscript%2520async%253E%250A%2520%2520const%2520primaryModalBtn%2520%253D%2520document.getElementById%28%2522primary-modal-btn%2522%29%253B%250A%2520%2520const%2520primaryModalContainer%2520%253D%2520document.getElementById%28%2522primary-modal-container%2522%29%253B%250A%2520%2520const%2520primaryModalEl%2520%253D%2520document.getElementById%28%2522primary-modal-el%2522%29%253B%250A%2520%2520const%2520primaryModalCloseBtn%2520%253D%2520document.getElementById%28%2522primarymodal-close-btn%2522%29%253B%250A%250A%2520%2520primaryModalBtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520primaryModalContainer.style.display%2520%253D%2520%2522flex%2522%253B%250A%2520%2520%2520%2520primaryModalEl.style.display%2520%253D%2520%2522flex%2522%253B%250A%2520%2520%257D%29%253B%250A%250A%2520%2520primaryModalCloseBtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520primaryModalContainer.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%2520%2520primaryModalEl.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%257D%29%250A%253C%252Fscript%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 800px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
+            <div
+              class="modal__container bring-to-top"
+              id="primary-modal-container"
+            >
+              <section
+                class="modal mdl__icons mdl-primary"
+                id="primary-modal-el"
+              >
+                <header class="modal__title">
+                  <h1 class="h-5">Modal Title</h1>
+                  <button
+                    class="button btn-action btn-plain-icon modal__title--close"
+                    id="primarymodal-close-btn"
+                  >
+                    <img
+                      class="icon-light icon-lg button__icon"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg"
+                      alt="close"
+                    />
+                  </button>
+                </header>
+                <main class="modal__body">
+                  <p class="bd-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis blanditiis, explicabo deleniti rerum.
+                  </p>
+                </main>
+                <footer class="modal__footer">
+                  <button class="button btn-solid-primary modal__footer--btn">
+                    ACTION 1
+                  </button>
+                  <button class="button btn-outline-primary modal__footer--btn">
+                    ACTION 2
+                  </button>
+                </footer>
+              </section>
+            </div>
 
-        <!-- DANGER MODAL -->
-        <p class="h-5 maincontent__content--info" id="danger-modal">
-          Danger Modal
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Danger Modal</span> component give the <span style="font-style: italic; color: var(--primary);">mdl-danger</span> class to the modal element. Copy the code below to use it in your project. Make sure to include the JavaScript also.
-        </p>
-        <div class="txt-center" style="padding: var(--space-md) var(--space-xxxl);">
-          <button class="button btn-solid-danger" id="danger-modal-btn">Danger Modal</button>
+            <script async>
+              const primaryModalBtn =
+                document.getElementById("primary-modal-btn");
+              const primaryModalContainer = document.getElementById(
+                "primary-modal-container"
+              );
+              const primaryModalEl =
+                document.getElementById("primary-modal-el");
+              const primaryModalCloseBtn = document.getElementById(
+                "primarymodal-close-btn"
+              );
 
-          <div class="modal__container" id="danger-modal-container" style="z-index: 999;">
-            <section class="modal mdl__icons mdl-danger" id="danger-modal-el">
-              <header class="modal__title">
-                <h1 class="h-5">Modal Title</h1>
-                <button class="button btn-action btn-plain-icon modal__title--close" id="dangermodal-close-btn"><img class="icon-light icon-lg button__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg" alt="close"></button>
-              </header>
-              <main class="modal__body">
-                <p class="bd-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis blanditiis, explicabo deleniti rerum.</p>
-              </main>
-              <footer class="modal__footer">
-                <button class="button btn-solid-danger modal__footer--btn">ACTION 1</button>
-                <button class="button btn-outline-danger modal__footer--btn">ACTION 2</button>
-              </footer>
-            </section>
+              primaryModalBtn.addEventListener("click", () => {
+                primaryModalContainer.style.display = "flex";
+                primaryModalEl.style.display = "flex";
+              });
+
+              primaryModalCloseBtn.addEventListener("click", () => {
+                primaryModalContainer.style.display = "none";
+                primaryModalEl.style.display = "none";
+              });
+            </script>
+          </div>
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;button class=&quot;button btn-solid-primary&quot; id=&quot;primary-modal-btn&quot;&gt;
+  Primary Modal
+&lt;/button&gt;
+
+&lt;div class=&quot;modal__container&quot; id=&quot;primary-modal-container&quot;&gt;
+  &lt;section class=&quot;modal mdl__icons mdl-primary&quot; id=&quot;primary-modal-el&quot;&gt;
+    &lt;header class=&quot;modal__title&quot;&gt;
+      &lt;h1 class=&quot;h-5&quot;&gt;Modal Title&lt;/h1&gt;
+      &lt;button 
+        class=&quot;button btn-action btn-plain-icon modal__title--close&quot;
+        id=&quot;primarymodal-close-btn&quot;
+      &gt;
+        &lt;img 
+          class=&quot;icon-light icon-lg button__icon&quot; 
+          src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg&quot;
+          /&gt;
+      &lt;/button&gt;
+    &lt;/header&gt;
+    &lt;main class=&quot;modal__body&quot;&gt;
+      &lt;p class=&quot;bd-5&quot;&gt;
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Omnis blanditiis, explicabo deleniti rerum.
+      &lt;/p&gt;
+    &lt;/main&gt;
+    &lt;footer class=&quot;modal__footer&quot;&gt;
+      &lt;button class=&quot;button btn-solid-primary modal__footer--btn&quot;&gt;
+        ACTION 1
+      &lt;/button&gt;
+      &lt;button class=&quot;button btn-outline-primary modal__footer--btn&quot;&gt;
+        ACTION 2
+      &lt;/button&gt;
+    &lt;/footer&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+
+&lt;!-- JavaScript --&gt;
+&lt;script async&gt;
+  const primaryModalBtn = document.getElementById(&quot;primary-modal-btn&quot;);
+  const primaryModalContainer = document.getElementById(&quot;primary-modal-container&quot;);
+  const primaryModalEl = document.getElementById(&quot;primary-modal-el&quot;);
+  const primaryModalCloseBtn = document.getElementById(&quot;primarymodal-close-btn&quot;);
+
+  primaryModalBtn.addEventListener(&quot;click&quot;, () =&gt; {
+    primaryModalContainer.style.display = &quot;flex&quot;;
+    primaryModalEl.style.display = &quot;flex&quot;;
+  });
+
+  primaryModalCloseBtn.addEventListener(&quot;click&quot;, () =&gt; {
+    primaryModalContainer.style.display = &quot;none&quot;;
+    primaryModalEl.style.display = &quot;none&quot;;
+  })
+&lt;/script&gt;
+            </code>
+          </pre>
           </div>
 
-          <script async>
-            const dangerModalBtn = document.getElementById("danger-modal-btn");
-            const dangerModalContainer = document.getElementById("danger-modal-container");
-            const dangerModalEl = document.getElementById("danger-modal-el");
-            const dangerModalCloseBtn = document.getElementById("dangermodal-close-btn");
-            
-            dangerModalBtn.addEventListener("click", () => {
-              dangerModalContainer.style.display = "flex";
-              dangerModalEl.style.display = "flex";
-            });
+          <!-- DANGER MODAL -->
+          <p class="h-5 maincontent__content--info" id="danger-modal">
+            Danger Modal
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            To use the
+            <span class="word-highlight-red">Danger Modal</span> component give
+            the <span class="classname-highlight">mdl-danger</span> class to the
+            modal element. Copy the code below to use it in your project. Make
+            sure to include the JavaScript also.
+          </p>
+          <div class="txt-center input-eg">
+            <button class="button btn-solid-danger" id="danger-modal-btn">
+              Danger Modal
+            </button>
 
-            dangerModalCloseBtn.addEventListener("click", () => {
-              dangerModalContainer.style.display = "none";
-              dangerModalEl.style.display = "none";
-            })
-          </script>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-solid-danger%2522%2520id%253D%2522danger-modal-btn%2522%253EDanger%2520Modal%253C%252Fbutton%253E%250A%250A%253Cdiv%2520class%253D%2522modal__container%2522%2520id%253D%2522danger-modal-container%2522%253E%250A%2520%2520%253Csection%2520class%253D%2522modal%2520mdl__icons%2520mdl-danger%2522%2520id%253D%2522danger-modal-el%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522modal__title%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522h-5%2522%253EModal%2520Title%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522button%2520btn-action%2520btn-plain-icon%2520modal__title--close%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522dangermodal-close-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522icon-light%2520icon-lg%2520button__icon%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fclose.svg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522close%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%2520%2520%2520%2520%253Cmain%2520class%253D%2522modal__body%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522bd-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520%2520%2520%2520%2520Omnis%2520blanditiis%252C%2520explicabo%2520deleniti%2520rerum.%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fmain%253E%250A%2520%2520%2520%2520%253Cfooter%2520class%253D%2522modal__footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520btn-solid-danger%2520modal__footer--btn%2522%253EACTION%25201%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520btn-outline-danger%2520modal__footer--btn%2522%253EACTION%25202%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Ffooter%253E%250A%2520%2520%253C%252Fsection%253E%250A%253C%252Fdiv%253E%250A%250A%253Cscript%2520async%253E%250A%2520%2520const%2520dangerModalBtn%2520%253D%2520document.getElementById%28%2522danger-modal-btn%2522%29%253B%250A%2520%2520const%2520dangerModalContainer%2520%253D%2520document.getElementById%28%2522danger-modal-container%2522%29%253B%250A%2520%2520const%2520dangerModalEl%2520%253D%2520document.getElementById%28%2522danger-modal-el%2522%29%253B%250A%2520%2520const%2520dangerModalCloseBtn%2520%253D%2520document.getElementById%28%2522dangermodal-close-btn%2522%29%253B%250A%250A%2520%2520dangerModalBtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520dangerModalContainer.style.display%2520%253D%2520%2522flex%2522%253B%250A%2520%2520%2520%2520dangerModalEl.style.display%2520%253D%2520%2522flex%2522%253B%250A%2520%2520%257D%29%253B%250A%250A%2520%2520dangerModalCloseBtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520dangerModalContainer.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%2520%2520dangerModalEl.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%257D%29%250A%253C%252Fscript%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 800px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
+            <div
+              class="modal__container bring-to-top"
+              id="danger-modal-container"
+            >
+              <section class="modal mdl__icons mdl-danger" id="danger-modal-el">
+                <header class="modal__title">
+                  <h1 class="h-5">Modal Title</h1>
+                  <button
+                    class="button btn-action btn-plain-icon modal__title--close"
+                    id="dangermodal-close-btn"
+                  >
+                    <img
+                      class="icon-light icon-lg button__icon"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg"
+                      alt="close"
+                    />
+                  </button>
+                </header>
+                <main class="modal__body">
+                  <p class="bd-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis blanditiis, explicabo deleniti rerum.
+                  </p>
+                </main>
+                <footer class="modal__footer">
+                  <button class="button btn-solid-danger modal__footer--btn">
+                    ACTION 1
+                  </button>
+                  <button class="button btn-outline-danger modal__footer--btn">
+                    ACTION 2
+                  </button>
+                </footer>
+              </section>
+            </div>
 
-        <!-- SUCCESS MODAL -->
-        <p class="h-5 maincontent__content--info" id="success-modal">
-          Success Modal
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Success Modal</span> component give the <span style="font-style: italic; color: var(--primary);">mdl-success</span> class to the modal element. Copy the code below to use it in your project. Make sure to include the JavaScript also.
-        </p>
-        <div class="txt-center" style="padding: var(--space-md) var(--space-xxxl);">
-          <button class="button btn-solid-success" id="success-modal-btn">Success Modal</button>
+            <script async>
+              const dangerModalBtn =
+                document.getElementById("danger-modal-btn");
+              const dangerModalContainer = document.getElementById(
+                "danger-modal-container"
+              );
+              const dangerModalEl = document.getElementById("danger-modal-el");
+              const dangerModalCloseBtn = document.getElementById(
+                "dangermodal-close-btn"
+              );
 
-          <div class="modal__container" id="success-modal-container" style="z-index: 999;">
-            <section class="modal mdl__icons mdl-success" id="success-modal-el">
-              <header class="modal__title">
-                <h1 class="h-5">Modal Title</h1>
-                <button class="button btn-action btn-plain-icon modal__title--close" id="successmodal-close-btn"><img class="icon-light icon-lg button__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg" alt="close"></button>
-              </header>
-              <main class="modal__body">
-                <p class="bd-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis blanditiis, explicabo deleniti rerum.</p>
-              </main>
-              <footer class="modal__footer">
-                <button class="button btn-solid-success modal__footer--btn">ACTION 1</button>
-                <button class="button btn-outline-success modal__footer--btn">ACTION 2</button>
-              </footer>
-            </section>
+              dangerModalBtn.addEventListener("click", () => {
+                dangerModalContainer.style.display = "flex";
+                dangerModalEl.style.display = "flex";
+              });
+
+              dangerModalCloseBtn.addEventListener("click", () => {
+                dangerModalContainer.style.display = "none";
+                dangerModalEl.style.display = "none";
+              });
+            </script>
+          </div>
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;button class=&quot;button btn-solid-danger&quot; id=&quot;danger-modal-btn&quot;&gt;
+  Danger Modal
+&lt;/button&gt;
+
+&lt;div class=&quot;modal__container&quot; id=&quot;danger-modal-container&quot;&gt;
+  &lt;section class=&quot;modal mdl__icons mdl-danger&quot; id=&quot;danger-modal-el&quot;&gt;
+    &lt;header class=&quot;modal__title&quot;&gt;
+      &lt;h1 class=&quot;h-5&quot;&gt;Modal Title&lt;/h1&gt;
+      &lt;button
+        class=&quot;button btn-action btn-plain-icon modal__title--close&quot;
+        id=&quot;dangermodal-close-btn&quot;
+      &gt;
+        &lt;img
+          class=&quot;icon-light icon-lg button__icon&quot;
+          src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg&quot;
+        /&gt;
+      &lt;/button&gt;
+    &lt;/header&gt;
+    &lt;main class=&quot;modal__body&quot;&gt;
+      &lt;p class=&quot;bd-5&quot;&gt;
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Omnis blanditiis, explicabo deleniti rerum.
+      &lt;/p&gt;
+    &lt;/main&gt;
+    &lt;footer class=&quot;modal__footer&quot;&gt;
+      &lt;button class=&quot;button btn-solid-danger modal__footer--btn&quot;&gt;
+        ACTION 1
+      &lt;/button&gt;
+      &lt;button class=&quot;button btn-outline-danger modal__footer--btn&quot;&gt;
+        ACTION 2
+      &lt;/button&gt;
+    &lt;/footer&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+
+&lt;!-- JavaScript --&gt;
+&lt;script async&gt;
+  const dangerModalBtn = document.getElementById(&quot;danger-modal-btn&quot;);
+  const dangerModalContainer = document.getElementById(&quot;danger-modal-container&quot;);
+  const dangerModalEl = document.getElementById(&quot;danger-modal-el&quot;);
+  const dangerModalCloseBtn = document.getElementById(&quot;dangermodal-close-btn&quot;);
+
+  dangerModalBtn.addEventListener(&quot;click&quot;, () =&gt; {
+    dangerModalContainer.style.display = &quot;flex&quot;;
+    dangerModalEl.style.display = &quot;flex&quot;;
+  });
+
+  dangerModalCloseBtn.addEventListener(&quot;click&quot;, () =&gt; {
+    dangerModalContainer.style.display = &quot;none&quot;;
+    dangerModalEl.style.display = &quot;none&quot;;
+  })
+&lt;/script&gt;
+            </code>
+          </pre>
           </div>
 
-          <script async>
-            const successModalBtn = document.getElementById("success-modal-btn");
-            const successModalContainer = document.getElementById("success-modal-container");
-            const successModalEl = document.getElementById("success-modal-el");
-            const successModalCloseBtn = document.getElementById("successmodal-close-btn");
-            
-            successModalBtn.addEventListener("click", () => {
-              successModalContainer.style.display = "flex";
-              successModalEl.style.display = "flex";
-            });
+          <!-- SUCCESS MODAL -->
+          <p class="h-5 maincontent__content--info" id="success-modal">
+            Success Modal
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            To use the
+            <span class="word-highlight-red">Success Modal</span> component give
+            the <span class="classname-highlight">mdl-success</span> class to
+            the modal element. Copy the code below to use it in your project.
+            Make sure to include the JavaScript also.
+          </p>
+          <div class="txt-center input-eg">
+            <button class="button btn-solid-success" id="success-modal-btn">
+              Success Modal
+            </button>
 
-            successModalCloseBtn.addEventListener("click", () => {
-              successModalContainer.style.display = "none";
-              successModalEl.style.display = "none";
-            })
-          </script>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-solid-success%2522%2520id%253D%2522success-modal-btn%2522%253ESuccess%2520Modal%253C%252Fbutton%253E%250A%250A%253Cdiv%2520class%253D%2522modal__container%2522%2520id%253D%2522success-modal-container%2522%253E%250A%2520%2520%253Csection%2520class%253D%2522modal%2520mdl__icons%2520mdl-success%2522%2520id%253D%2522success-modal-el%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522modal__title%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522h-5%2522%253EModal%2520Title%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522button%2520btn-action%2520btn-plain-icon%2520modal__title--close%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522successmodal-close-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522icon-light%2520icon-lg%2520button__icon%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fclose.svg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522close%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%2520%2520%2520%2520%253Cmain%2520class%253D%2522modal__body%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522bd-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520%2520%2520%2520%2520Omnis%2520blanditiis%252C%2520explicabo%2520deleniti%2520rerum.%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fmain%253E%250A%2520%2520%2520%2520%253Cfooter%2520class%253D%2522modal__footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520btn-solid-success%2520modal__footer--btn%2522%253EACTION%25201%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520btn-outline-success%2520modal__footer--btn%2522%253EACTION%25202%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Ffooter%253E%250A%2520%2520%253C%252Fsection%253E%250A%253C%252Fdiv%253E%250A%250A%253Cscript%2520async%253E%250A%2520%2520const%2520successModalBtn%2520%253D%2520document.getElementById%28%2522success-modal-btn%2522%29%253B%250A%2520%2520const%2520successModalContainer%2520%253D%2520document.getElementById%28%2522success-modal-container%2522%29%253B%250A%2520%2520const%2520successModalEl%2520%253D%2520document.getElementById%28%2522success-modal-el%2522%29%253B%250A%2520%2520const%2520successModalCloseBtn%2520%253D%2520document.getElementById%28%2522successmodal-close-btn%2522%29%253B%250A%250A%2520%2520successModalBtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520successModalContainer.style.display%2520%253D%2520%2522flex%2522%253B%250A%2520%2520%2520%2520successModalEl.style.display%2520%253D%2520%2522flex%2522%253B%250A%2520%2520%257D%29%253B%250A%250A%2520%2520successModalCloseBtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520successModalContainer.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%2520%2520successModalEl.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%257D%29%250A%253C%252Fscript%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 800px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
+            <div
+              class="modal__container bring-to-top"
+              id="success-modal-container"
+            >
+              <section
+                class="modal mdl__icons mdl-success"
+                id="success-modal-el"
+              >
+                <header class="modal__title">
+                  <h1 class="h-5">Modal Title</h1>
+                  <button
+                    class="button btn-action btn-plain-icon modal__title--close"
+                    id="successmodal-close-btn"
+                  >
+                    <img
+                      class="icon-light icon-lg button__icon"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg"
+                      alt="close"
+                    />
+                  </button>
+                </header>
+                <main class="modal__body">
+                  <p class="bd-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis blanditiis, explicabo deleniti rerum.
+                  </p>
+                </main>
+                <footer class="modal__footer">
+                  <button class="button btn-solid-success modal__footer--btn">
+                    ACTION 1
+                  </button>
+                  <button class="button btn-outline-success modal__footer--btn">
+                    ACTION 2
+                  </button>
+                </footer>
+              </section>
+            </div>
 
-        <!-- WARNING MODAL -->
-        <p class="h-5 maincontent__content--info" id="warning-modal">
-          Warning Modal
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Warning Modal</span> component give the <span style="font-style: italic; color: var(--primary);">mdl-warning</span> class to the modal element. Copy the code below to use it in your project. Make sure to include the JavaScript also.
-        </p>
-        <div class="txt-center" style="padding: var(--space-md) var(--space-xxxl);">
-          <button class="button btn-solid-warning" id="warning-modal-btn">Warning Modal</button>
+            <script async>
+              const successModalBtn =
+                document.getElementById("success-modal-btn");
+              const successModalContainer = document.getElementById(
+                "success-modal-container"
+              );
+              const successModalEl =
+                document.getElementById("success-modal-el");
+              const successModalCloseBtn = document.getElementById(
+                "successmodal-close-btn"
+              );
 
-          <div class="modal__container" id="warning-modal-container" style="z-index: 999;">
-            <section class="modal mdl__icons mdl-warning" id="warning-modal-el">
-              <header class="modal__title">
-                <h1 class="h-5">Modal Title</h1>
-                <button class="button btn-action btn-plain-icon modal__title--close" id="warningmodal-close-btn"><img class="icon-dark icon-lg button__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg" alt="close"></button>
-              </header>
-              <main class="modal__body">
-                <p class="bd-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis blanditiis, explicabo deleniti rerum.</p>
-              </main>
-              <footer class="modal__footer">
-                <button class="button btn-solid-warning modal__footer--btn">ACTION 1</button>
-                <button class="button btn-outline-warning modal__footer--btn">ACTION 2</button>
-              </footer>
-            </section>
+              successModalBtn.addEventListener("click", () => {
+                successModalContainer.style.display = "flex";
+                successModalEl.style.display = "flex";
+              });
+
+              successModalCloseBtn.addEventListener("click", () => {
+                successModalContainer.style.display = "none";
+                successModalEl.style.display = "none";
+              });
+            </script>
+          </div>
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;button class=&quot;button btn-solid-success&quot; id=&quot;success-modal-btn&quot;&gt;
+  Success Modal
+&lt;/button&gt;
+
+&lt;div class=&quot;modal__container&quot; id=&quot;success-modal-container&quot;&gt;
+  &lt;section class=&quot;modal mdl__icons mdl-success&quot; id=&quot;success-modal-el&quot;&gt;
+    &lt;header class=&quot;modal__title&quot;&gt;
+      &lt;h1 class=&quot;h-5&quot;&gt;Modal Title&lt;/h1&gt;
+      &lt;button
+        class=&quot;button btn-action btn-plain-icon modal__title--close&quot;
+        id=&quot;successmodal-close-btn&quot;
+      &gt;
+        &lt;img 
+          class=&quot;icon-light icon-lg button__icon&quot;
+          src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg&quot;
+        /&gt;
+      &lt;/button&gt;
+    &lt;/header&gt;
+    &lt;main class=&quot;modal__body&quot;&gt;
+      &lt;p class=&quot;bd-5&quot;&gt;
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Omnis blanditiis, explicabo deleniti rerum.
+      &lt;/p&gt;
+    &lt;/main&gt;
+    &lt;footer class=&quot;modal__footer&quot;&gt;
+      &lt;button class=&quot;button btn-solid-success modal__footer--btn&quot;&gt;
+        ACTION 1
+      &lt;/button&gt;
+      &lt;button class=&quot;button btn-outline-success modal__footer--btn&quot;&gt;
+        ACTION 2
+      &lt;/button&gt;
+    &lt;/footer&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+
+&lt;!-- JavaScript --&gt;
+&lt;script async&gt;
+  const successModalBtn = document.getElementById(&quot;success-modal-btn&quot;);
+  const successModalContainer = document.getElementById(&quot;success-modal-container&quot;);
+  const successModalEl = document.getElementById(&quot;success-modal-el&quot;);
+  const successModalCloseBtn = document.getElementById(&quot;successmodal-close-btn&quot;);
+
+  successModalBtn.addEventListener(&quot;click&quot;, () =&gt; {
+    successModalContainer.style.display = &quot;flex&quot;;
+    successModalEl.style.display = &quot;flex&quot;;
+  });
+
+  successModalCloseBtn.addEventListener(&quot;click&quot;, () =&gt; {
+    successModalContainer.style.display = &quot;none&quot;;
+    successModalEl.style.display = &quot;none&quot;;
+  })
+&lt;/script&gt;
+            </code>
+          </pre>
           </div>
 
-          <script async>
-            const warningModalBtn = document.getElementById("warning-modal-btn");
-            const warningModalContainer = document.getElementById("warning-modal-container");
-            const warningModalEl = document.getElementById("warning-modal-el");
-            const warningModalCloseBtn = document.getElementById("warningmodal-close-btn");
-            
-            warningModalBtn.addEventListener("click", () => {
-              warningModalContainer.style.display = "flex";
-              warningModalEl.style.display = "flex";
-            });
+          <!-- WARNING MODAL -->
+          <p class="h-5 maincontent__content--info" id="warning-modal">
+            Warning Modal
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            To use the
+            <span class="word-highlight-red">Warning Modal</span> component give
+            the <span class="classname-highlight">mdl-warning</span> class to
+            the modal element. Copy the code below to use it in your project.
+            Make sure to include the JavaScript also.
+          </p>
+          <div class="txt-center input-eg">
+            <button class="button btn-solid-warning" id="warning-modal-btn">
+              Warning Modal
+            </button>
 
-            warningModalCloseBtn.addEventListener("click", () => {
-              warningModalContainer.style.display = "none";
-              warningModalEl.style.display = "none";
-            })
-          </script>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-solid-warning%2522%2520id%253D%2522warning-modal-btn%2522%253EWarning%2520Modal%253C%252Fbutton%253E%250A%250A%253Cdiv%2520class%253D%2522modal__container%2522%2520id%253D%2522warning-modal-container%2522%2520style%253D%2522z-index%253A%2520999%253B%2522%253E%250A%2520%2520%253Csection%2520class%253D%2522modal%2520mdl__icons%2520mdl-warning%2522%2520id%253D%2522warning-modal-el%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522modal__title%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522h-5%2522%253EModal%2520Title%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522button%2520btn-action%2520btn-plain-icon%2520modal__title--close%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522warningmodal-close-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522icon-dark%2520icon-lg%2520button__icon%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fclose.svg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522close%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%2520%2520%2520%2520%253Cmain%2520class%253D%2522modal__body%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522bd-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520%2520%2520%2520%2520Omnis%2520blanditiis%252C%2520explicabo%2520deleniti%2520rerum.%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fmain%253E%250A%2520%2520%2520%2520%253Cfooter%2520class%253D%2522modal__footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520btn-solid-warning%2520modal__footer--btn%2522%253EACTION%25201%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520btn-outline-warning%2520modal__footer--btn%2522%253EACTION%25202%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Ffooter%253E%250A%2520%2520%253C%252Fsection%253E%250A%253C%252Fdiv%253E%250A%250A%253Cscript%2520async%253E%250A%2520%2520const%2520warningModalBtn%2520%253D%2520document.getElementById%28%2522warning-modal-btn%2522%29%253B%250A%2520%2520const%2520warningModalContainer%2520%253D%2520document.getElementById%28%2522warning-modal-container%2522%29%253B%250A%2520%2520const%2520warningModalEl%2520%253D%2520document.getElementById%28%2522warning-modal-el%2522%29%253B%250A%2520%2520const%2520warningModalCloseBtn%2520%253D%2520document.getElementById%28%2522warningmodal-close-btn%2522%29%253B%250A%250A%2520%2520warningModalBtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520warningModalContainer.style.display%2520%253D%2520%2522flex%2522%253B%250A%2520%2520%2520%2520warningModalEl.style.display%2520%253D%2520%2522flex%2522%253B%250A%2520%2520%257D%29%253B%250A%250A%2520%2520warningModalCloseBtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520warningModalContainer.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%2520%2520warningModalEl.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%257D%29%250A%253C%252Fscript%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 800px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
+            <div
+              class="modal__container bring-to-top"
+              id="warning-modal-container"
+            >
+              <section
+                class="modal mdl__icons mdl-warning"
+                id="warning-modal-el"
+              >
+                <header class="modal__title">
+                  <h1 class="h-5">Modal Title</h1>
+                  <button
+                    class="button btn-action btn-plain-icon modal__title--close"
+                    id="warningmodal-close-btn"
+                  >
+                    <img
+                      class="icon-dark icon-lg button__icon"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg"
+                      alt="close"
+                    />
+                  </button>
+                </header>
+                <main class="modal__body">
+                  <p class="bd-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis blanditiis, explicabo deleniti rerum.
+                  </p>
+                </main>
+                <footer class="modal__footer">
+                  <button class="button btn-solid-warning modal__footer--btn">
+                    ACTION 1
+                  </button>
+                  <button class="button btn-outline-warning modal__footer--btn">
+                    ACTION 2
+                  </button>
+                </footer>
+              </section>
+            </div>
 
-        <!-- DARK MODAL -->
-        <p class="h-5 maincontent__content--info" id="dark-modal">
-          Dark Modal
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Dark Modal</span> component give the <span style="font-style: italic; color: var(--primary);">mdl-dark</span> class to the modal element. Copy the code below to use it in your project. Make sure to include the JavaScript also.
-        </p>
-        <div class="txt-center" style="padding: var(--space-md) var(--space-xxxl);">
-          <button class="button btn-solid-dark" id="dark-modal-btn">Dark Modal</button>
+            <script async>
+              const warningModalBtn =
+                document.getElementById("warning-modal-btn");
+              const warningModalContainer = document.getElementById(
+                "warning-modal-container"
+              );
+              const warningModalEl =
+                document.getElementById("warning-modal-el");
+              const warningModalCloseBtn = document.getElementById(
+                "warningmodal-close-btn"
+              );
 
-          <div class="modal__container" id="dark-modal-container" style="z-index: 999;">
-            <section class="modal mdl__icons mdl-dark" id="dark-modal-el">
-              <header class="modal__title">
-                <h1 class="h-5">Modal Title</h1>
-                <button class="button btn-action btn-plain-icon modal__title--close" id="darkmodal-close-btn"><img class="icon-light icon-lg button__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg" alt="close"></button>
-              </header>
-              <main class="modal__body">
-                <p class="bd-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis blanditiis, explicabo deleniti rerum.</p>
-              </main>
-              <footer class="modal__footer">
-                <button class="button btn-solid-dark modal__footer--btn">ACTION 1</button>
-                <button class="button btn-outline-dark modal__footer--btn">ACTION 2</button>
-              </footer>
-            </section>
+              warningModalBtn.addEventListener("click", () => {
+                warningModalContainer.style.display = "flex";
+                warningModalEl.style.display = "flex";
+              });
+
+              warningModalCloseBtn.addEventListener("click", () => {
+                warningModalContainer.style.display = "none";
+                warningModalEl.style.display = "none";
+              });
+            </script>
+          </div>
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;button class=&quot;button btn-solid-warning&quot; id=&quot;warning-modal-btn&quot;&gt;
+  Warning Modal
+&lt;/button&gt;
+
+&lt;div class=&quot;modal__container&quot; id=&quot;warning-modal-container&quot;&gt;
+  &lt;section class=&quot;modal mdl__icons mdl-warning&quot; id=&quot;warning-modal-el&quot;&gt;
+    &lt;header class=&quot;modal__title&quot;&gt;
+      &lt;h1 class=&quot;h-5&quot;&gt;Modal Title&lt;/h1&gt;
+      &lt;button 
+        class=&quot;button btn-action btn-plain-icon modal__title--close&quot;
+        id=&quot;warningmodal-close-btn&quot;
+      &gt;
+        &lt;img 
+          class=&quot;icon-dark icon-lg button__icon&quot;
+          src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg&quot;
+        /&gt;
+      &lt;/button&gt;
+    &lt;/header&gt;
+    &lt;main class=&quot;modal__body&quot;&gt;
+      &lt;p class=&quot;bd-5&quot;&gt;
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Omnis blanditiis, explicabo deleniti rerum.
+      &lt;/p&gt;
+    &lt;/main&gt;
+    &lt;footer class=&quot;modal__footer&quot;&gt;
+      &lt;button class=&quot;button btn-solid-warning modal__footer--btn&quot;&gt;
+        ACTION 1
+      &lt;/button&gt;
+      &lt;button class=&quot;button btn-outline-warning modal__footer--btn&quot;&gt;
+        ACTION 2
+      &lt;/button&gt;
+    &lt;/footer&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+
+&lt;!-- JavaScript --&gt;
+&lt;script async&gt;
+  const warningModalBtn = document.getElementById(&quot;warning-modal-btn&quot;);
+  const warningModalContainer = document.getElementById(&quot;warning-modal-container&quot;);
+  const warningModalEl = document.getElementById(&quot;warning-modal-el&quot;);
+  const warningModalCloseBtn = document.getElementById(&quot;warningmodal-close-btn&quot;);
+
+  warningModalBtn.addEventListener(&quot;click&quot;, () =&gt; {
+    warningModalContainer.style.display = &quot;flex&quot;;
+    warningModalEl.style.display = &quot;flex&quot;;
+  });
+
+  warningModalCloseBtn.addEventListener(&quot;click&quot;, () =&gt; {
+    warningModalContainer.style.display = &quot;none&quot;;
+    warningModalEl.style.display = &quot;none&quot;;
+  })
+&lt;/script&gt;
+            </code>
+          </pre>
           </div>
 
-          <script async>
-            const darkModalBtn = document.getElementById("dark-modal-btn");
-            const darkModalContainer = document.getElementById("dark-modal-container");
-            const darkModalEl = document.getElementById("dark-modal-el");
-            const darkModalCloseBtn = document.getElementById("darkmodal-close-btn");
-            
-            darkModalBtn.addEventListener("click", () => {
-              darkModalContainer.style.display = "flex";
-              darkModalEl.style.display = "flex";
-            });
+          <!-- DARK MODAL -->
+          <p class="h-5 maincontent__content--info" id="dark-modal">
+            Dark Modal
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            To use the
+            <span class="word-highlight-red">Dark Modal</span> component give
+            the <span class="classname-highlight">mdl-dark</span> class to the
+            modal element. Copy the code below to use it in your project. Make
+            sure to include the JavaScript also.
+          </p>
+          <div class="txt-center input-eg">
+            <button class="button btn-solid-dark" id="dark-modal-btn">
+              Dark Modal
+            </button>
 
-            darkModalCloseBtn.addEventListener("click", () => {
-              darkModalContainer.style.display = "none";
-              darkModalEl.style.display = "none";
-            })
-          </script>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520btn-solid-dark%2522%2520id%253D%2522dark-modal-btn%2522%253EDark%2520Modal%253C%252Fbutton%253E%250A%250A%253Cdiv%2520class%253D%2522modal__container%2522%2520id%253D%2522dark-modal-container%2522%2520style%253D%2522z-index%253A%2520999%253B%2522%253E%250A%2520%2520%253Csection%2520class%253D%2522modal%2520mdl__icons%2520mdl-dark%2522%2520id%253D%2522dark-modal-el%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522modal__title%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522h-5%2522%253EModal%2520Title%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522button%2520btn-action%2520btn-plain-icon%2520modal__title--close%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522darkmodal-close-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522icon-light%2520icon-lg%2520button__icon%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fclose.svg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522close%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%2520%2520%2520%2520%253Cmain%2520class%253D%2522modal__body%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522bd-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520%2520%2520%2520%2520Omnis%2520blanditiis%252C%2520explicabo%2520deleniti%2520rerum.%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fmain%253E%250A%2520%2520%2520%2520%253Cfooter%2520class%253D%2522modal__footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520btn-solid-dark%2520modal__footer--btn%2522%253EACTION%25201%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520btn-outline-dark%2520modal__footer--btn%2522%253EACTION%25202%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Ffooter%253E%250A%2520%2520%253C%252Fsection%253E%250A%253C%252Fdiv%253E%250A%250A%253Cscript%2520async%253E%250A%2520%2520const%2520darkModalBtn%2520%253D%2520document.getElementById%28%2522dark-modal-btn%2522%29%253B%250A%2520%2520const%2520darkModalContainer%2520%253D%2520document.getElementById%28%2522dark-modal-container%2522%29%253B%250A%2520%2520const%2520darkModalEl%2520%253D%2520document.getElementById%28%2522dark-modal-el%2522%29%253B%250A%2520%2520const%2520darkModalCloseBtn%2520%253D%2520document.getElementById%28%2522darkmodal-close-btn%2522%29%253B%250A%250A%2520%2520darkModalBtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520darkModalContainer.style.display%2520%253D%2520%2522flex%2522%253B%250A%2520%2520%2520%2520darkModalEl.style.display%2520%253D%2520%2522flex%2522%253B%250A%2520%2520%257D%29%253B%250A%250A%2520%2520darkModalCloseBtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520darkModalContainer.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%2520%2520darkModalEl.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%257D%29%250A%253C%252Fscript%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 800px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
+            <div
+              class="modal__container bring-to-top"
+              id="dark-modal-container"
+            >
+              <section class="modal mdl__icons mdl-dark" id="dark-modal-el">
+                <header class="modal__title">
+                  <h1 class="h-5">Modal Title</h1>
+                  <button
+                    class="button btn-action btn-plain-icon modal__title--close"
+                    id="darkmodal-close-btn"
+                  >
+                    <img
+                      class="icon-light icon-lg button__icon"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg"
+                      alt="close"
+                    />
+                  </button>
+                </header>
+                <main class="modal__body">
+                  <p class="bd-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis blanditiis, explicabo deleniti rerum.
+                  </p>
+                </main>
+                <footer class="modal__footer">
+                  <button class="button btn-solid-dark modal__footer--btn">
+                    ACTION 1
+                  </button>
+                  <button class="button btn-outline-dark modal__footer--btn">
+                    ACTION 2
+                  </button>
+                </footer>
+              </section>
+            </div>
+
+            <script async>
+              const darkModalBtn = document.getElementById("dark-modal-btn");
+              const darkModalContainer = document.getElementById(
+                "dark-modal-container"
+              );
+              const darkModalEl = document.getElementById("dark-modal-el");
+              const darkModalCloseBtn = document.getElementById(
+                "darkmodal-close-btn"
+              );
+
+              darkModalBtn.addEventListener("click", () => {
+                darkModalContainer.style.display = "flex";
+                darkModalEl.style.display = "flex";
+              });
+
+              darkModalCloseBtn.addEventListener("click", () => {
+                darkModalContainer.style.display = "none";
+                darkModalEl.style.display = "none";
+              });
+            </script>
+          </div>
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;button class=&quot;button btn-solid-dark&quot; id=&quot;dark-modal-btn&quot;&gt;
+  Dark Modal
+&lt;/button&gt;
+
+&lt;div class=&quot;modal__container&quot; id=&quot;dark-modal-container&quot;&gt;
+  &lt;section class=&quot;modal mdl__icons mdl-dark&quot; id=&quot;dark-modal-el&quot;&gt;
+    &lt;header class=&quot;modal__title&quot;&gt;
+      &lt;h1 class=&quot;h-5&quot;&gt;Modal Title&lt;/h1&gt;
+      &lt;button 
+        class=&quot;button btn-action btn-plain-icon modal__title--close&quot;
+        id=&quot;darkmodal-close-btn&quot;&gt;
+        &lt;img 
+          class=&quot;icon-light icon-lg button__icon&quot;
+          src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg&quot;
+          alt=&quot;close&quot;&gt;
+      &lt;/button&gt;
+    &lt;/header&gt;
+    &lt;main class=&quot;modal__body&quot;&gt;
+      &lt;p class=&quot;bd-5&quot;&gt;
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Omnis blanditiis, explicabo deleniti rerum.
+      &lt;/p&gt;
+    &lt;/main&gt;
+    &lt;footer class=&quot;modal__footer&quot;&gt;
+      &lt;button class=&quot;button btn-solid-dark modal__footer--btn&quot;&gt;
+        ACTION 1
+      &lt;/button&gt;
+      &lt;button class=&quot;button btn-outline-dark modal__footer--btn&quot;&gt;
+        ACTION 2
+      &lt;/button&gt;
+    &lt;/footer&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+
+&lt;!-- JavaScript --&gt;
+&lt;script async&gt;
+  const darkModalBtn = document.getElementById(&quot;dark-modal-btn&quot;);
+  const darkModalContainer = document.getElementById(&quot;dark-modal-container&quot;);
+  const darkModalEl = document.getElementById(&quot;dark-modal-el&quot;);
+  const darkModalCloseBtn = document.getElementById(&quot;darkmodal-close-btn&quot;);
+
+  darkModalBtn.addEventListener(&quot;click&quot;, () =&gt; {
+    darkModalContainer.style.display = &quot;flex&quot;;
+    darkModalEl.style.display = &quot;flex&quot;;
+  });
+
+  darkModalCloseBtn.addEventListener(&quot;click&quot;, () =&gt; {
+    darkModalContainer.style.display = &quot;none&quot;;
+    darkModalEl.style.display = &quot;none&quot;;
+  })
+&lt;/script&gt;
+            </code>
+          </pre>
+          </div>
+        </section>
+
+        <!-------------------------------------
+                  CONTENT FOOTER 
+      -------------------------------------->
+        <footer class="footer">
+          <section class="navigation__wrapper">
+            <a
+              href="../list/list.html"
+              class="navigation__wrapper--item txt-center st-1"
+            >
+              <img
+                class="icon-sm icon-dark maincontent__sidebar--icon rotate90"
+                src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+                alt="angle-icon"
+              />
+              List
+            </a>
+            <a
+              href="../navbar/navbar.html"
+              class="navigation__wrapper--item txt-center st-1"
+            >
+              Navbar
+              <img
+                class="icon-sm icon-dark maincontent__sidebar--icon"
+                src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+                alt="angle-icon"
+              />
+            </a>
+          </section>
+          <section class="footer__end">
+            <p class="footer__copyright bd-5">
+              Copyright &copy; 2022
+              <a href="https://github.com/VishalPatil18"> Vishal Patil </a>
+              <br class="footer__break" />
+              All Rights Reserved
+            </p>
+            <a href="https://github.com/VishalPatil18/VISPA-UI-Docs">
+              Edit this page on Github
+            </a>
+          </section>
+        </footer>
       </section>
 
       <!-------------------------------------
-                  CONTENT FOOTER 
-      -------------------------------------->
-      <footer class="footer">
-        <section class="navigation__wrapper">
-          <a href="../list/list.html" class="navigation__wrapper--item txt-center st-1">
-            <img class="icon-sm icon-dark maincontent__sidebar--icon" style="transform: rotate(-90deg);" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-            List
-          </a>
-          <a href="../navbar/navbar.html" class="navigation__wrapper--item txt-center st-1">
-            Navbar
-            <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-          </a>
-        </section>
-        <section class="footer__end">
-          <p class="footer__copyright bd-5">
-            Copyright &copy; 2022 
-            <a href="https://github.com/VishalPatil18">
-              Vishal Patil
-            </a>
-            <br class="footer__break">
-             All Rights Reserved
-          </p>
-          <a href="https://github.com/VishalPatil18/VISPA-UI">Edit this page on Github</a>
-        </section>
-      </footer>
-    </section>
-
-    <!-------------------------------------
                 RIGHT SIDEBAR 
     -------------------------------------->
-    <aside class="maincontent__sidebar--right">
-      <h6 class="h-6 maincontent__sidebar--right--title">On this Page</h6>
-      <a class="bd-5" href="#basic-modal">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Basic Modal
-      </a>
-      <a class="bd-5" href="#icon-modal">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Modal with Icons
-      </a>
-      <a class="bd-5" href="#sharelink-modal">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Share Link Modal
-      </a>
-      <a class="bd-5" href="#primary-modal">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Primary Modal
-      </a>
-      <a class="bd-5" href="#danger-modal">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Danger Modal
-      </a>
-      <a class="bd-5" href="#success-modal">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Success Modal
-      </a>
-      <a class="bd-5" href="#warning-modal">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Warning Modal
-      </a>
-      <a class="bd-5" href="#dark-modal">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Dark Modal
-      </a>
-    </aside>
-  </main>
-</body>
-<script src="../../script.js" defer></script>
+      <aside class="maincontent__sidebar--right">
+        <h6 class="h-6 maincontent__sidebar--right--title">On this Page</h6>
+        <a class="bd-5" href="#basic-modal">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Basic Modal
+        </a>
+        <a class="bd-5" href="#icon-modal">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Modal with Icons
+        </a>
+        <a class="bd-5" href="#sharelink-modal">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Share Link Modal
+        </a>
+        <a class="bd-5" href="#primary-modal">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Primary Modal
+        </a>
+        <a class="bd-5" href="#danger-modal">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Danger Modal
+        </a>
+        <a class="bd-5" href="#success-modal">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Success Modal
+        </a>
+        <a class="bd-5" href="#warning-modal">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Warning Modal
+        </a>
+        <a class="bd-5" href="#dark-modal">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Dark Modal
+        </a>
+      </aside>
+    </main>
+  </body>
+  <script src="../../script.js" defer></script>
+
+  <!-- HIGHLIGHT.JS CDN SCRIPT -->
+  <script src="../../highlight/highlight.min.js"></script>
+
+  <!-- RUNNING HIGHLIGHT JS FOR STYLING -->
+  <script>
+    hljs.highlightAll();
+  </script>
 </html>

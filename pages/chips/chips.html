@@ -1,379 +1,589 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://vispaui-postdev-deploy.netlify.app/css/main.css">
-  <link rel="stylesheet" href="../../style.css">
-  <link rel="icon" type="image/x-icon" href="../../assets/VISPA_UI--logo.svg">
-  <title>VISPA-UI / Chips</title>
-</head>
-<body>
-  <!-------------------------------------
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- HIGHLIGHT.JS STYLESHEET -->
+    <link
+      rel="stylesheet"
+      href="../../highlight/styles/atom-one-dark-reasonable.min.css"
+    />
+
+    <!-- VENDOR STYLESHEET -->
+    <link
+      rel="stylesheet"
+      href="https://vispaui-postdev-deploy.netlify.app/css/main.css"
+    />
+
+    <!-- MAIN STYLESHEET -->
+    <link rel="stylesheet" href="../../style.css" />
+
+    <!-- FAVICON -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../assets/VISPA_UI--logo.svg"
+    />
+
+    <!-- TITLE -->
+    <title>VISPA-UI / Chips</title>
+  </head>
+  <body>
+    <!-------------------------------------
                   NAVBAR 
   -------------------------------------->
-  <header class="_navbar">
-    <img class="navbar__logo" src="../../assets/VISPA_UI--logo.svg" alt="vispa-ui--logo">
-    <img class="navbar__menu--btn icon-xl icon-primary" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bars.svg" id="menu-btn" alt="menu-btn">
-    <a class="h-4" href="../../index.html">
-      <p>VISPA<span class="navbar__ui">UI</span></p>
-    </a>
-    <span class="navbar__version">v1.0</span>
-    <a class="h-5 button btn-lg btn-plain" href="../alert/alert.html">Docs</a>
-    <a href="https://github.com/VishalPatil18/VISPA-UI">
-      <img class="icon-dark icon-xl" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/github.svg" alt="github">
-    </a>
-  </header>
+    <header class="_navbar">
+      <img
+        class="navbar__logo"
+        src="../../assets/VISPA_UI--logo.svg"
+        alt="vispa-ui--logo"
+      />
+      <img
+        class="navbar__menu--btn icon-xl icon-primary"
+        src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bars.svg"
+        id="menu-btn"
+        alt="menu-btn"
+      />
+      <a class="h-4" href="../../index.html">
+        <p>VISPA<span class="navbar__ui">UI</span></p>
+      </a>
+      <span class="navbar__version">v1.0</span>
+      <a class="h-5 button btn-lg btn-plain" href="../alert/alert.html">Docs</a>
+      <a href="https://github.com/VishalPatil18/VISPA-UI">
+        <img
+          class="icon-dark icon-xl"
+          src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/github.svg"
+          alt="github"
+        />
+      </a>
+    </header>
 
-  <!-------------------------------------
+    <!-------------------------------------
                 MAIN BODY 
   -------------------------------------->
-  <main class="maincontent">
-    <!-------------------------------------
+    <main class="maincontent">
+      <!-------------------------------------
                   SIDEBAR 
     -------------------------------------->
-    <aside class="maincontent__sidebar--left">
-      <div class="drawer" id="sidebar-el">
-        <button class="button btn-plain sidebar__close--btn" id="sidebar-close-btn">
-          <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/times.svg" alt="close">
-        </button> 
-        <div class="drawer__list">
-          <p class="list__subheading">Getting Started</p>
-          <a href="../installation/installation.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/download.svg" alt="install">
-            Installation
-          </a>
-    
-          <a href="../colors/colors.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/palette.svg" alt="colors">
-            Colors
-          </a>
-    
-          <a href="../typography/typography.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/feather-alt.svg" alt="typography">
-            Typography
-          </a>
+      <aside class="maincontent__sidebar--left">
+        <div class="drawer" id="sidebar-el">
+          <button
+            class="button btn-plain sidebar__close--btn"
+            id="sidebar-close-btn"
+          >
+            <img
+              class="icon-md icon-dark drawer__item--icon"
+              src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/times.svg"
+              alt="close"
+            />
+          </button>
+          <div class="drawer__list">
+            <p class="list__subheading">Getting Started</p>
+            <a href="../installation/installation.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/download.svg"
+                alt="install"
+              />
+              Installation
+            </a>
 
-          <a href="../utilities/utilities.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/cogs.svg" alt="utilities">
-            Utilities
-          </a>
-        </div>
-        <div class="drawer__list">
-          <p class="list__subheading">Components</p>
-          <a href="../alert/alert.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/warning.svg" alt="alert">
-            Alert
-          </a>
-          <a href="../avatar/avatar.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/portrait.svg" alt="avatar">
-            Avatar
-          </a>
-          <a href="../badge/badge.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg" alt="badge">
-            Badge
-          </a>
-          <a href="../button/button.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/clone.svg" alt="button">
-            Button
-          </a>
-          <a href="../card/card.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/id-card.svg" alt="card">
-            Card
-          </a>
-          <a href="./chips.html" class="drawer__item drawer__item--active">
-            <img class="icon-md icon-primary drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/backspace.svg" alt="chips">
-            Chips
-          </a>
-          <a href="../drawer/drawer.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/indent.svg" alt="drawer">
-            Drawer
-          </a>
-          <a href="../grid/grid.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/th.svg" alt="grid">
-            Grid
-          </a>
-          <a href="../image/image.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/images.svg" alt="image">
-            Image
-          </a>
-          <a href="../input/input.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/edit.svg" alt="input">
-            Input
-          </a>
-          <a href="../list/list.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/list-ol.svg" alt="list">
-            List
-          </a>
-          <a href="../modal/modal.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/window-maximize.svg" alt="modal">
-            Modal
-          </a>
-          <a href="../navbar/navbar.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bars.svg" alt="navbar">
-            Navbar
-          </a>
-          <a href="../rating/rating.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/star-solid.svg" alt="rating">
-            Rating
-          </a>
-          <a href="../slider/slider.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/server.svg" alt="slider">
-            Slider
-          </a>
-          <a href="../toast/toast.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/vote-yea.svg" alt="toast">
-            Toast
-          </a>
-        </div>
-        <div class="drawer__list">
-          <p class="list__subheading">Customization</p>
-          <a href="../variables/variables.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/at.svg" alt="toast">
-            Variables
-          </a>
-          <a href="../utilityclasses/utilityclasses.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bezier-curve.svg" alt="toast">
-            Utility Classes
-          </a>
-        </div>
-      </div>
-    </aside>
+            <a href="../colors/colors.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/palette.svg"
+                alt="colors"
+              />
+              Colors
+            </a>
 
-    <!-------------------------------------
+            <a href="../typography/typography.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/feather-alt.svg"
+                alt="typography"
+              />
+              Typography
+            </a>
+
+            <a href="../utilities/utilities.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/cogs.svg"
+                alt="utilities"
+              />
+              Utilities
+            </a>
+          </div>
+          <div class="drawer__list">
+            <p class="list__subheading">Components</p>
+            <a href="../alert/alert.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/warning.svg"
+                alt="alert"
+              />
+              Alert
+            </a>
+            <a href="../avatar/avatar.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/portrait.svg"
+                alt="avatar"
+              />
+              Avatar
+            </a>
+            <a href="../badge/badge.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg"
+                alt="badge"
+              />
+              Badge
+            </a>
+            <a href="../button/button.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/clone.svg"
+                alt="button"
+              />
+              Button
+            </a>
+            <a href="../card/card.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/id-card.svg"
+                alt="card"
+              />
+              Card
+            </a>
+            <a href="./chips.html" class="drawer__item drawer__item--active">
+              <img
+                class="icon-md icon-primary drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/backspace.svg"
+                alt="chips"
+              />
+              Chips
+            </a>
+            <a href="../drawer/drawer.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/indent.svg"
+                alt="drawer"
+              />
+              Drawer
+            </a>
+            <a href="../grid/grid.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/th.svg"
+                alt="grid"
+              />
+              Grid
+            </a>
+            <a href="../image/image.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/images.svg"
+                alt="image"
+              />
+              Image
+            </a>
+            <a href="../input/input.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/edit.svg"
+                alt="input"
+              />
+              Input
+            </a>
+            <a href="../list/list.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/list-ol.svg"
+                alt="list"
+              />
+              List
+            </a>
+            <a href="../modal/modal.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/window-maximize.svg"
+                alt="modal"
+              />
+              Modal
+            </a>
+            <a href="../navbar/navbar.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bars.svg"
+                alt="navbar"
+              />
+              Navbar
+            </a>
+            <a href="../rating/rating.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/star-solid.svg"
+                alt="rating"
+              />
+              Rating
+            </a>
+            <a href="../slider/slider.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/server.svg"
+                alt="slider"
+              />
+              Slider
+            </a>
+            <a href="../toast/toast.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/vote-yea.svg"
+                alt="toast"
+              />
+              Toast
+            </a>
+          </div>
+          <div class="drawer__list">
+            <p class="list__subheading">Customization</p>
+            <a href="../variables/variables.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/at.svg"
+                alt="toast"
+              />
+              Variables
+            </a>
+            <a
+              href="../utilityclasses/utilityclasses.html"
+              class="drawer__item"
+            >
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bezier-curve.svg"
+                alt="toast"
+              />
+              Utility Classes
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <!-------------------------------------
                     CONTENT
     -------------------------------------->
-    <section class="maincontent__content bd-5 typography__content">
-      <section class="maincontent__content--box">
-        <h1 class="h-4" id="colors">Chips</h1>
-        <p class="bd-5 maincontent__content--desc">
-          VISPA-UI includes an expertly-crafted 8 varieties of <span style="font-weight: 500; color: var(--danger);">Chips</span> which can make your UI building experience effortless.
-        </p>
+      <section class="maincontent__content bd-5 typography__content">
+        <section class="maincontent__content--box">
+          <h1 class="h-4" id="colors">Chips</h1>
+          <p class="bd-5 maincontent__content--desc">
+            VISPA-UI includes an expertly-crafted 8 varieties of
+            <span class="word-highlight-red">Chips</span> which can make your UI
+            building experience effortless.
+          </p>
 
-        <!-- BASIC CHIP -->
-        <p class="h-5 maincontent__content--info" id="basic-chip">
-          Basic Chip
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Basic Chip</span> component give the <span style="font-style: italic; color: var(--primary);">chip</span> class to the span.
-        </p>
-        <div class="txt-center" style="padding-bottom: var(--space-sm);">
-          <span class="chip">basic</span>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522chip%2522%253Ebasic%253C%252Fspan%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
+          <!-- BASIC CHIP -->
+          <p class="h-5 maincontent__content--info" id="basic-chip">
+            Basic Chip
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            To use the
+            <span class="word-highlight-red">Basic Chip</span> component give
+            the <span class="classname-highlight">chip</span> class to the span.
+          </p>
+          <div class="txt-center">
+            <span class="chip">basic</span>
+          </div>
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;span class=&quot;chip&quot;&gt;basic&lt;/span&gt;
+            </code>
+          </pre>
+          </div>
 
-        <!-- DRAGGABLE CHIP -->
-        <p class="h-5 maincontent__content--info" id="draggable-chip">
-          Draggable Chip
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Draggable Chip</span> component set the <span style="font-style: italic; color: var(--primary);">draggable</span> property to <span style="font-style: italic; color: var(--primary);">true</span> of the span.
-        </p>
-        <div class="txt-center" style="padding-bottom: var(--space-sm);">
-          <span draggable="true" class="chip">draggable</span>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520draggable%253D%2522true%2522%2520class%253D%2522chip%2522%253Edraggable%253C%252Fspan%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
+          <!-- DRAGGABLE CHIP -->
+          <p class="h-5 maincontent__content--info" id="draggable-chip">
+            Draggable Chip
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            To use the
+            <span class="word-highlight-red">Draggable Chip</span> component set
+            the <span class="classname-highlight">draggable</span> property to
+            <span class="classname-highlight">true</span> of the span.
+          </p>
+          <div class="txt-center">
+            <span draggable="true" class="chip">draggable</span>
+          </div>
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;span draggable=&quot;true&quot; class=&quot;chip&quot;&gt;draggable&lt;/span&gt;
+            </code>
+          </pre>
+          </div>
 
-        <!-- DISMISSIBLE CHIP -->
-        <p class="h-5 maincontent__content--info" id="dismissible-chip">
-          Dismissible Chip
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Dismissible Chip</span> component give the <span style="font-style: italic; color: var(--primary);">chip__icon</span> class to the close icon.
-        </p>
-        <div class="txt-center" style="padding-bottom: var(--space-sm);">
-          <span draggable="true" class="chip ch--warning">
-            🥭 mango
-            <img class="icon-sm chip__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg" alt="close-btn">
-          </span>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522chip%2522%253E%250A%2520%2520%25F0%259F%25A5%25AD%2520mango%250A%2520%2520%253Cimg%2520class%253D%2522icon-sm%2520chip__icon%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fclose.svg%2522%2520alt%253D%2522close-btn%2522%253E%250A%253C%252Fspan%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 220px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
+          <!-- DISMISSIBLE CHIP -->
+          <p class="h-5 maincontent__content--info" id="dismissible-chip">
+            Dismissible Chip
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            To use the
+            <span class="word-highlight-red">Dismissible Chip</span> component
+            give the <span class="classname-highlight">chip__icon</span> class
+            to the close icon.
+          </p>
+          <div class="txt-center">
+            <span draggable="true" class="chip ch--warning">
+              🥭 mango
+              <img
+                class="icon-sm chip__icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg"
+                alt="close-btn"
+              />
+            </span>
+          </div>
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;span class=&quot;chip&quot;&gt;
+  🥭 mango
+  &lt;img 
+    class=&quot;icon-sm chip__icon&quot; 
+    src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg&quot;
+  /&gt;
+&lt;/span&gt;
+            </code>
+          </pre>
+          </div>
 
-        <!-- PRIMARY CHIP -->
-        <p class="h-5 maincontent__content--info" id="primary-chip">
-          Primary Chip
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Primary Chip</span> component give the <span style="font-style: italic; color: var(--primary);">ch--primary</span> class to the span.
-        </p>
-        <div class="txt-center" style="padding-bottom: var(--space-sm);">
-          <span class="chip ch--primary">primary</span>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522chip%2520ch--primary%2522%253Eprimary%253C%252Fspan%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
+          <!-- PRIMARY CHIP -->
+          <p class="h-5 maincontent__content--info" id="primary-chip">
+            Primary Chip
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            To use the
+            <span class="word-highlight-red">Primary Chip</span> component give
+            the <span class="classname-highlight">ch--primary</span> class to
+            the span.
+          </p>
+          <div class="txt-center">
+            <span class="chip ch--primary">primary</span>
+          </div>
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;span class=&quot;chip ch--primary&quot;&gt;primary&lt;/span&gt;
+            </code>
+          </pre>
+          </div>
 
-        <!-- DANGER CHIP -->
-        <p class="h-5 maincontent__content--info" id="danger-chip">
-          Danger Chip
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Danger Chip</span> component give the <span style="font-style: italic; color: var(--primary);">ch--danger</span> class to the span.
-        </p>
-        <div class="txt-center" style="padding-bottom: var(--space-sm);">
-          <span class="chip ch--danger">danger</span>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522chip%2520ch--danger%2522%253Edanger%253C%252Fspan%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
+          <!-- DANGER CHIP -->
+          <p class="h-5 maincontent__content--info" id="danger-chip">
+            Danger Chip
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            To use the
+            <span class="word-highlight-red">Danger Chip</span> component give
+            the <span class="classname-highlight">ch--danger</span> class to the
+            span.
+          </p>
+          <div class="txt-center">
+            <span class="chip ch--danger">danger</span>
+          </div>
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;span class=&quot;chip ch--danger&quot;&gt;danger&lt;/span&gt;
+            </code>
+          </pre>
+          </div>
 
-        <!-- SUCCESS CHIP -->
-        <p class="h-5 maincontent__content--info" id="success-chip">
-          Success Chip
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Success Chip</span> component give the <span style="font-style: italic; color: var(--primary);">ch--success</span> class to the span.
-        </p>
-        <div class="txt-center" style="padding-bottom: var(--space-sm);">
-          <span class="chip ch--success">success</span>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522chip%2520ch--success%2522%253Esuccess%253C%252Fspan%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
+          <!-- SUCCESS CHIP -->
+          <p class="h-5 maincontent__content--info" id="success-chip">
+            Success Chip
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            To use the
+            <span class="word-highlight-red">Success Chip</span> component give
+            the <span class="classname-highlight">ch--success</span> class to
+            the span.
+          </p>
+          <div class="txt-center">
+            <span class="chip ch--success">success</span>
+          </div>
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;span class=&quot;chip ch--success&quot;&gt;success&lt;/span&gt;
+            </code>
+          </pre>
+          </div>
 
-        <!-- WARNING CHIP -->
-        <p class="h-5 maincontent__content--info" id="warning-chip">
-          Warning Chip
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Warning Chip</span> component give the <span style="font-style: italic; color: var(--primary);">ch--warning</span> class to the span.
-        </p>
-        <div class="txt-center" style="padding-bottom: var(--space-sm);">
-          <span class="chip ch--warning">warning</span>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522chip%2520ch--warning%2522%253Ewarning%253C%252Fspan%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
+          <!-- WARNING CHIP -->
+          <p class="h-5 maincontent__content--info" id="warning-chip">
+            Warning Chip
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            To use the
+            <span class="word-highlight-red">Warning Chip</span> component give
+            the <span class="classname-highlight">ch--warning</span> class to
+            the span.
+          </p>
+          <div class="txt-center">
+            <span class="chip ch--warning">warning</span>
+          </div>
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;span class=&quot;chip ch--warning&quot;&gt;warning&lt;/span&gt;
+            </code>
+          </pre>
+          </div>
 
-        <!-- DARK CHIP -->
-        <p class="h-5 maincontent__content--info" id="dark-chip">
-          Dark Chip
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Dark Chip</span> component give the <span style="font-style: italic; color: var(--primary);">ch--dark</span> class to the span.
-        </p>
-        <div class="txt-center" style="padding-bottom: var(--space-sm);">
-          <span class="chip ch--dark">dark</span>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522chip%2520ch--dark%2522%253Edark%253C%252Fspan%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 100px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
+          <!-- DARK CHIP -->
+          <p class="h-5 maincontent__content--info" id="dark-chip">Dark Chip</p>
+          <p class="bd-5 maincontent__content--info">
+            To use the
+            <span class="word-highlight-red">Dark Chip</span> component give the
+            <span class="classname-highlight">ch--dark</span> class to the span.
+          </p>
+          <div class="txt-center">
+            <span class="chip ch--dark">dark</span>
+          </div>
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;span class=&quot;chip ch--dark&quot;&gt;dark&lt;/span&gt;
+            </code>
+          </pre>
+          </div>
+        </section>
+
+        <!-------------------------------------
+                  CONTENT FOOTER 
+      -------------------------------------->
+        <footer class="footer">
+          <section class="navigation__wrapper">
+            <a
+              href="../card/card.html"
+              class="navigation__wrapper--item txt-center st-1"
+            >
+              <img
+                class="icon-sm icon-dark maincontent__sidebar--icon rotate90"
+                src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+                alt="angle-icon"
+              />
+              Card
+            </a>
+            <a
+              href="../drawer/drawer.html"
+              class="navigation__wrapper--item txt-center st-1"
+            >
+              Drawer
+              <img
+                class="icon-sm icon-dark maincontent__sidebar--icon"
+                src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+                alt="angle-icon"
+              />
+            </a>
+          </section>
+          <section class="footer__end">
+            <p class="footer__copyright bd-5">
+              Copyright &copy; 2022
+              <a href="https://github.com/VishalPatil18"> Vishal Patil </a>
+              <br class="footer__break" />
+              All Rights Reserved
+            </p>
+            <a href="https://github.com/VishalPatil18/VISPA-UI-Docs">
+              Edit this page on Github
+            </a>
+          </section>
+        </footer>
       </section>
 
       <!-------------------------------------
-                  CONTENT FOOTER 
-      -------------------------------------->
-      <footer class="footer">
-        <section class="navigation__wrapper">
-          <a href="../card/card.html" class="navigation__wrapper--item txt-center st-1">
-            <img class="icon-sm icon-dark maincontent__sidebar--icon" style="transform: rotate(-90deg);" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-            Card
-          </a>
-          <a href="../drawer/drawer.html" class="navigation__wrapper--item txt-center st-1">
-            Drawer
-            <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-          </a>
-        </section>
-        <section class="footer__end">
-          <p class="footer__copyright bd-5">
-            Copyright &copy; 2022 
-            <a href="https://github.com/VishalPatil18">
-              Vishal Patil
-            </a>
-            <br class="footer__break">
-             All Rights Reserved
-          </p>
-          <a href="https://github.com/VishalPatil18/VISPA-UI">Edit this page on Github</a>
-        </section>
-      </footer>
-    </section>
-
-    <!-------------------------------------
                 RIGHT SIDEBAR 
     -------------------------------------->
-    <aside class="maincontent__sidebar--right">
-      <h6 class="h-6 maincontent__sidebar--right--title">On this Page</h6>
-      <a class="bd-5" href="#basic-chip">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Basic Chip
-      </a>
-      <a class="bd-5" href="#draggable-chip">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Draggable Chip
-      </a>
-      <a class="bd-5" href="#dismissible-chip">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Dismissible Chip
-      </a>
-      <a class="bd-5" href="#primary-chip">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Primary Chip
-      </a>
-      <a class="bd-5" href="#danger-chip">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Danger Chip
-      </a>
-      <a class="bd-5" href="#success-chip">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Success Chip
-      </a>
-      <a class="bd-5" href="#warning-chip">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Warning Chip
-      </a>
-      <a class="bd-5" href="#dark-chip">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Dark Chip
-      </a>
-    </aside>
-  </main>
-</body>
-<script src="../../script.js" defer></script>
+      <aside class="maincontent__sidebar--right">
+        <h6 class="h-6 maincontent__sidebar--right--title">On this Page</h6>
+        <a class="bd-5" href="#basic-chip">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Basic Chip
+        </a>
+        <a class="bd-5" href="#draggable-chip">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Draggable Chip
+        </a>
+        <a class="bd-5" href="#dismissible-chip">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Dismissible Chip
+        </a>
+        <a class="bd-5" href="#primary-chip">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Primary Chip
+        </a>
+        <a class="bd-5" href="#danger-chip">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Danger Chip
+        </a>
+        <a class="bd-5" href="#success-chip">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Success Chip
+        </a>
+        <a class="bd-5" href="#warning-chip">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Warning Chip
+        </a>
+        <a class="bd-5" href="#dark-chip">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Dark Chip
+        </a>
+      </aside>
+    </main>
+  </body>
+  <script src="../../script.js" defer></script>
+
+  <!-- HIGHLIGHT.JS CDN SCRIPT -->
+  <script src="../../highlight/highlight.min.js"></script>
+
+  <!-- RUNNING HIGHLIGHT JS FOR STYLING -->
+  <script>
+    hljs.highlightAll();
+  </script>
 </html>

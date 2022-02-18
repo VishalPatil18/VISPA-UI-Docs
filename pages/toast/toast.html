@@ -1,359 +1,657 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://vispaui-postdev-deploy.netlify.app/css/main.css">
-  <link rel="stylesheet" href="../../style.css">
-  <link rel="icon" type="image/x-icon" href="../../assets/VISPA_UI--logo.svg">
-  <title>VISPA-UI / Toast</title>
-</head>
-<body>
-  <!-------------------------------------
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- HIGHLIGHT.JS STYLESHEET -->
+    <link
+      rel="stylesheet"
+      href="../../highlight/styles/atom-one-dark-reasonable.min.css"
+    />
+
+    <!-- VENDOR STYLESHEET -->
+    <link
+      rel="stylesheet"
+      href="https://vispaui-postdev-deploy.netlify.app/css/main.css"
+    />
+
+    <!-- MAIN STYLESHEET -->
+    <link rel="stylesheet" href="../../style.css" />
+
+    <!-- FAVICON -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../assets/VISPA_UI--logo.svg"
+    />
+
+    <!-- TITLE -->
+    <title>VISPA-UI / Toast</title>
+  </head>
+  <body>
+    <!-------------------------------------
                   NAVBAR 
   -------------------------------------->
-  <header class="_navbar">
-    <img class="navbar__logo" src="../../assets/VISPA_UI--logo.svg" alt="vispa-ui--logo">
-    <img class="navbar__menu--btn icon-xl icon-primary" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bars.svg" id="menu-btn" alt="menu-btn">
-    <a class="h-4" href="../../index.html">
-      <p>VISPA<span class="navbar__ui">UI</span></p>
-    </a>
-    <span class="navbar__version">v1.0</span>
-    <a class="h-5 button btn-lg btn-plain" href="../alert/alert.html">Docs</a>
-    <a href="https://github.com/VishalPatil18/VISPA-UI">
-      <img class="icon-dark icon-xl" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/github.svg" alt="github">
-    </a>
-  </header>
+    <header class="_navbar">
+      <img
+        class="navbar__logo"
+        src="../../assets/VISPA_UI--logo.svg"
+        alt="vispa-ui--logo"
+      />
+      <img
+        class="navbar__menu--btn icon-xl icon-primary"
+        src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bars.svg"
+        id="menu-btn"
+        alt="menu-btn"
+      />
+      <a class="h-4" href="../../index.html">
+        <p>VISPA<span class="navbar__ui">UI</span></p>
+      </a>
+      <span class="navbar__version">v1.0</span>
+      <a class="h-5 button btn-lg btn-plain" href="../alert/alert.html">Docs</a>
+      <a href="https://github.com/VishalPatil18/VISPA-UI">
+        <img
+          class="icon-dark icon-xl"
+          src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/github.svg"
+          alt="github"
+        />
+      </a>
+    </header>
 
-  <!-------------------------------------
+    <!-------------------------------------
                 MAIN BODY 
   -------------------------------------->
-  <main class="maincontent">
-    <!-------------------------------------
+    <main class="maincontent">
+      <!-------------------------------------
                   SIDEBAR 
     -------------------------------------->
-    <aside class="maincontent__sidebar--left">
-      <div class="drawer" id="sidebar-el">
-        <button class="button btn-plain sidebar__close--btn" id="sidebar-close-btn">
-          <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/times.svg" alt="close">
-        </button> 
-        <div class="drawer__list">
-          <p class="list__subheading">Getting Started</p>
-          <a href="../installation/installation.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/download.svg" alt="install">
-            Installation
-          </a>
-    
-          <a href="../colors/colors.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/palette.svg" alt="colors">
-            Colors
-          </a>
-    
-          <a href="../typography/typography.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/feather-alt.svg" alt="typography">
-            Typography
-          </a>
+      <aside class="maincontent__sidebar--left">
+        <div class="drawer" id="sidebar-el">
+          <button
+            class="button btn-plain sidebar__close--btn"
+            id="sidebar-close-btn"
+          >
+            <img
+              class="icon-md icon-dark drawer__item--icon"
+              src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/times.svg"
+              alt="close"
+            />
+          </button>
+          <div class="drawer__list">
+            <p class="list__subheading">Getting Started</p>
+            <a href="../installation/installation.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/download.svg"
+                alt="install"
+              />
+              Installation
+            </a>
 
-          <a href="../utilities/utilities.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/cogs.svg" alt="utilities">
-            Utilities
-          </a>
-        </div>
-        <div class="drawer__list">
-          <p class="list__subheading">Components</p>
-          <a href="../alert/alert.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/warning.svg" alt="alert">
-            Alert
-          </a>
-          <a href="../avatar/avatar.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/portrait.svg" alt="avatar">
-            Avatar
-          </a>
-          <a href="../badge/badge.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg" alt="badge">
-            Badge
-          </a>
-          <a href="../button/button.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/clone.svg" alt="button">
-            Button
-          </a>
-          <a href="../card/card.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/id-card.svg" alt="card">
-            Card
-          </a>
-          <a href="../chips/chips.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/backspace.svg" alt="chips">
-            Chips
-          </a>
-          <a href="../drawer/drawer.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/indent.svg" alt="drawer">
-            Drawer
-          </a>
-          <a href="../grid/grid.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/th.svg" alt="grid">
-            Grid
-          </a>
-          <a href="../image/image.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/images.svg" alt="image">
-            Image
-          </a>
-          <a href="../input/input.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/edit.svg" alt="input">
-            Input
-          </a>
-          <a href="../list/list.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/list-ol.svg" alt="list">
-            List
-          </a>
-          <a href="../modal/modal.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/window-maximize.svg" alt="modal">
-            Modal
-          </a>
-          <a href="../navbar/navbar.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bars.svg" alt="navbar">
-            Navbar
-          </a>
-          <a href="../rating/rating.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/star-solid.svg" alt="rating">
-            Rating
-          </a>
-          <a href="../slider/slider.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/server.svg" alt="slider">
-            Slider
-          </a>
-          <a href="./toast.html" class="drawer__item drawer__item--active">
-            <img class="icon-md icon-primary drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/vote-yea.svg" alt="toast">
-            Toast
-          </a>
-        </div>
-        <div class="drawer__list">
-          <p class="list__subheading">Customization</p>
-          <a href="../variables/variables.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/at.svg" alt="toast">
-            Variables
-          </a>
-          <a href="../utilityclasses/utilityclasses.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bezier-curve.svg" alt="toast">
-            Utility Classes
-          </a>
-        </div>
-      </div>
-    </aside>
+            <a href="../colors/colors.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/palette.svg"
+                alt="colors"
+              />
+              Colors
+            </a>
 
-    <!-------------------------------------
+            <a href="../typography/typography.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/feather-alt.svg"
+                alt="typography"
+              />
+              Typography
+            </a>
+
+            <a href="../utilities/utilities.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/cogs.svg"
+                alt="utilities"
+              />
+              Utilities
+            </a>
+          </div>
+          <div class="drawer__list">
+            <p class="list__subheading">Components</p>
+            <a href="../alert/alert.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/warning.svg"
+                alt="alert"
+              />
+              Alert
+            </a>
+            <a href="../avatar/avatar.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/portrait.svg"
+                alt="avatar"
+              />
+              Avatar
+            </a>
+            <a href="../badge/badge.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg"
+                alt="badge"
+              />
+              Badge
+            </a>
+            <a href="../button/button.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/clone.svg"
+                alt="button"
+              />
+              Button
+            </a>
+            <a href="../card/card.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/id-card.svg"
+                alt="card"
+              />
+              Card
+            </a>
+            <a href="../chips/chips.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/backspace.svg"
+                alt="chips"
+              />
+              Chips
+            </a>
+            <a href="../drawer/drawer.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/indent.svg"
+                alt="drawer"
+              />
+              Drawer
+            </a>
+            <a href="../grid/grid.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/th.svg"
+                alt="grid"
+              />
+              Grid
+            </a>
+            <a href="../image/image.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/images.svg"
+                alt="image"
+              />
+              Image
+            </a>
+            <a href="../input/input.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/edit.svg"
+                alt="input"
+              />
+              Input
+            </a>
+            <a href="../list/list.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/list-ol.svg"
+                alt="list"
+              />
+              List
+            </a>
+            <a href="../modal/modal.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/window-maximize.svg"
+                alt="modal"
+              />
+              Modal
+            </a>
+            <a href="../navbar/navbar.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bars.svg"
+                alt="navbar"
+              />
+              Navbar
+            </a>
+            <a href="../rating/rating.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/star-solid.svg"
+                alt="rating"
+              />
+              Rating
+            </a>
+            <a href="../slider/slider.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/server.svg"
+                alt="slider"
+              />
+              Slider
+            </a>
+            <a href="./toast.html" class="drawer__item drawer__item--active">
+              <img
+                class="icon-md icon-primary drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/vote-yea.svg"
+                alt="toast"
+              />
+              Toast
+            </a>
+          </div>
+          <div class="drawer__list">
+            <p class="list__subheading">Customization</p>
+            <a href="../variables/variables.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/at.svg"
+                alt="toast"
+              />
+              Variables
+            </a>
+            <a
+              href="../utilityclasses/utilityclasses.html"
+              class="drawer__item"
+            >
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bezier-curve.svg"
+                alt="toast"
+              />
+              Utility Classes
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <!-------------------------------------
                     CONTENT
     -------------------------------------->
-    <section class="maincontent__content bd-5 typography__content">
-      <section class="maincontent__content--box">
-        <h1 class="h-4" id="rating">Toast</h1>
-        <p class="bd-5 maincontent__content--desc">
-          VISPA-UI includes an expertly-crafted 6 varities of <span style="font-weight: 500; color: var(--danger);">Toast</span> components which can make your UI building experience effortless.
-        </p>
+      <section class="maincontent__content bd-5 typography__content">
+        <section class="maincontent__content--box">
+          <h1 class="h-4" id="rating">Toast</h1>
+          <p class="bd-5 maincontent__content--desc">
+            VISPA-UI includes an expertly-crafted 6 varities of
+            <span class="word-highlight-red">Toast</span> components which can
+            make your UI building experience effortless.
+          </p>
 
-        <!-- BASIC TOAST -->
-        <p class="h-5 maincontent__content--info" id="basic-toast">
-          Basic Toast
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Basic Toast</span> component give the <span style="font-style: italic; color: var(--primary);">toast</span> class to the toast container.
-        </p>
-        <div class="txt-center" style="margin-bottom: var(--space-md);">
-          <div class="toast toast__basic">
-            <p class="toast__content">This is a basic Toast</p>
-          </div>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522toast%2520toast__basic%2522%253E%250A%2520%2520%253Cp%2520class%253D%2522toast__content%2522%253EThis%2520is%2520a%2520basic%2520Toast%253C%252Fp%253E%250A%253C%252Fdiv%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
-
-        <!-- STACKED TOAST -->
-        <p class="h-5 maincontent__content--info" id="stacked-toast">
-          Stacked Toast
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Stacked Toast</span> component give the <span style="font-style: italic; color: var(--primary);">toast__stacked</span> class to the toast container.
-        </p>
-        <div class="txt-center" style="margin-bottom: var(--space-md);">
-          <div class="toast toast__stacked tst--primary">
-            <p class="toast__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae natus molestiae maxime veritatis libero harum quo.</p>
-            <div class="toast__button--wrapper">
-              <a class="button btn-plain btn-sm btn-primary">Action Button 1</a>
-              <a class="button btn-plain btn-sm btn-primary">Action Button 2</a>
+          <!-- BASIC TOAST -->
+          <p class="h-5 maincontent__content--info" id="basic-toast">
+            Basic Toast
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            To use the
+            <span class="word-highlight-red">Basic Toast</span> component give
+            the <span class="classname-highlight">toast</span> class to the
+            toast container.
+          </p>
+          <div class="txt-center">
+            <div class="toast toast__basic">
+              <p class="toast__content">This is a basic Toast</p>
             </div>
           </div>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522toast%2520toast__stacked%2520tst--primary%2522%253E%250A%2520%2520%253Cp%2520class%253D%2522toast__content%2522%253E%250A%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520Beatae%2520natus%2520molestiae%2520maxime%2520veritatis%2520libero%2520harum%2520quo.%250A%2520%2520%253C%252Fp%253E%250A%2520%2520%253Cdiv%2520class%253D%2522toast__button--wrapper%2522%253E%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522button%2520btn-plain%2520btn-sm%2520btn-primary%2522%253EAction%2520Button%25201%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522button%2520btn-plain%2520btn-sm%2520btn-primary%2522%253EAction%2520Button%25202%253C%252Fa%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 320px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
-
-        <!-- PRIMARY TOAST -->
-        <p class="h-5 maincontent__content--info" id="primary-toast">
-          Primary Toast
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Primary Toast</span> component give the <span style="font-style: italic; color: var(--primary);">tst--primary</span> class to the toast container.
-        </p>
-        <div class="txt-center" style="margin-bottom: var(--space-md);">
-          <div class="toast tst--primary">
-            <img class="icon-lg toast__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/info.svg" alt="info-icon">
-            <p class="toast__content">This is a Primary Toast</p>
-            <img class="icon-md toast__icon--btn toast__close icon-primary" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg" alt="close-btn">
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;div class=&quot;toast toast__basic&quot;&gt;
+  &lt;p class=&quot;toast__content&quot;&gt;This is a basic Toast&lt;/p&gt;
+&lt;/div&gt;
+            </code>
+          </pre>
           </div>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522toast%2520tst--primary%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522icon-lg%2520toast__icon%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Finfo.svg%2522%250A%2520%2520%2520%2520alt%253D%2522info-icon%2522%250A%2520%2520%253E%250A%2520%2520%253Cp%2520class%253D%2522toast__content%2522%253EThis%2520is%2520a%2520Primary%2520Toast%253C%252Fp%253E%250A%2520%2520%253Cimg%2520%250A%2520%2520%2520%2520class%253D%2522icon-md%2520toast__icon--btn%2520toast__close%2520icon-primary%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fclose.svg%2522%250A%2520%2520%2520%2520alt%253D%2522close-btn%2522%250A%2520%2520%253E%250A%253C%252Fdiv%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 450px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
 
-        <!-- DANGER TOAST -->
-        <p class="h-5 maincontent__content--info" id="danger-toast">
-          Danger Toast
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Danger Toast</span> component give the <span style="font-style: italic; color: var(--primary);">tst--danger</span> class to the toast container.
-        </p>
-        <div class="txt-center" style="margin-bottom: var(--space-md);">
-          <div class="toast tst--danger">
-            <img class="icon-lg toast__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/ban.svg" alt="ban-icon">
-            <p class="toast__content">This is a Danger Toast</p>
-            <img class="icon-md toast__icon--btn toast__close icon-danger" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/redo.svg" alt="retry-btn">
-            <img class="icon-md toast__icon--btn toast__close icon-danger" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg" alt="close-btn">
+          <!-- STACKED TOAST -->
+          <p class="h-5 maincontent__content--info" id="stacked-toast">
+            Stacked Toast
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            To use the
+            <span class="word-highlight-red">Stacked Toast</span> component give
+            the <span class="classname-highlight">toast__stacked</span> class to
+            the toast container.
+          </p>
+          <div class="txt-center">
+            <div class="toast toast__stacked tst--primary">
+              <p class="toast__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                natus molestiae maxime veritatis libero harum quo.
+              </p>
+              <div class="toast__button--wrapper">
+                <a class="button btn-plain btn-sm btn-primary"
+                  >Action Button 1</a
+                >
+                <a class="button btn-plain btn-sm btn-primary"
+                  >Action Button 2</a
+                >
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522toast%2520tst--danger%2522%253E%250A%2520%2520%253Cimg%2520%250A%2520%2520%2520%2520class%253D%2522icon-lg%2520toast__icon%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fban.svg%2522%250A%2520%2520%2520%2520alt%253D%2522ban-icon%2522%250A%2520%2520%253E%250A%2520%2520%253Cp%2520class%253D%2522toast__content%2522%253EThis%2520is%2520a%2520Danger%2520Toast%253C%252Fp%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522icon-md%2520toast__icon--btn%2520toast__close%2520icon-danger%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fredo.svg%2522%250A%2520%2520%2520%2520alt%253D%2522retry-btn%2522%250A%2520%2520%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522icon-md%2520toast__icon--btn%2520toast__close%2520icon-danger%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fclose.svg%2522%250A%2520%2520%2520%2520alt%253D%2522close-btn%2522%250A%2520%2520%253E%250A%253C%252Fdiv%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 600px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;div class=&quot;toast toast__stacked tst--primary&quot;&gt;
+  &lt;p class=&quot;toast__content&quot;&gt;
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Beatae natus molestiae maxime veritatis libero harum quo.
+  &lt;/p&gt;
+  &lt;div class=&quot;toast__button--wrapper&quot;&gt;
+    &lt;a class=&quot;button btn-plain btn-sm btn-primary&quot;&gt;Action Button 1&lt;/a&gt;
+    &lt;a class=&quot;button btn-plain btn-sm btn-primary&quot;&gt;Action Button 2&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+            </code>
+          </pre>
+          </div>
 
-        <!-- SUCCESS TOAST -->
-        <p class="h-5 maincontent__content--info" id="success-toast">
-          Success Toast
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Success Toast</span> component give the <span style="font-style: italic; color: var(--primary);">tst--success</span> class to the toast container.
-        </p>
-        <div class="txt-center" style="margin-bottom: var(--space-md);">
-          <div class="toast tst--success">
-            <img class="icon-lg toast__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/check.svg" alt="check-icon">
-            <p class="toast__content">This is a Success Toast</p>
-            <img class="icon-md toast__icon--btn toast__close icon-success" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg" alt="close-btn">
+          <!-- PRIMARY TOAST -->
+          <p class="h-5 maincontent__content--info" id="primary-toast">
+            Primary Toast
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            To use the
+            <span class="word-highlight-red">Primary Toast</span> component give
+            the <span class="classname-highlight">tst--primary</span> class to
+            the toast container.
+          </p>
+          <div class="txt-center">
+            <div class="toast tst--primary">
+              <img
+                class="icon-lg toast__icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/info.svg"
+                alt="info-icon"
+              />
+              <p class="toast__content">This is a Primary Toast</p>
+              <img
+                class="icon-md toast__icon--btn toast__close icon-primary"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg"
+                alt="close-btn"
+              />
+            </div>
           </div>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522toast%2520tst--success%2522%253E%250A%2520%2520%253Cimg%2520%250A%2520%2520%2520%2520class%253D%2522icon-lg%2520toast__icon%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fcheck.svg%2522%250A%2520%2520%2520%2520alt%253D%2522check-icon%2522%250A%2520%2520%253E%250A%2520%2520%253Cp%2520class%253D%2522toast__content%2522%253EThis%2520is%2520a%2520Success%2520Toast%253C%252Fp%253E%250A%2520%2520%253Cimg%2520%250A%2520%2520%2520%2520class%253D%2522icon-md%2520toast__icon--btn%2520toast__close%2520icon-success%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fclose.svg%2522%250A%2520%2520%2520%2520alt%253D%2522close-btn%2522%250A%2520%2520%253E%250A%253C%252Fdiv%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 450px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;div class=&quot;toast tst--primary&quot;&gt;
+  &lt;img
+    class=&quot;icon-lg toast__icon&quot;
+    src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/info.svg&quot;
+  &gt;
+  &lt;p class=&quot;toast__content&quot;&gt;This is a Primary Toast&lt;/p&gt;
+  &lt;img 
+    class=&quot;icon-md toast__icon--btn toast__close icon-primary&quot;
+    src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg&quot;
+  &gt;
+&lt;/div&gt;
+            </code>
+          </pre>
+          </div>
 
-        <!-- WARNING TOAST -->
-        <p class="h-5 maincontent__content--info" id="warning-toast">
-          Warning Toast
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          To use the <span style="font-weight: 500; color: var(--danger);">Warning Toast</span> component give the <span style="font-style: italic; color: var(--primary);">tst--warning</span> class to the toast container.
-        </p>
-        <div class="txt-center" style="margin-bottom: var(--space-md);">
-          <div class="toast tst--warning">
-            <img class="icon-lg toast__icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/warning.svg" alt="warning-icon">
-            <p class="toast__content">This is a Warning Toast</p>
-            <img class="icon-md toast__icon--btn toast__close icon-warning" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/redo.svg" alt="retry-btn">
-            <img class="icon-md toast__icon--btn toast__close icon-warning" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg" alt="close-btn">
+          <!-- DANGER TOAST -->
+          <p class="h-5 maincontent__content--info" id="danger-toast">
+            Danger Toast
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            To use the
+            <span class="word-highlight-red">Danger Toast</span> component give
+            the <span class="classname-highlight">tst--danger</span> class to
+            the toast container.
+          </p>
+          <div class="txt-center">
+            <div class="toast tst--danger">
+              <img
+                class="icon-lg toast__icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/ban.svg"
+                alt="ban-icon"
+              />
+              <p class="toast__content">This is a Danger Toast</p>
+              <img
+                class="icon-md toast__icon--btn toast__close icon-danger"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/redo.svg"
+                alt="retry-btn"
+              />
+              <img
+                class="icon-md toast__icon--btn toast__close icon-danger"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg"
+                alt="close-btn"
+              />
+            </div>
           </div>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=882&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522toast%2520tst--warning%2522%253E%250A%2520%2520%253Cimg%2520%250A%2520%2520%2520%2520class%253D%2522icon-lg%2520toast__icon%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fwarning.svg%2522%250A%2520%2520%2520%2520alt%253D%2522warning-icon%2522%250A%2520%2520%253E%250A%2520%2520%253Cp%2520class%253D%2522toast__content%2522%253EThis%2520is%2520a%2520Warning%2520Toast%253C%252Fp%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522icon-md%2520toast__icon--btn%2520toast__close%2520icon-warning%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fredo.svg%2522%250A%2520%2520%2520%2520alt%253D%2522retry-btn%2522%250A%2520%2520%253E%250A%2520%2520%253Cimg%2520%250A%2520%2520%2520%2520class%253D%2522icon-md%2520toast__icon--btn%2520toast__close%2520icon-warning%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fclose.svg%2522%250A%2520%2520%2520%2520alt%253D%2522close-btn%2522%250A%2520%2520%253E%250A%253C%252Fdiv%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 600px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;div class=&quot;toast tst--danger&quot;&gt;
+  &lt;img 
+    class=&quot;icon-lg toast__icon&quot;
+    src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/ban.svg&quot;
+  &gt;
+  &lt;p class=&quot;toast__content&quot;&gt;This is a Danger Toast&lt;/p&gt;
+  &lt;img
+    class=&quot;icon-md toast__icon--btn toast__close icon-danger&quot;
+    src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/redo.svg&quot;
+  &gt;
+  &lt;img
+    class=&quot;icon-md toast__icon--btn toast__close icon-danger&quot;
+    src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg&quot;
+  &gt;
+&lt;/div&gt;
+            </code>
+          </pre>
+          </div>
+
+          <!-- SUCCESS TOAST -->
+          <p class="h-5 maincontent__content--info" id="success-toast">
+            Success Toast
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            To use the
+            <span class="word-highlight-red">Success Toast</span> component give
+            the <span class="classname-highlight">tst--success</span> class to
+            the toast container.
+          </p>
+          <div class="txt-center">
+            <div class="toast tst--success">
+              <img
+                class="icon-lg toast__icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/check.svg"
+                alt="check-icon"
+              />
+              <p class="toast__content">This is a Success Toast</p>
+              <img
+                class="icon-md toast__icon--btn toast__close icon-success"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg"
+                alt="close-btn"
+              />
+            </div>
+          </div>
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;div class=&quot;toast tst--success&quot;&gt;
+  &lt;img 
+    class=&quot;icon-lg toast__icon&quot;
+    src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/check.svg&quot;
+  &gt;
+  &lt;p class=&quot;toast__content&quot;&gt;This is a Success Toast&lt;/p&gt;
+  &lt;img 
+    class=&quot;icon-md toast__icon--btn toast__close icon-success&quot;
+    src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg&quot;
+  &gt;
+&lt;/div&gt;
+            </code>
+          </pre>
+          </div>
+
+          <!-- WARNING TOAST -->
+          <p class="h-5 maincontent__content--info" id="warning-toast">
+            Warning Toast
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            To use the
+            <span class="word-highlight-red">Warning Toast</span> component give
+            the <span class="classname-highlight">tst--warning</span> class to
+            the toast container.
+          </p>
+          <div class="txt-center">
+            <div class="toast tst--warning">
+              <img
+                class="icon-lg toast__icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/warning.svg"
+                alt="warning-icon"
+              />
+              <p class="toast__content">This is a Warning Toast</p>
+              <img
+                class="icon-md toast__icon--btn toast__close icon-warning"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/redo.svg"
+                alt="retry-btn"
+              />
+              <img
+                class="icon-md toast__icon--btn toast__close icon-warning"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg"
+                alt="close-btn"
+              />
+            </div>
+          </div>
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;div class=&quot;toast tst--warning&quot;&gt;
+  &lt;img 
+    class=&quot;icon-lg toast__icon&quot;
+    src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/warning.svg&quot;
+  &gt;
+  &lt;p class=&quot;toast__content&quot;&gt;This is a Warning Toast&lt;/p&gt;
+  &lt;img
+    class=&quot;icon-md toast__icon--btn toast__close icon-warning&quot;
+    src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/redo.svg&quot;
+  &gt;
+  &lt;img 
+    class=&quot;icon-md toast__icon--btn toast__close icon-warning&quot;
+    src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/close.svg&quot;
+  &gt;
+&lt;/div&gt;
+            </code>
+          </pre>
+          </div>
+        </section>
+
+        <!-------------------------------------
+                  CONTENT FOOTER 
+      -------------------------------------->
+        <footer class="footer">
+          <section class="navigation__wrapper">
+            <a
+              href="../slider/slider.html"
+              class="navigation__wrapper--item txt-center st-1"
+            >
+              <img
+                class="icon-sm icon-dark maincontent__sidebar--icon rotate90"
+                src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+                alt="angle-icon"
+              />
+              Slider
+            </a>
+            <a
+              href="../variables/variables.html"
+              class="navigation__wrapper--item txt-center st-1"
+            >
+              Variables
+              <img
+                class="icon-sm icon-dark maincontent__sidebar--icon"
+                src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+                alt="angle-icon"
+              />
+            </a>
+          </section>
+          <section class="footer__end">
+            <p class="footer__copyright bd-5">
+              Copyright &copy; 2022
+              <a href="https://github.com/VishalPatil18"> Vishal Patil </a>
+              <br class="footer__break" />
+              All Rights Reserved
+            </p>
+            <a href="https://github.com/VishalPatil18/VISPA-UI-Docs">
+              Edit this page on Github
+            </a>
+          </section>
+        </footer>
       </section>
 
       <!-------------------------------------
-                  CONTENT FOOTER 
-      -------------------------------------->
-      <footer class="footer">
-        <section class="navigation__wrapper">
-          <a href="../slider/slider.html" class="navigation__wrapper--item txt-center st-1">
-            <img class="icon-sm icon-dark maincontent__sidebar--icon" style="transform: rotate(-90deg);" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-            Slider
-          </a>
-          <a href="../variables/variables.html" class="navigation__wrapper--item txt-center st-1">
-            Variables
-            <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-          </a>
-        </section>
-        <section class="footer__end">
-          <p class="footer__copyright bd-5">
-            Copyright &copy; 2022 
-            <a href="https://github.com/VishalPatil18">
-              Vishal Patil
-            </a>
-            <br class="footer__break">
-             All Rights Reserved
-          </p>
-          <a href="https://github.com/VishalPatil18/VISPA-UI">Edit this page on Github</a>
-        </section>
-      </footer>
-    </section>
+                RIGHT SIDEBAR 
+    -------------------------------------->
+      <!-------------------------------------
+                RIGHT SIDEBAR 
+    -------------------------------------->
+      <aside class="maincontent__sidebar--right">
+        <h6 class="h-6 maincontent__sidebar--right--title">On this Page</h6>
+        <a class="bd-5" href="#basic-toast">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Basic Toast
+        </a>
+        <a class="bd-5" href="#stacked-toast">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Stacked Toast
+        </a>
+        <a class="bd-5" href="#primary-toast">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Primary Toast
+        </a>
+        <a class="bd-5" href="#danger-toast">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Danger Toast
+        </a>
+        <a class="bd-5" href="#success-toast">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Success Toast
+        </a>
+        <a class="bd-5" href="#warning-toast">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Warning Toast
+        </a>
+      </aside>
+    </main>
+  </body>
+  <script src="../../script.js" defer></script>
 
-    <!-------------------------------------
-                RIGHT SIDEBAR 
-    -------------------------------------->
-    <!-------------------------------------
-                RIGHT SIDEBAR 
-    -------------------------------------->
-    <aside class="maincontent__sidebar--right">
-      <h6 class="h-6 maincontent__sidebar--right--title">On this Page</h6>
-      <a class="bd-5" href="#basic-toast">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Basic Toast
-      </a>
-      <a class="bd-5" href="#stacked-toast">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Stacked Toast
-      </a>
-      <a class="bd-5" href="#primary-toast">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Primary Toast
-      </a>
-      <a class="bd-5" href="#danger-toast">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Danger Toast
-      </a>
-      <a class="bd-5" href="#success-toast">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Success Toast
-      </a>
-      <a class="bd-5" href="#warning-toast">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Warning Toast
-      </a>
-    </aside>
-  </main>
-</body>
-<script src="../../script.js" defer></script>
+  <!-- HIGHLIGHT.JS CDN SCRIPT -->
+  <script src="../../highlight/highlight.min.js"></script>
+
+  <!-- RUNNING HIGHLIGHT JS FOR STYLING -->
+  <script>
+    hljs.highlightAll();
+  </script>
 </html>
