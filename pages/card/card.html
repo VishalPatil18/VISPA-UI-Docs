@@ -1,413 +1,936 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://vispaui-postdev-deploy.netlify.app/css/main.css">
-  <link rel="stylesheet" href="../../style.css">
-  <link rel="icon" type="image/x-icon" href="../../assets/VISPA_UI--logo.svg">
-  <title>VISPA-UI / Cards</title>
-</head>
-<body>
-  <!-------------------------------------
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- HIGHLIGHT.JS STYLESHEET -->
+    <link
+      rel="stylesheet"
+      href="../../highlight/styles/atom-one-dark-reasonable.min.css"
+    />
+
+    <!-- VENDOR STYLESHEET -->
+    <link
+      rel="stylesheet"
+      href="https://vispaui-postdev-deploy.netlify.app/css/main.css"
+    />
+
+    <!-- MAIN STYLESHEET -->
+    <link rel="stylesheet" href="../../style.css" />
+
+    <!-- FAVICON -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../assets/VISPA_UI--logo.svg"
+    />
+
+    <!-- TITLE -->
+    <title>VISPA-UI / Cards</title>
+  </head>
+  <body>
+    <!-------------------------------------
                   NAVBAR 
   -------------------------------------->
-  <header class="_navbar">
-    <img class="navbar__logo" src="../../assets/VISPA_UI--logo.svg" alt="vispa-ui--logo">
-    <img class="navbar__menu--btn icon-xl icon-primary" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bars.svg" id="menu-btn" alt="menu-btn">
-    <a class="h-4" href="../../index.html">
-      <p>VISPA<span class="navbar__ui">UI</span></p>
-    </a>
-    <span class="navbar__version">v1.0</span>
-    <a class="h-5 button btn-lg btn-plain" href="../alert/alert.html">Docs</a>
-    <a href="https://github.com/VishalPatil18/VISPA-UI">
-      <img class="icon-dark icon-xl" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/github.svg" alt="github">
-    </a>
-  </header>
+    <header class="_navbar">
+      <img
+        class="navbar__logo"
+        src="../../assets/VISPA_UI--logo.svg"
+        alt="vispa-ui--logo"
+      />
+      <img
+        class="navbar__menu--btn icon-xl icon-primary"
+        src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bars.svg"
+        id="menu-btn"
+        alt="menu-btn"
+      />
+      <a class="h-4" href="../../index.html">
+        <p>VISPA<span class="navbar__ui">UI</span></p>
+      </a>
+      <span class="navbar__version">v1.0</span>
+      <a class="h-5 button btn-lg btn-plain" href="../alert/alert.html">Docs</a>
+      <a href="https://github.com/VishalPatil18/VISPA-UI">
+        <img
+          class="icon-dark icon-xl"
+          src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/github.svg"
+          alt="github"
+        />
+      </a>
+    </header>
 
-  <!-------------------------------------
+    <!-------------------------------------
                 MAIN BODY 
   -------------------------------------->
-  <main class="maincontent">
-    <!-------------------------------------
+    <main class="maincontent">
+      <!-------------------------------------
                   SIDEBAR 
     -------------------------------------->
-    <aside class="maincontent__sidebar--left">
-      <div class="drawer" id="sidebar-el">
-        <button class="button btn-plain sidebar__close--btn" id="sidebar-close-btn">
-          <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/times.svg" alt="close">
-        </button>
-        <div class="drawer__list">
-          <p class="list__subheading">Getting Started</p>
-          <a href="../installation/installation.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/download.svg" alt="install">
-            Installation
-          </a>
-    
-          <a href="../colors/colors.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/palette.svg" alt="colors">
-            Colors
-          </a>
-    
-          <a href="../typography/typography.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/feather-alt.svg" alt="typography">
-            Typography
-          </a>
+      <aside class="maincontent__sidebar--left">
+        <div class="drawer" id="sidebar-el">
+          <button
+            class="button btn-plain sidebar__close--btn"
+            id="sidebar-close-btn"
+          >
+            <img
+              class="icon-md icon-dark drawer__item--icon"
+              src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/times.svg"
+              alt="close"
+            />
+          </button>
+          <div class="drawer__list">
+            <p class="list__subheading">Getting Started</p>
+            <a href="../installation/installation.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/download.svg"
+                alt="install"
+              />
+              Installation
+            </a>
 
-          <a href="../utilities/utilities.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/cogs.svg" alt="utilities">
-            Utilities
-          </a>
-        </div>
-        <div class="drawer__list">
-          <p class="list__subheading">Components</p>
-          <a href="../alert/alert.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/warning.svg" alt="alert">
-            Alert
-          </a>
-          <a href="../avatar/avatar.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/portrait.svg" alt="avatar">
-            Avatar
-          </a>
-          <a href="../badge/badge.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg" alt="badge">
-            Badge
-          </a>
-          <a href="../button/button.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/clone.svg" alt="button">
-            Button
-          </a>
-          <a href="./card.html" class="drawer__item drawer__item--active">
-            <img class="icon-md icon-primary drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/id-card.svg" alt="card">
-            Card
-          </a>
-          <a href="../chips/chips.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/backspace.svg" alt="chips">
-            Chips
-          </a>
-          <a href="../drawer/drawer.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/indent.svg" alt="drawer">
-            Drawer
-          </a>
-          <a href="../grid/grid.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/th.svg" alt="grid">
-            Grid
-          </a>
-          <a href="../image/image.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/images.svg" alt="image">
-            Image
-          </a>
-          <a href="../input/input.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/edit.svg" alt="input">
-            Input
-          </a>
-          <a href="../list/list.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/list-ol.svg" alt="list">
-            List
-          </a>
-          <a href="../modal/modal.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/window-maximize.svg" alt="modal">
-            Modal
-          </a>
-          <a href="../navbar/navbar.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bars.svg" alt="navbar">
-            Navbar
-          </a>
-          <a href="../rating/rating.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/star-solid.svg" alt="rating">
-            Rating
-          </a>
-          <a href="../slider/slider.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/server.svg" alt="slider">
-            Slider
-          </a>
-          <a href="../toast/toast.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/vote-yea.svg" alt="toast">
-            Toast
-          </a>
-        </div>
-        <div class="drawer__list">
-          <p class="list__subheading">Customization</p>
-          <a href="../variables/variables.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/at.svg" alt="toast">
-            Variables
-          </a>
-          <a href="../utilityclasses/utilityclasses.html" class="drawer__item">
-            <img class="icon-md icon-dark drawer__item--icon" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bezier-curve.svg" alt="toast">
-            Utility Classes
-          </a>
-        </div>
-      </div>
-    </aside>
+            <a href="../colors/colors.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/palette.svg"
+                alt="colors"
+              />
+              Colors
+            </a>
 
-    <!-------------------------------------
+            <a href="../typography/typography.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/feather-alt.svg"
+                alt="typography"
+              />
+              Typography
+            </a>
+
+            <a href="../utilities/utilities.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/cogs.svg"
+                alt="utilities"
+              />
+              Utilities
+            </a>
+          </div>
+          <div class="drawer__list">
+            <p class="list__subheading">Components</p>
+            <a href="../alert/alert.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/warning.svg"
+                alt="alert"
+              />
+              Alert
+            </a>
+            <a href="../avatar/avatar.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/portrait.svg"
+                alt="avatar"
+              />
+              Avatar
+            </a>
+            <a href="../badge/badge.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg"
+                alt="badge"
+              />
+              Badge
+            </a>
+            <a href="../button/button.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/clone.svg"
+                alt="button"
+              />
+              Button
+            </a>
+            <a href="./card.html" class="drawer__item drawer__item--active">
+              <img
+                class="icon-md icon-primary drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/id-card.svg"
+                alt="card"
+              />
+              Card
+            </a>
+            <a href="../chips/chips.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/backspace.svg"
+                alt="chips"
+              />
+              Chips
+            </a>
+            <a href="../drawer/drawer.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/indent.svg"
+                alt="drawer"
+              />
+              Drawer
+            </a>
+            <a href="../grid/grid.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/th.svg"
+                alt="grid"
+              />
+              Grid
+            </a>
+            <a href="../image/image.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/images.svg"
+                alt="image"
+              />
+              Image
+            </a>
+            <a href="../input/input.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/edit.svg"
+                alt="input"
+              />
+              Input
+            </a>
+            <a href="../list/list.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/list-ol.svg"
+                alt="list"
+              />
+              List
+            </a>
+            <a href="../modal/modal.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/window-maximize.svg"
+                alt="modal"
+              />
+              Modal
+            </a>
+            <a href="../navbar/navbar.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bars.svg"
+                alt="navbar"
+              />
+              Navbar
+            </a>
+            <a href="../rating/rating.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/star-solid.svg"
+                alt="rating"
+              />
+              Rating
+            </a>
+            <a href="../slider/slider.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/server.svg"
+                alt="slider"
+              />
+              Slider
+            </a>
+            <a href="../toast/toast.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/vote-yea.svg"
+                alt="toast"
+              />
+              Toast
+            </a>
+          </div>
+          <div class="drawer__list">
+            <p class="list__subheading">Customization</p>
+            <a href="../variables/variables.html" class="drawer__item">
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/at.svg"
+                alt="toast"
+              />
+              Variables
+            </a>
+            <a
+              href="../utilityclasses/utilityclasses.html"
+              class="drawer__item"
+            >
+              <img
+                class="icon-md icon-dark drawer__item--icon"
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bezier-curve.svg"
+                alt="toast"
+              />
+              Utility Classes
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <!-------------------------------------
                     CONTENT
     -------------------------------------->
-    <section class="maincontent__content bd-5 typography__content">
-      <section class="maincontent__content--box">
-        <h1 class="h-4" id="colors">Cards</h1>
-        <p class="bd-5 maincontent__content--desc">
-          VISPA-UI includes an expertly-crafted 5 varieties of <span style="font-weight: 500; color: var(--danger);">Cards</span> which can make your UI building experience effortless.
-        </p>
+      <section class="maincontent__content bd-5 typography__content">
+        <section class="maincontent__content--box">
+          <h1 class="h-4" id="colors">Cards</h1>
+          <p class="bd-5 maincontent__content--desc">
+            VISPA-UI includes an expertly-crafted 5 varieties of
+            <span class="word-highlight-red">Cards</span> which can make your UI
+            building experience effortless.
+          </p>
 
-        <!-- BASIC CARD -->
-        <p class="h-5 maincontent__content--info" id="basic-card">
-          Basic Card
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          The <span style="font-weight: 500; color: var(--danger);">Basic Card</span> component comes with a Title, a Card Body and a button at the end.
-        </p>
-        <div class="txt-center" style="padding-bottom: var(--space-sm);">
-          <div class="card">
-            <div class="card__title">
-              <h1 class="h-5">Card Title</h1>
-            </div>
-            <div class="card__content">
-              <p class="bd-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi praesentium totam reprehenderit.</p>
-            </div>
-            <a class="card__button" href="#"><button class="button btn-solid-dark">Button</button></a>
-          </div>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card__title%2522%253E%250A%2520%2520%2520%2520%253Ch1%2520class%253D%2522h-5%2522%253ECard%2520Title%253C%252Fh1%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card__content%2522%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522bd-5%2522%253E%250A%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Nisi%2520praesentium%2520totam%2520reprehenderit.%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Ca%2520class%253D%2522card__button%2522%2520href%253D%2522%2523%2522%253E%253Cbutton%2520class%253D%2522button%2520btn-solid-dark%2522%253EButton%253C%252Fbutton%253E%253C%252Fa%253E%250A%253C%252Fdiv%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 400px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
-
-        <!-- IMAGE CARD -->
-        <p class="h-5 maincontent__content--info" id="image-card">
-          Dismissible Image Card
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          The <span style="font-weight: 500; color: var(--danger);">Image Card</span> component comes with an Image, a close button, a Title, a Subtitle, a Card Body and a few buttons at the end.
-        </p>
-        <div class="txt-center" style="padding-bottom: var(--space-sm);">
-          <div class="card">
-            <div class="card__body">
-              <img src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/image.jpg" class="card__img" alt="card-image"/>
-              <img class="icon-lg icon-dark card__close-btn" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/times.svg" alt="close-icon">
+          <!-- BASIC CARD -->
+          <p class="h-5 maincontent__content--info" id="basic-card">
+            Basic Card
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            The <span class="word-highlight-red">Basic Card</span> component
+            comes with a Title, a Card Body and a button at the end.
+          </p>
+          <div class="txt-center">
+            <div class="card">
               <div class="card__title">
                 <h1 class="h-5">Card Title</h1>
-                <p class="caption">by Bablu Tailor</p>
               </div>
               <div class="card__content">
-                <p class="bd-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rerum ipsum itaque adipisci dolores ipsa.</p>
+                <p class="bd-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                  praesentium totam reprehenderit.
+                </p>
               </div>
-            </div>
-            <div class="card__footer">
-              <div class="card__footer--left">
-                <a class="card__button" href="#"><button class="button btn-sm btn-plain btn-primary">READ</button></a>
-              </div>
-              <div class="card__footer--right">
-                <a><img class="icon-sm icon-dark" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/heart.svg" alt="heart-icon"/></a>
-                <a><img class="icon-sm icon-dark" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg" alt="bookmark-icon"/></a>
-                <a><img class="icon-sm icon-dark" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/share.svg" alt="share-icon"/></a>
-                <a><img class="icon-sm icon-dark" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/menu.svg" alt="menu-icon"/></a>
-              </div>
+              <a class="card__button" href="#"
+                ><button class="button btn-solid-dark">Button</button></a
+              >
             </div>
           </div>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card__body%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fimage.jpg%2522%2520class%253D%2522card__img%2522%2520alt%253D%2522card-image%2522%252F%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522icon-lg%2520icon-dark%2520card__close-btn%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Ftimes.svg%2522%2520alt%253D%2522close-icon%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__title%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522h-5%2522%253ECard%2520Title%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522caption%2522%253Eby%2520Bablu%2520Tailor%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__content%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522bd-5%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Ea%2520rerum%2520ipsum%2520itaque%2520adipisci%2520dolores%2520ipsa.%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card__footer%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__footer--left%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522card__button%2522%2520href%253D%2522%2523%2522%253E%253Cbutton%2520class%253D%2522button%2520btn-sm%2520btn-plain%2520btn-primary%2522%253EREAD%253C%252Fbutton%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__footer--right%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%253E%253Cimg%2520class%253D%2522icon-sm%2520icon-dark%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fheart.svg%2522%2520alt%253D%2522heart-icon%2522%252F%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%253E%253Cimg%2520class%253D%2522icon-sm%2520icon-dark%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fbookmark.svg%2522%2520alt%253D%2522bookmark-icon%2522%252F%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%253E%253Cimg%2520class%253D%2522icon-sm%2520icon-dark%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fshare.svg%2522%2520alt%253D%2522share-icon%2522%252F%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%253E%253Cimg%2520class%253D%2522icon-sm%2520icon-dark%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fmenu.svg%2522%2520alt%253D%2522menu-icon%2522%252F%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-            style="width: 100%; height: 900px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy"
-            sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
-
-        <!-- SOCIAL MEDIA CARD -->
-        <p class="h-5 maincontent__content--info" id="socialmedia-card">
-          Social Media Card
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          The <span style="font-weight: 500; color: var(--danger);">Social Media Card</span> component comes with a Username and Avatar, a Card Image, a Body and a few buttons at the end.
-        </p>
-        <div class="txt-center" style="padding-bottom: var(--space-sm);">
-          <div class="card card__socialmedia">
-            <div class="card__body">
-              <div class="card__title">
-                <div class="card__title--img">
-                  <img class="avatar av-sm" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/profile_dark.png" alt="profile_dark">
-                </div>
-                <div class="card__title--content">
-                  <h1 class="h-5">Bablu Tailor</h1>
-                  <p class="card__title--p cp">7 Hours ago</p>
-                </div>
-                <a href="#" class="card__title--icon"><img class="icon-sm icon-dark" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/menu.svg" alt="menu-icon"/></a>
-              </div>
-              <img src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/image.jpg" class="card__img" alt="card-image"/>
-              <div class="card__content">
-                <p class="bd-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores impedit voluptatum dicta odit quos rem delectus deleniti.</p>
-              </div>
-            </div>
-            <div class="card__footer">
-              <div class="card__footer--left cp">
-                Jony and 8 Others liked
-              </div>
-              <div class="card__footer--right">
-                <a><img class="icon-sm icon-dark" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/heart.svg" alt="heart-icon"/></a>
-                <a><img class="icon-sm icon-dark" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/comment.svg" alt="comment-icon"/></a>
-                <a><img class="icon-sm icon-dark" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg" alt="bookmark-icon"/></a>
-                <a><img class="icon-sm icon-dark" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/share.svg" alt="share-icon"/></a>
-              </div>
-            </div>
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;div class=&quot;card&quot;&gt;
+  &lt;div class=&quot;card__title&quot;&gt;
+    &lt;h1 class=&quot;h-5&quot;&gt;Card Title&lt;/h1&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card__content&quot;&gt;
+    &lt;p class=&quot;bd-5&quot;&gt;
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Nisi praesentium totam reprehenderit.
+    &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;a class=&quot;card__button&quot; href=&quot;#&quot;&gt;
+    &lt;button class=&quot;button btn-solid-dark&quot;&gt;
+      Button
+    &lt;/button&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+            </code>
+          </pre>
           </div>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card__socialmedia%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card__body%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__title%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__title--img%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520av-sm%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fprofile_dark.png%2522%2520alt%253D%2522profile_dark%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__title--content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522h-5%2522%253EBablu%2520Tailor%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card__title--p%2522%253E7%2520Hours%2520ago%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522card__title--icon%2522%253E%253Cimg%2520class%253D%2522icon-sm%2520icon-dark%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fmenu.svg%2522%2520alt%253D%2522menu-icon%2522%252F%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fimage.jpg%2522%2520class%253D%2522card__img%2522%2520alt%253D%2522card-image%2522%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__content%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522bd-5%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Asperiores%2520impedit%2520voluptatum%2520dicta%2520odit%2520quos%2520rem%2520delectus%2520deleniti.%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card__footer%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__footer--left%2522%253E%250A%2520%2520%2520%2520%2520%2520Jony%2520and%25208%2520Others%2520liked%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__footer--right%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%253E%253Cimg%2520class%253D%2522icon-sm%2520icon-dark%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fheart.svg%2522%2520alt%253D%2522heart-icon%2522%252F%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%253E%253Cimg%2520class%253D%2522icon-sm%2520icon-dark%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fcomment.svg%2522%2520alt%253D%2522comment-icon%2522%252F%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%253E%253Cimg%2520class%253D%2522icon-sm%2520icon-dark%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fbookmark.svg%2522%2520alt%253D%2522bookmark-icon%2522%252F%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%253E%253Cimg%2520class%253D%2522icon-sm%2520icon-dark%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fshare.svg%2522%2520alt%253D%2522share-icon%2522%252F%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 900px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
 
-        <!-- TEXT OVERLAY CARD -->
-        <p class="h-5 maincontent__content--info" id="overlay-card">
-          Text Overlay Card
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          The <span style="font-weight: 500; color: var(--danger);">Text Overlay Card</span> component comes with a Title, a Subtitle, an Image Background, a caption text and a few buttons at the end.
-        </p>
-        <div class="txt-center" style="padding-bottom: var(--space-sm);">
-          <div class="card card__imgbg">
-            <img src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/image.jpg" class="card__img" alt="card-image"/>
-            <div class="card__body">
-              <div class="card__title">
-                <h1 class="h-5">Card Title</h1>
-                <p class="caption">Card Sub-title</p>
+          <!-- IMAGE CARD -->
+          <p class="h-5 maincontent__content--info" id="image-card">
+            Dismissible Image Card
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            The <span class="word-highlight-red">Image Card</span> component
+            comes with an Image, a close button, a Title, a Subtitle, a Card
+            Body and a few buttons at the end.
+          </p>
+          <div class="txt-center">
+            <div class="card">
+              <div class="card__body">
+                <img
+                  src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/image.jpg"
+                  class="card__img"
+                  alt="card-image"
+                />
+                <img
+                  class="icon-lg icon-dark card__close-btn"
+                  src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/times.svg"
+                  alt="close-icon"
+                />
+                <div class="card__title">
+                  <h1 class="h-5">Card Title</h1>
+                  <p class="caption">by Bablu Tailor</p>
+                </div>
+                <div class="card__content">
+                  <p class="bd-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    rerum ipsum itaque adipisci dolores ipsa.
+                  </p>
+                </div>
               </div>
               <div class="card__footer">
                 <div class="card__footer--left">
-                  7 hours ago
+                  <a class="card__button" href="#"
+                    ><button class="button btn-sm btn-plain btn-primary">
+                      READ
+                    </button></a
+                  >
                 </div>
                 <div class="card__footer--right">
-                  <a><img class="icon-sm icon-light" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/heart.svg" alt="heart-icon"/></a>
-                  <a><img class="icon-sm icon-light" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/comment.svg" alt="comment-icon"/></a>
-                  <a><img class="icon-sm icon-light" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg" alt="bookmark-icon"/></a>
-                  <a><img class="icon-sm icon-light" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/share.svg" alt="share-icon"/></a>
+                  <a
+                    ><img
+                      class="icon-sm icon-dark"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/heart.svg"
+                      alt="heart-icon"
+                  /></a>
+                  <a
+                    ><img
+                      class="icon-sm icon-dark"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg"
+                      alt="bookmark-icon"
+                  /></a>
+                  <a
+                    ><img
+                      class="icon-sm icon-dark"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/share.svg"
+                      alt="share-icon"
+                  /></a>
+                  <a
+                    ><img
+                      class="icon-sm icon-dark"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/menu.svg"
+                      alt="menu-icon"
+                  /></a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card__imgbg%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fimage.jpg%2522%2520class%253D%2522card__img%2522%2520alt%253D%2522card-image%2522%252F%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card__body%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__title%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522h-5%2522%253ECard%2520Title%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522caption%2522%253ECard%2520Sub-title%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__footer--left%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%25207%2520hours%2520ago%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__footer--right%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%253E%253Cimg%2520class%253D%2522icon-sm%2520icon-light%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fheart.svg%2522%2520alt%253D%2522heart-icon%2522%252F%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%253E%253Cimg%2520class%253D%2522icon-sm%2520icon-light%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fcomment.svg%2522%2520alt%253D%2522comment-icon%2522%252F%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%253E%253Cimg%2520class%253D%2522icon-sm%2520icon-light%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fbookmark.svg%2522%2520alt%253D%2522bookmark-icon%2522%252F%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%253E%253Cimg%2520class%253D%2522icon-sm%2520icon-light%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fshare.svg%2522%2520alt%253D%2522share-icon%2522%252F%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 800px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;div class=&quot;card&quot;&gt;
+  &lt;div class=&quot;card__body&quot;&gt;
+    &lt;img src=&quot;#&quot; class=&quot;card__img&quot; /&gt;
+    &lt;img 
+      class=&quot;icon-lg icon-dark card__close-btn&quot; 
+      src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/times.svg&quot;
+    &gt;
+    &lt;div class=&quot;card__title&quot;&gt;
+      &lt;h1 class=&quot;h-5&quot;&gt;Card Title&lt;/h1&gt;
+      &lt;p class=&quot;caption&quot;&gt;by Bablu Tailor&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card__content&quot;&gt;
+      &lt;p class=&quot;bd-5&quot;&gt;
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ea rerum ipsum itaque adipisci dolores ipsa.
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card__footer&quot;&gt;
+    &lt;div class=&quot;card__footer--left&quot;&gt;
+      &lt;a class=&quot;card__button&quot; href=&quot;#&quot;&gt;
+        &lt;button class=&quot;button btn-sm btn-plain btn-primary&quot;&gt;
+          READ
+        &lt;/button&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card__footer--right&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        &lt;img 
+          class=&quot;icon-sm icon-dark&quot; 
+          src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/heart.svg&quot; 
+        /&gt;
+      &lt;/a&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        &lt;img 
+          class=&quot;icon-sm icon-dark&quot; 
+          src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg&quot; 
+        /&gt;
+      &lt;/a&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        &lt;img
+          class=&quot;icon-sm icon-dark&quot; 
+          src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/share.svg&quot; 
+        /&gt;
+      &lt;/a&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        &lt;img 
+          class=&quot;icon-sm icon-dark&quot; 
+          src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/menu.svg&quot; 
+        /&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;        
+            </code>
+          </pre>
+          </div>
 
-        <!-- E-COMMERCE CARD -->
-        <p class="h-5 maincontent__content--info" id="ecommerce-card">
-          E-Commerce Card
-        </p>
-        <p class="bd-5 maincontent__content--info">
-          The <span style="font-weight: 500; color: var(--danger);">E-Commerce Card</span> component comes with an Image, Product Title, a Product Category, Price Tag, a OFF Badge and a few buttons at the end.
-        </p>
-        <div class="txt-center" style="padding-bottom: var(--space-sm);">
-          <div class="card card__ecommerce">
-            <div class="card__body">
-              <div class="card__badge">
-                <img class="badge__icon icon-danger" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg" alt="bookmark-icon"/>
-                <span class="card__discount">40% OFF</span>
+          <!-- SOCIAL MEDIA CARD -->
+          <p class="h-5 maincontent__content--info" id="socialmedia-card">
+            Social Media Card
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            The
+            <span class="word-highlight-red">Social Media Card</span> component
+            comes with a Username and Avatar, a Card Image, a Body and a few
+            buttons at the end.
+          </p>
+          <div class="txt-center">
+            <div class="card card__socialmedia">
+              <div class="card__body">
+                <div class="card__title">
+                  <div class="card__title--img">
+                    <img
+                      class="avatar av-sm"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/profile_dark.png"
+                      alt="profile_dark"
+                    />
+                  </div>
+                  <div class="card__title--content">
+                    <h1 class="h-5">Bablu Tailor</h1>
+                    <p class="card__title--p cp">7 Hours ago</p>
+                  </div>
+                  <a href="#" class="card__title--icon"
+                    ><img
+                      class="icon-sm icon-dark"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/menu.svg"
+                      alt="menu-icon"
+                  /></a>
+                </div>
+                <img
+                  src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/image.jpg"
+                  class="card__img"
+                  alt="card-image"
+                />
+                <div class="card__content">
+                  <p class="bd-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Asperiores impedit voluptatum dicta odit quos rem delectus
+                    deleniti.
+                  </p>
+                </div>
               </div>
-              <img src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/image.jpg" class="card__img" alt="card-image"/>
-              <div class="card__title">
-                <h1 class="h-5">Item Title</h1>
-                <p class="caption">Item Category</p>
-              </div>
-              <div class="card__content">
-                <p class="bd-5">₹ <strike>5000</strike> <span class="card__content--newprice">3000</span> /-</p>
-                <button class="btn-solid-primary card__content--button">-</button>
-                <span class="st-1">2</span>
-                <button class="btn-solid-primary card__content--button">+</button>
-              </div>
-            </div>
-            <div class="card__footer">
-              <div class="card__footer--left">
-                <a class="card__button" href="#"><button class="button btn-sm btn-solid-success">Buy - ₹ 6000</button></a>
-              </div>
-              <div class="card__footer--right">
-                <a><img class="icon-sm icon-dark" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/heart.svg" alt="heart-icon"/></a>
-                <a><img class="icon-sm icon-dark" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/share.svg" alt="share-icon"/></a>
-                <a><img class="icon-sm icon-dark" src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/menu.svg" alt="menu-icon"/></a>
+              <div class="card__footer">
+                <div class="card__footer--left cp">Jony and 8 Others liked</div>
+                <div class="card__footer--right">
+                  <a
+                    ><img
+                      class="icon-sm icon-dark"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/heart.svg"
+                      alt="heart-icon"
+                  /></a>
+                  <a
+                    ><img
+                      class="icon-sm icon-dark"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/comment.svg"
+                      alt="comment-icon"
+                  /></a>
+                  <a
+                    ><img
+                      class="icon-sm icon-dark"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg"
+                      alt="bookmark-icon"
+                  /></a>
+                  <a
+                    ><img
+                      class="icon-sm icon-dark"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/share.svg"
+                      alt="share-icon"
+                  /></a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="code__wrapper">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=material&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card__ecommerce%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card__body%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522badge__icon%2520icon-danger%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fbookmark.svg%2522%2520alt%253D%2522bookmark-icon%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card__discount%2522%253E40%2525%2520OFF%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fimage.jpg%2522%2520class%253D%2522card__img%2522%2520alt%253D%2522card-image%2522%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__title%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522h-5%2522%253EItem%2520Title%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522caption%2522%253EItem%2520Category%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__content%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522bd-5%2522%253E%25E2%2582%25B9%2520%253Cstrike%253E5000%253C%252Fstrike%253E%2520%253Cspan%2520class%253D%2522card__content--newprice%2522%253E3000%253C%252Fspan%253E%2520%252F-%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-solid-primary%2520card__content--button%2522%253E-%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522st-1%2522%253E2%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-solid-primary%2520card__content--button%2522%253E%252B%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card__footer%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__footer--left%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522card__button%2522%2520href%253D%2522%2523%2522%253E%253Cbutton%2520class%253D%2522button%2520btn-sm%2520btn-solid-success%2522%253EBuy%2520-%2520%25E2%2582%25B9%25206000%253C%252Fbutton%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__footer--right%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%253E%253Cimg%2520class%253D%2522icon-sm%2520icon-dark%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fheart.svg%2522%2520alt%253D%2522heart-icon%2522%252F%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%253E%253Cimg%2520class%253D%2522icon-sm%2520icon-dark%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fshare.svg%2522%2520alt%253D%2522share-icon%2522%252F%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%253E%253Cimg%2520class%253D%2522icon-sm%2520icon-dark%2522%2520src%253D%2522https%253A%252F%252Fraw.githubusercontent.com%252FVishalPatil18%252FVISPA-UI%252Fmain%252Fassets%252Fmenu.svg%2522%2520alt%253D%2522menu-icon%2522%252F%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-            sandbox="allow-scripts allow-same-origin"
-            style="width: 100%; height: 900px; border:0; transform: scale(1); overflow:hidden;"
-            loading="lazy">
-          </iframe>
-        </div>
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;div class=&quot;card card__socialmedia&quot;&gt;
+  &lt;div class=&quot;card__body&quot;&gt;
+    &lt;div class=&quot;card__title&quot;&gt;
+      &lt;div class=&quot;card__title--img&quot;&gt;
+        &lt;img  class=&quot;avatar av-sm&quot;  src=&quot;#&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card__title--content&quot;&gt;
+        &lt;h1 class=&quot;h-5&quot;&gt;Bablu Tailor&lt;/h1&gt;
+        &lt;p class=&quot;card__title--p&quot;&gt;7 Hours ago&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;a href=&quot;#&quot; class=&quot;card__title--icon&quot;&gt;
+        &lt;img 
+          class=&quot;icon-sm icon-dark&quot; 
+          src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/menu.svg&quot; /&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;img src=&quot;#&quot; class=&quot;card__img&quot; /&gt;
+    &lt;div class=&quot;card__content&quot;&gt;
+      &lt;p class=&quot;bd-5&quot;&gt;
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Asperiores impedit voluptatum dicta odit quos rem delectus deleniti.
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card__footer&quot;&gt;
+    &lt;div class=&quot;card__footer--left&quot;&gt;
+      Jony and 8 Others liked
+    &lt;/div&gt;
+    &lt;div class=&quot;card__footer--right&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+        &lt;img 
+          class=&quot;icon-sm icon-dark&quot; 
+          src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/heart.svg&quot;
+        /&gt;
+      &lt;/a&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        &lt;img 
+          class=&quot;icon-sm icon-dark&quot; 
+          src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/comment.svg&quot;
+        /&gt;
+      &lt;/a&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        &lt;img 
+          class=&quot;icon-sm icon-dark&quot; 
+          src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg&quot;
+        /&gt;
+      &lt;/a&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        &lt;img 
+          class=&quot;icon-sm icon-dark&quot; 
+          src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/share.svg&quot;
+        /&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+            </code>
+          </pre>
+          </div>
+
+          <!-- TEXT OVERLAY CARD -->
+          <p class="h-5 maincontent__content--info" id="overlay-card">
+            Text Overlay Card
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            The
+            <span class="word-highlight-red">Text Overlay Card</span> component
+            comes with a Title, a Subtitle, an Image Background, a caption text
+            and a few buttons at the end.
+          </p>
+          <div class="txt-center">
+            <div class="card card__imgbg">
+              <img
+                src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/image.jpg"
+                class="card__img"
+                alt="card-image"
+              />
+              <div class="card__body">
+                <div class="card__title">
+                  <h1 class="h-5">Card Title</h1>
+                  <p class="caption">Card Sub-title</p>
+                </div>
+                <div class="card__footer">
+                  <div class="card__footer--left">7 hours ago</div>
+                  <div class="card__footer--right">
+                    <a
+                      ><img
+                        class="icon-sm icon-light"
+                        src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/heart.svg"
+                        alt="heart-icon"
+                    /></a>
+                    <a
+                      ><img
+                        class="icon-sm icon-light"
+                        src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/comment.svg"
+                        alt="comment-icon"
+                    /></a>
+                    <a
+                      ><img
+                        class="icon-sm icon-light"
+                        src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg"
+                        alt="bookmark-icon"
+                    /></a>
+                    <a
+                      ><img
+                        class="icon-sm icon-light"
+                        src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/share.svg"
+                        alt="share-icon"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;div class=&quot;card card__imgbg&quot;&gt;
+  &lt;img src=&quot;#&quot; class=&quot;card__img&quot; /&gt;
+  &lt;div class=&quot;card__body&quot;&gt;
+    &lt;div class=&quot;card__title&quot;&gt;
+      &lt;h1 class=&quot;h-5&quot;&gt;Card Title&lt;/h1&gt;
+      &lt;p class=&quot;caption&quot;&gt;Card Sub-title&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card__footer&quot;&gt;
+      &lt;div class=&quot;card__footer--left&quot;&gt;
+        7 hours ago
+      &lt;/div&gt;
+      &lt;div class=&quot;card__footer--right&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;
+          &lt;img
+            class=&quot;icon-sm icon-light&quot; 
+            src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/heart.svg&quot;
+          /&gt;
+        &lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;
+          &lt;img
+            class=&quot;icon-sm icon-light&quot; 
+            src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/comment.svg&quot;
+          /&gt;
+        &lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;
+          &lt;img
+            class=&quot;icon-sm icon-light&quot; 
+            src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg&quot;
+          /&gt;
+        &lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;
+          &lt;img 
+            class=&quot;icon-sm icon-light&quot; 
+            src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/share.svg&quot;
+          /&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+            </code>
+          </pre>
+          </div>
+
+          <!-- E-COMMERCE CARD -->
+          <p class="h-5 maincontent__content--info" id="ecommerce-card">
+            E-Commerce Card
+          </p>
+          <p class="bd-5 maincontent__content--info">
+            The
+            <span class="word-highlight-red">E-Commerce Card</span> component
+            comes with an Image, Product Title, a Product Category, Price Tag, a
+            OFF Badge and a few buttons at the end.
+          </p>
+          <div class="txt-center">
+            <div class="card card__ecommerce">
+              <div class="card__body">
+                <div class="card__badge">
+                  <img
+                    class="badge__icon icon-danger"
+                    src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg"
+                    alt="bookmark-icon"
+                  />
+                  <span class="card__discount">40% OFF</span>
+                </div>
+                <img
+                  src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/image.jpg"
+                  class="card__img"
+                  alt="card-image"
+                />
+                <div class="card__title">
+                  <h1 class="h-5">Item Title</h1>
+                  <p class="caption">Item Category</p>
+                </div>
+                <div class="card__content">
+                  <p class="bd-5">
+                    ₹ <strike>5000</strike>
+                    <span class="card__content--newprice">3000</span> /-
+                  </p>
+                  <button class="btn-solid-primary card__content--button">
+                    -
+                  </button>
+                  <span class="st-1">2</span>
+                  <button class="btn-solid-primary card__content--button">
+                    +
+                  </button>
+                </div>
+              </div>
+              <div class="card__footer">
+                <div class="card__footer--left">
+                  <a class="card__button" href="#"
+                    ><button class="button btn-sm btn-solid-success">
+                      Buy - ₹ 6000
+                    </button></a
+                  >
+                </div>
+                <div class="card__footer--right">
+                  <a
+                    ><img
+                      class="icon-sm icon-dark"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/heart.svg"
+                      alt="heart-icon"
+                  /></a>
+                  <a
+                    ><img
+                      class="icon-sm icon-dark"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/share.svg"
+                      alt="share-icon"
+                  /></a>
+                  <a
+                    ><img
+                      class="icon-sm icon-dark"
+                      src="https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/menu.svg"
+                      alt="menu-icon"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="code__wrapper">
+            <pre class="code-embed">
+            <code class="code tag">
+&lt;div class=&quot;card card__ecommerce&quot;&gt;
+  &lt;div class=&quot;card__body&quot;&gt;
+    &lt;div class=&quot;card__badge&quot;&gt;
+      &lt;img class=&quot;badge__icon icon-danger&quot; src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/bookmark.svg&quot; /&gt;
+      &lt;span class=&quot;card__discount&quot;&gt;40% OFF&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;img src=&quot;#&quot; class=&quot;card__img&quot; /&gt;
+    &lt;div class=&quot;card__title&quot;&gt;
+      &lt;h1 class=&quot;h-5&quot;&gt;Item Title&lt;/h1&gt;
+      &lt;p class=&quot;caption&quot;&gt;Item Category&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card__content&quot;&gt;
+      &lt;p class=&quot;bd-5&quot;&gt;₹ &lt;strike&gt;5000&lt;/strike&gt; &lt;span class=&quot;card__content--newprice&quot;&gt;3000&lt;/span&gt; /-&lt;/p&gt;
+      &lt;button class=&quot;btn-solid-primary card__content--button&quot;&gt;-&lt;/button&gt;
+      &lt;span class=&quot;st-1&quot;&gt;2&lt;/span&gt;
+      &lt;button class=&quot;btn-solid-primary card__content--button&quot;&gt;+&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card__footer&quot;&gt;
+    &lt;div class=&quot;card__footer--left&quot;&gt;
+      &lt;a class=&quot;card__button&quot; href=&quot;#&quot;&gt;
+        &lt;button class=&quot;button btn-sm btn-solid-success&quot;&gt;
+          Buy - ₹ 6000
+        &lt;/button&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card__footer--right&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        &lt;img 
+          class=&quot;icon-sm icon-dark&quot; 
+          src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/heart.svg&quot;
+        /&gt;
+      &lt;/a&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        &lt;img 
+          class=&quot;icon-sm icon-dark&quot; 
+          src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/share.svg&quot;
+        /&gt;
+      &lt;/a&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        &lt;img 
+          class=&quot;icon-sm icon-dark&quot; 
+          src=&quot;https://raw.githubusercontent.com/VishalPatil18/VISPA-UI/main/assets/menu.svg&quot;
+        /&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+            </code>
+          </pre>
+          </div>
+        </section>
+
+        <!-------------------------------------
+                  CONTENT FOOTER 
+      -------------------------------------->
+        <footer class="footer">
+          <section class="navigation__wrapper">
+            <a
+              href="../button/button.html"
+              class="navigation__wrapper--item txt-center st-1"
+            >
+              <img
+                class="icon-sm icon-dark maincontent__sidebar--icon rotate90"
+                src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+                alt="angle-icon"
+              />
+              Button
+            </a>
+            <a
+              href="../chips/chips.html"
+              class="navigation__wrapper--item txt-center st-1"
+            >
+              Chips
+              <img
+                class="icon-sm icon-dark maincontent__sidebar--icon"
+                src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+                alt="angle-icon"
+              />
+            </a>
+          </section>
+          <section class="footer__end">
+            <p class="footer__copyright bd-5">
+              Copyright &copy; 2022
+              <a href="https://github.com/VishalPatil18"> Vishal Patil </a>
+              <br class="footer__break" />
+              All Rights Reserved
+            </p>
+            <a href="https://github.com/VishalPatil18/VISPA-UI-Docs">
+              Edit this page on Github
+            </a>
+          </section>
+        </footer>
       </section>
 
       <!-------------------------------------
-                  CONTENT FOOTER 
-      -------------------------------------->
-      <footer class="footer">
-        <section class="navigation__wrapper">
-          <a href="../button/button.html" class="navigation__wrapper--item txt-center st-1">
-            <img class="icon-sm icon-dark maincontent__sidebar--icon" style="transform: rotate(-90deg);" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-            Button
-          </a>
-          <a href="../chips/chips.html" class="navigation__wrapper--item txt-center st-1">
-            Chips
-            <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-          </a>
-        </section>
-        <section class="footer__end">
-          <p class="footer__copyright bd-5">
-            Copyright &copy; 2022 
-            <a href="https://github.com/VishalPatil18">
-              Vishal Patil
-            </a>
-            <br class="footer__break">
-             All Rights Reserved
-          </p>
-          <a href="https://github.com/VishalPatil18/VISPA-UI">Edit this page on Github</a>
-        </section>
-      </footer>
-    </section>
-
-    <!-------------------------------------
                 RIGHT SIDEBAR 
     -------------------------------------->
-    <aside class="maincontent__sidebar--right">
-      <h6 class="h-6 maincontent__sidebar--right--title">On this Page</h6>
-      <a class="bd-5" href="#basic-card">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Basic Card
-      </a>
-      <a class="bd-5" href="#image-card">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Dismissible Image Card
-      </a>
-      <a class="bd-5" href="#socialmedia-card">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Social Media Card
-      </a>
-      <a class="bd-5" href="#overlay-card">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        Text Overlay Card
-      </a>
-      <a class="bd-5" href="#ecommerce-card">
-        <img class="icon-sm icon-dark maincontent__sidebar--icon" src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg" alt="angle-icon">
-        E-Commerce Card
-      </a>
-    </aside>
-  </main>
-</body>
-<script src="../../script.js" defer></script>
+      <aside class="maincontent__sidebar--right">
+        <h6 class="h-6 maincontent__sidebar--right--title">On this Page</h6>
+        <a class="bd-5" href="#basic-card">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Basic Card
+        </a>
+        <a class="bd-5" href="#image-card">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Dismissible Image Card
+        </a>
+        <a class="bd-5" href="#socialmedia-card">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Social Media Card
+        </a>
+        <a class="bd-5" href="#overlay-card">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          Text Overlay Card
+        </a>
+        <a class="bd-5" href="#ecommerce-card">
+          <img
+            class="icon-sm icon-dark maincontent__sidebar--icon"
+            src="https://vispaui-postdev-deploy.netlify.app/assets/angle-up.svg"
+            alt="angle-icon"
+          />
+          E-Commerce Card
+        </a>
+      </aside>
+    </main>
+  </body>
+  <script src="../../script.js" defer></script>
+
+  <!-- HIGHLIGHT.JS CDN SCRIPT -->
+  <script src="../../highlight/highlight.min.js"></script>
+
+  <!-- RUNNING HIGHLIGHT JS FOR STYLING -->
+  <script>
+    hljs.highlightAll();
+  </script>
 </html>

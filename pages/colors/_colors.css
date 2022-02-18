@@ -62,7 +62,7 @@
 
 .color--warning {
   background-color: var(--warning);
-  color: var(--dark)
+  color: var(--dark);
 }
 
 .color--dark {
