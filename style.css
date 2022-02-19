@@ -136,6 +136,16 @@ body ._navbar .btn-github {
   width: 100%;
 }
 
+.hero2-text {
+  -webkit-text-stroke: 2px var(--primary);
+  color: white;
+  font-size: var(--fs-xxl-2);
+  font-weight: var(--fw-7);
+  line-height: 1;
+  text-shadow: 6px 8px 8px rgba(3,144,226,0.77);
+  text-transform: uppercase;
+}
+
 .maincontent__content {
   display: flex;
   flex-direction: column;
