@@ -19,3 +19,24 @@ window.addEventListener("click", (e) => {
     sidebarContainer.style.display = "none";
   }
 });
+
+const changeBackToDark = (currentBtn) => {
+  currentBtn.children[0].src = "../../assets/copy.svg";
+  currentBtn.classList.remove("icon-success");
+  currentBtn.classList.add("icon-light");
+}
+
+const copyBtns = document.querySelectorAll(".copy-btn");
+copyBtns.forEach(function (currentBtn) {
+  currentBtn.addEventListener("click", (e) => {
+    if (e.target.parentElement.parentElement.children[1]) {
+      const textToCopy =
+        e.target.parentElement.parentElement.children[1].textContent;
+      navigator.clipboard.writeText(textToCopy);
+      currentBtn.classList.remove("icon-light");
+      currentBtn.classList.add("icon-success");
+      currentBtn.children[0].src = "../../assets/copy-success.svg";
+      setTimeout(() => changeBackToDark(currentBtn), 2000);
+    }
+  });
+});

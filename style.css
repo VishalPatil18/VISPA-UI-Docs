@@ -172,7 +172,7 @@ body ._navbar .btn-github {
 .code-embed > code.tag,
 .code-embed > code.html {
   border-radius: var(--br-lg);
-  padding: 0 var(--space-md);
+  padding: 0 var(--space-xl) 0 var(--space-md);
   max-height: 600px;
   overflow-y: scroll;
 }
@@ -182,6 +182,27 @@ pre code.hljs {
   padding: 0;
   white-space: pre-wrap;
   overflow-x: auto;
+}
+
+.code-embed {
+  position: relative;
+}
+
+.copy-btn{
+  position: absolute;
+  top: 55px;
+  right: 5px;
+  background-color: rgba(0, 0,0, 0);
+  border: none;
+  cursor: pointer;
+  height: 45px;
+  width: 45px;
+}
+
+.copy-btn:hover {
+  border-radius: var(--br-full);
+  background-color: white;
+  transition: 0.2s ease-in-out;
 }
 
 .word-highlight-red {
